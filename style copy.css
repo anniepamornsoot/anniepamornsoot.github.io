@@ -1,0 +1,82 @@
+body,
+html {
+  height: 100%;
+}
+
+.hero-image {
+background-image: url("relaxingspa3.png");
+height: 100%;
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}  
+
+p {
+  position: absolute;
+width: 584px;
+height: 117px;
+left: 120px;
+top: 345px;
+
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 23px;
+line-height: 39px;
+/* or 169% */
+
+letter-spacing: -0.015em;
+
+color: #333333;
+}
+
+header {
+position: absolute;
+left: 8.06%;
+right: 50.62%;
+top: 31.53%;
+bottom: 61.15%;
+
+/* Title/Title */
+
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 51px;
+line-height: 61px;
+display: flex;
+align-items: center;
+letter-spacing: -0.015em;
+
+color: #333333;
+
+}
+
+button {
+  position: absolute;
+width: 179px;
+height: 50px;
+left: 120px;
+top: 496px;
+
+border-radius: 80px;
+
+border: 1.5px solid #0F5259;
+border-radius: 39px;
+
+/* Button Text / Poppin */
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+
+
+/* Primary/0F5259 */
+
+color: #0F5259;
+
+}
