@@ -1,33 +1,598 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Startup</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phuket Boat Tours – Private & Group Island Trips</title>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <!-- Your own stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <div class="container d-flex align-items-center h-100">
-      <div class="row">
-        <header class="text-center col-12">
-          <h1 class="text-uppercase"><strong>The biggest startup event of the year</strong></h1>
-        </header>
-        <div class="buffer col-12"></div>
-        <section class="text-center col-12">
-          <hr>
-          <a href="https://mailchi.mp/8a224497d796/ztmstudents">
-            <button class="btn btn-primary btn-xl">Find out more</button>
-          </a>
-        </section>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <i class="fas fa-anchor"></i>
+        <span>Phuket<strong>Sail</strong></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="#private">Private</a></li>
+        <li><a href="#group">Group</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Phuket, Thailand</span>
+      <h1>Discover Paradise<br><em>by Boat</em></h1>
+      <p>Private & group island-hopping tours from Phuket.<br>Crystal waters, hidden bays, and unforgettable sunsets.</p>
+      <div class="hero-actions">
+        <a href="#tours" class="btn btn-primary">Explore Tours</a>
+        <a href="#contact" class="btn btn-outline">Book a Trip</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <strong>500+</strong>
+          <span>Happy Guests / Year</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>4.9 ★</strong>
+          <span>Average Rating</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>15+</strong>
+          <span>Destinations</span>
+        </div>
       </div>
     </div>
-  </body>
+    <div class="hero-scroll">
+      <a href="#tours"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ===== TOUR TYPE SELECTOR ===== -->
+  <section class="tour-types" id="tours">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">What We Offer</span>
+        <h2>Choose Your Adventure</h2>
+        <p>Whether you want an exclusive private escape or a fun social group trip, we have the perfect boat tour for you.</p>
+      </div>
+      <div class="type-cards">
+        <div class="type-card private">
+          <div class="type-card-img">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=700&q=80" alt="Private boat tour Phuket">
+            <div class="type-badge">From ฿8,500/boat</div>
+          </div>
+          <div class="type-card-body">
+            <i class="fas fa-ship type-icon"></i>
+            <h3>Private Boat Tours</h3>
+            <p>Rent an entire boat just for your group. You set the schedule, choose the stops, and enjoy total privacy on the Andaman Sea.</p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Exclusive use of the vessel</li>
+              <li><i class="fas fa-check"></i> Customizable itinerary</li>
+              <li><i class="fas fa-check"></i> Up to 10 guests</li>
+              <li><i class="fas fa-check"></i> Dedicated captain & crew</li>
+            </ul>
+            <a href="#private" class="btn btn-primary">See Private Tours</a>
+          </div>
+        </div>
+        <div class="type-card group">
+          <div class="type-card-img">
+            <img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=700&q=80" alt="Group boat tour Phuket">
+            <div class="type-badge">From ฿1,500/person</div>
+          </div>
+          <div class="type-card-body">
+            <i class="fas fa-users type-icon"></i>
+            <h3>Group Boat Tours</h3>
+            <p>Join fellow travellers on a shared adventure. Great value, great vibes, and a chance to make new friends while exploring Phuket's best islands.</p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Small groups (max 20 pax)</li>
+              <li><i class="fas fa-check"></i> Fixed daily departures</li>
+              <li><i class="fas fa-check"></i> Experienced tour guide</li>
+              <li><i class="fas fa-check"></i> Lunch & snorkelling gear</li>
+            </ul>
+            <a href="#group" class="btn btn-primary">See Group Tours</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRIVATE TOURS ===== -->
+  <section class="tours-section" id="private">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Private</span>
+        <h2>Private Boat Charters</h2>
+        <p>Your boat, your rules. Pick a tour and we'll tailor every detail to your wishes.</p>
+      </div>
+      <div class="tours-grid">
+
+        <div class="tour-card">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1537956965359-7573183d1f57?w=600&q=80" alt="Phi Phi Islands Private Tour">
+            <span class="tour-tag">Best Seller</span>
+          </div>
+          <div class="tour-body">
+            <div class="tour-meta">
+              <span><i class="fas fa-clock"></i> Full Day (8h)</span>
+              <span><i class="fas fa-star"></i> 5.0 (128)</span>
+            </div>
+            <h4>Phi Phi Islands Private Charter</h4>
+            <p>Cruise to the iconic Phi Phi Islands — snorkel in turquoise lagoons, explore Maya Bay, and drift through the Pileh Cove.</p>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="from">From</span>
+                <strong>฿9,500</strong>
+                <span class="per">/boat</span>
+              </div>
+              <a href="#contact" class="btn btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=600&q=80" alt="James Bond Island Private Tour">
+            <span class="tour-tag">Iconic</span>
+          </div>
+          <div class="tour-body">
+            <div class="tour-meta">
+              <span><i class="fas fa-clock"></i> Full Day (8h)</span>
+              <span><i class="fas fa-star"></i> 4.9 (94)</span>
+            </div>
+            <h4>James Bond Island Private Trip</h4>
+            <p>Sail through Phang Nga Bay's dramatic limestone karsts, visit Ko Tapu (James Bond Island), and explore sea caves by kayak.</p>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="from">From</span>
+                <strong>฿10,500</strong>
+                <span class="per">/boat</span>
+              </div>
+              <a href="#contact" class="btn btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Similan Islands Private Tour">
+            <span class="tour-tag">Diving</span>
+          </div>
+          <div class="tour-body">
+            <div class="tour-meta">
+              <span><i class="fas fa-clock"></i> Full Day (10h)</span>
+              <span><i class="fas fa-star"></i> 4.9 (61)</span>
+            </div>
+            <h4>Similan Islands Private Charter</h4>
+            <p>Venture to the world-class Similan Islands. Pristine coral reefs, sea turtles, and crystal-clear water make this a diver's dream.</p>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="from">From</span>
+                <strong>฿18,000</strong>
+                <span class="per">/boat</span>
+              </div>
+              <a href="#contact" class="btn btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80" alt="Sunset Cruise Private Tour">
+          </div>
+          <div class="tour-body">
+            <div class="tour-meta">
+              <span><i class="fas fa-clock"></i> Half Day (3h)</span>
+              <span><i class="fas fa-star"></i> 5.0 (77)</span>
+            </div>
+            <h4>Romantic Sunset Cruise</h4>
+            <p>Watch the Andaman Sea glow gold at sunset. Champagne, canapés, and the horizon all to yourselves — perfect for couples.</p>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="from">From</span>
+                <strong>฿8,500</strong>
+                <span class="per">/boat</span>
+              </div>
+              <a href="#contact" class="btn btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GROUP TOURS ===== -->
+  <section class="tours-section alt-bg" id="group">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Group</span>
+        <h2>Group Island-Hopping Tours</h2>
+        <p>Join a small group and share the adventure — all tours include a local guide, lunch, and snorkelling equipment.</p>
+      </div>
+      <div class="tours-grid">
+
+        <div class="tour-card">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1540202404-a2f29564651e?w=600&q=80" alt="Phi Phi Group Tour">
+            <span class="tour-tag">Most Popular</span>
+          </div>
+          <div class="tour-body">
+            <div class="tour-meta">
+              <span><i class="fas fa-clock"></i> Full Day (7h)</span>
+              <span><i class="fas fa-star"></i> 4.8 (312)</span>
+            </div>
+            <h4>Phi Phi Islands Day Trip</h4>
+            <p>The classic Phuket group tour. Visit Maya Bay, snorkel at Monkey Beach, and have lunch on Phi Phi Don — all in one unforgettable day.</p>
+            <div class="tour-includes">
+              <span><i class="fas fa-utensils"></i> Lunch</span>
+              <span><i class="fas fa-water"></i> Snorkel</span>
+              <span><i class="fas fa-life-ring"></i> Life Jacket</span>
+            </div>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="from">From</span>
+                <strong>฿1,500</strong>
+                <span class="per">/person</span>
+              </div>
+              <a href="#contact" class="btn btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="James Bond Group Tour">
+          </div>
+          <div class="tour-body">
+            <div class="tour-meta">
+              <span><i class="fas fa-clock"></i> Full Day (8h)</span>
+              <span><i class="fas fa-star"></i> 4.8 (201)</span>
+            </div>
+            <h4>Phang Nga Bay Day Trip</h4>
+            <p>Paddle through sea caves, glide past towering limestone cliffs, and take the famous photo at James Bond Island.</p>
+            <div class="tour-includes">
+              <span><i class="fas fa-utensils"></i> Lunch</span>
+              <span><i class="fas fa-kayak"></i> Kayak</span>
+              <span><i class="fas fa-camera"></i> Photo stops</span>
+            </div>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="from">From</span>
+                <strong>฿1,800</strong>
+                <span class="per">/person</span>
+              </div>
+              <a href="#contact" class="btn btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?w=600&q=80" alt="Coral Island Group Tour">
+            <span class="tour-tag">Half Day</span>
+          </div>
+          <div class="tour-body">
+            <div class="tour-meta">
+              <span><i class="fas fa-clock"></i> Half Day (4h)</span>
+              <span><i class="fas fa-star"></i> 4.7 (178)</span>
+            </div>
+            <h4>Coral Island Snorkel Trip</h4>
+            <p>A relaxed morning escape to Koh Hae (Coral Island). Snorkel over vibrant reefs and lounge on a pristine white beach.</p>
+            <div class="tour-includes">
+              <span><i class="fas fa-water"></i> Snorkel</span>
+              <span><i class="fas fa-umbrella-beach"></i> Beach Time</span>
+              <span><i class="fas fa-life-ring"></i> Safety Gear</span>
+            </div>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="from">From</span>
+                <strong>฿900</strong>
+                <span class="per">/person</span>
+              </div>
+              <a href="#contact" class="btn btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&q=80" alt="4 Islands Group Tour">
+          </div>
+          <div class="tour-body">
+            <div class="tour-meta">
+              <span><i class="fas fa-clock"></i> Full Day (8h)</span>
+              <span><i class="fas fa-star"></i> 4.9 (145)</span>
+            </div>
+            <h4>4 Islands Adventure</h4>
+            <p>Hop between four stunning islands — snorkelling, swimming, beach picnic, and a stop at a glowing bioluminescent plankton bay at sunset.</p>
+            <div class="tour-includes">
+              <span><i class="fas fa-utensils"></i> Lunch</span>
+              <span><i class="fas fa-water"></i> Snorkel</span>
+              <span><i class="fas fa-moon"></i> Sunset</span>
+            </div>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="from">From</span>
+                <strong>฿2,200</strong>
+                <span class="per">/person</span>
+              </div>
+              <a href="#contact" class="btn btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="why-us" id="about">
+    <div class="container">
+      <div class="why-us-inner">
+        <div class="why-us-text">
+          <span class="label">Why Choose Us</span>
+          <h2>The Best Way to Explore Phuket's Waters</h2>
+          <p>We are a small, passionate team of local mariners and travel enthusiasts based in Phuket. Every trip is designed to give you genuine experiences — not tourist traps.</p>
+          <div class="perks">
+            <div class="perk">
+              <div class="perk-icon"><i class="fas fa-shield-alt"></i></div>
+              <div>
+                <h5>Safety First</h5>
+                <p>All boats are fully certified. Crew trained in first aid and maritime safety.</p>
+              </div>
+            </div>
+            <div class="perk">
+              <div class="perk-icon"><i class="fas fa-leaf"></i></div>
+              <div>
+                <h5>Eco-Conscious</h5>
+                <p>No single-use plastic on board. We protect the reefs we show you.</p>
+              </div>
+            </div>
+            <div class="perk">
+              <div class="perk-icon"><i class="fas fa-map-marked-alt"></i></div>
+              <div>
+                <h5>Local Expertise</h5>
+                <p>Born and raised in Phuket — we know every hidden bay and the best snorkel spots.</p>
+              </div>
+            </div>
+            <div class="perk">
+              <div class="perk-icon"><i class="fas fa-headset"></i></div>
+              <div>
+                <h5>24/7 Support</h5>
+                <p>WhatsApp us any time before, during, or after your trip.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-us-img">
+          <img src="https://images.unsplash.com/photo-1525523838591-b819b9a8a9cb?w=700&q=80" alt="Phuket boat crew">
+          <div class="img-badge">
+            <strong>10+</strong>
+            <span>Years on the water</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header light">
+        <span class="label">Reviews</span>
+        <h2>What Our Guests Say</h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Absolutely magical. The private Phi Phi charter was worth every baht. The crew knew all the secret spots and we had Maya Bay entirely to ourselves in the morning!"</p>
+          <div class="reviewer">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah M.">
+            <div>
+              <strong>Sarah M.</strong>
+              <span>Australia • Private Tour</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Joined the group Phang Nga Bay trip solo and it was one of the highlights of my Thailand trip. Small group, excellent guide, insane limestone scenery."</p>
+          <div class="reviewer">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Marco B.">
+            <div>
+              <strong>Marco B.</strong>
+              <span>Italy • Group Tour</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Booked the sunset cruise for our honeymoon — champagne, calm seas, golden sky. The team went above and beyond. We still talk about it every day!"</p>
+          <div class="reviewer">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma R.">
+            <div>
+              <strong>Emma R.</strong>
+              <span>UK • Sunset Cruise</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOOKING / CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-text">
+          <span class="label">Get In Touch</span>
+          <h2>Ready to Set Sail?</h2>
+          <p>Send us a message and we'll put together your perfect Phuket boat trip. Usually reply within 2 hours.</p>
+          <div class="contact-channels">
+            <a href="https://wa.me/66800000000" class="channel whatsapp">
+              <i class="fab fa-whatsapp"></i> WhatsApp Us
+            </a>
+            <a href="mailto:hello@phuketsail.com" class="channel email">
+              <i class="fas fa-envelope"></i> Email Us
+            </a>
+          </div>
+          <p class="small-note"><i class="fas fa-map-marker-alt"></i> Chalong Pier, Phuket, Thailand &nbsp;|&nbsp; <i class="fas fa-clock"></i> Open daily 07:00 – 20:00</p>
+        </div>
+        <form class="booking-form" id="bookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Jane Smith" required>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="jane@email.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Tour Type</label>
+              <select>
+                <option value="">Select a tour…</option>
+                <optgroup label="Private">
+                  <option>Phi Phi Islands – Private</option>
+                  <option>James Bond Island – Private</option>
+                  <option>Similan Islands – Private</option>
+                  <option>Sunset Cruise – Private</option>
+                </optgroup>
+                <optgroup label="Group">
+                  <option>Phi Phi Islands – Group</option>
+                  <option>Phang Nga Bay – Group</option>
+                  <option>Coral Island – Group</option>
+                  <option>4 Islands – Group</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Preferred Date</label>
+              <input type="date">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Number of Guests</label>
+            <input type="number" min="1" max="20" placeholder="2">
+          </div>
+          <div class="form-group">
+            <label>Message (optional)</label>
+            <textarea placeholder="Any special requests, dietary needs, or questions…" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Enquiry <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo logo-light">
+            <i class="fas fa-anchor"></i>
+            <span>Phuket<strong>Sail</strong></span>
+          </a>
+          <p>Your gateway to the Andaman Sea. Small team, big adventures.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h6>Private Tours</h6>
+          <ul>
+            <li><a href="#contact">Phi Phi Islands</a></li>
+            <li><a href="#contact">James Bond Island</a></li>
+            <li><a href="#contact">Similan Islands</a></li>
+            <li><a href="#contact">Sunset Cruise</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h6>Group Tours</h6>
+          <ul>
+            <li><a href="#contact">Phi Phi Day Trip</a></li>
+            <li><a href="#contact">Phang Nga Bay</a></li>
+            <li><a href="#contact">Coral Island</a></li>
+            <li><a href="#contact">4 Islands</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h6>Info</h6>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Booking Policy</a></li>
+            <li><a href="#contact">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 PhuketSail. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart"></i> in Phuket, Thailand</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky navbar
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      hamburger.classList.remove('active');
+    }));
+
+    // Booking form
+    document.getElementById('bookingForm').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thank you! We\'ll get back to you within 2 hours. Check your WhatsApp or email inbox!');
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.tour-card, .type-card, .perk, .review-card').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+  </script>
+</body>
 </html>
