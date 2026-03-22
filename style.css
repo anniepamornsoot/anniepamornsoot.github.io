@@ -4,16 +4,16 @@
 
 /* ---------- CSS Variables ---------- */
 :root {
-  --navy:       #0B1F3A;
-  --navy-mid:   #112849;
-  --navy-light: #1A3660;
-  --gold:       #B07D2E;
-  --gold-light: #C9963E;
-  --gold-pale:  #F4ECDA;
+  --navy:       #122333;
+  --navy-mid:   #1A3044;
+  --navy-light: #254460;
+  --gold:       #1A8BAE;
+  --gold-light: #26A0C5;
+  --gold-pale:  #DCF1F7;
   --white:      #FFFFFF;
-  --grey-50:    #FAFBFC;
-  --grey-100:   #F3F5F8;
-  --grey-200:   #E4E8EF;
+  --grey-50:    #F7F9FB;
+  --grey-100:   #EEF2F6;
+  --grey-200:   #DDE4ED;
   --grey-400:   #8D98A8;
   --grey-600:   #4E5A6B;
   --grey-800:   #2B3445;
