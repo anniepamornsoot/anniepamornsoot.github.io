@@ -665,8 +665,10 @@ ul { list-style: none; }
 .service-card--featured .service-link { color: var(--gold); }
 
 .service-icon {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--gold);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -676,7 +678,7 @@ ul { list-style: none; }
   flex-shrink: 0;
 }
 
-.service-card--featured .service-icon { color: var(--gold); }
+.service-card--featured .service-icon { background: var(--gold); color: var(--navy); }
 
 .service-card h3 { margin-bottom: 12px; font-size: 1rem; letter-spacing: -0.01em; }
 .service-card p { font-size: 0.9rem; flex: 1; line-height: 1.7; }
