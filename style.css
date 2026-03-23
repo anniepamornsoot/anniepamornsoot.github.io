@@ -394,7 +394,7 @@ ul { list-style: none; }
 .hero-headline .highlight {
   color: var(--gold-light);
   position: relative;
-  text-shadow: 0 0 30px rgba(255,85,40,0.55), 0 0 80px rgba(255,85,40,0.25);
+  text-shadow: none;
 }
 
 .hero-sub {
@@ -513,7 +513,6 @@ ul { list-style: none; }
   font-size: 1.1rem;
   font-weight: 800;
   color: #FF8A66;
-  text-shadow: 0 0 12px rgba(255,85,40,0.6);
 }
 
 .hv-chip-label {
