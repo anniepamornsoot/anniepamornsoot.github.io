@@ -995,6 +995,11 @@ ul { list-style: none; }
   background: var(--white);
 }
 
+.contact .section-badge--light {
+  color: var(--navy);
+  border-bottom-color: var(--navy);
+}
+
 .contact-inner {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
@@ -1016,12 +1021,14 @@ ul { list-style: none; }
 }
 
 .contact-detail i {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--gold);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--gold);
+  color: var(--navy);
   font-size: 0.85rem;
   flex-shrink: 0;
 }
