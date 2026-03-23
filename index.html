@@ -71,12 +71,12 @@
           <svg class="risk-svg" viewBox="0 0 460 420" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <radialGradient id="rg-pink" cx="55%" cy="40%" r="50%">
-                <stop offset="0%" stop-color="#FF006E" stop-opacity="0.40"/>
-                <stop offset="100%" stop-color="#FF006E" stop-opacity="0"/>
+                <stop offset="0%" stop-color="#FF5528" stop-opacity="0.40"/>
+                <stop offset="100%" stop-color="#FF5528" stop-opacity="0"/>
               </radialGradient>
               <radialGradient id="rg-cyan" cx="30%" cy="65%" r="50%">
-                <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.32"/>
-                <stop offset="100%" stop-color="#00F5FF" stop-opacity="0"/>
+                <stop offset="0%" stop-color="#DCFF00" stop-opacity="0.32"/>
+                <stop offset="100%" stop-color="#DCFF00" stop-opacity="0"/>
               </radialGradient>
               <filter id="f-pink" x="-50%" y="-50%" width="200%" height="200%">
                 <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
@@ -94,68 +94,68 @@
 
             <!-- Outer jagged polygon (main risk shape) -->
             <polygon points="230,22 358,82 398,215 335,348 152,355 82,238 112,92"
-              stroke="#FF006E" stroke-width="1.5" fill="rgba(255,0,110,0.05)"
+              stroke="#FF5528" stroke-width="1.5" fill="rgba(255,85,40,0.05)"
               class="rsk-poly-outer" filter="url(#f-pink)"/>
 
             <!-- Inner fragmented polygon -->
             <polygon points="230,68 328,118 352,212 292,312 172,318 118,210 142,114"
-              stroke="#00F5FF" stroke-width="1" fill="rgba(0,245,255,0.04)"
+              stroke="#DCFF00" stroke-width="1" fill="rgba(220,255,0,0.04)"
               class="rsk-poly-inner" filter="url(#f-cyan)"/>
 
             <!-- Central warning triangle -->
             <polygon points="230,138 298,258 162,258"
-              stroke="#FFDD00" stroke-width="2" fill="rgba(255,221,0,0.09)"
+              stroke="#6450D2" stroke-width="2" fill="rgba(100,80,210,0.09)"
               class="rsk-warn-tri" filter="url(#f-pink)"/>
             <!-- Exclamation mark -->
-            <rect x="226" y="168" width="8" height="46" rx="3" fill="#FFDD00" class="rsk-excl"/>
-            <circle cx="230" cy="244" r="4.5" fill="#FFDD00" class="rsk-excl-dot"/>
+            <rect x="226" y="168" width="8" height="46" rx="3" fill="#6450D2" class="rsk-excl"/>
+            <circle cx="230" cy="244" r="4.5" fill="#6450D2" class="rsk-excl-dot"/>
 
             <!-- Volatile market line -->
             <polyline
               points="38,365 78,308 114,332 156,270 196,302 230,245 265,285 308,215 344,262 384,192 424,228"
-              stroke="#FF006E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+              stroke="#FF5528" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
               class="rsk-volatile-line" filter="url(#f-pink)"/>
 
             <!-- Accent data points on line -->
-            <circle cx="156" cy="270" r="5" fill="#00F5FF" class="rsk-node-accent"/>
-            <circle cx="308" cy="215" r="5" fill="#FFDD00" class="rsk-node-accent"/>
-            <circle cx="230" cy="245" r="6" fill="#FF006E" class="rsk-node-accent"/>
+            <circle cx="156" cy="270" r="5" fill="#DCFF00" class="rsk-node-accent"/>
+            <circle cx="308" cy="215" r="5" fill="#6450D2" class="rsk-node-accent"/>
+            <circle cx="230" cy="245" r="6" fill="#FF5528" class="rsk-node-accent"/>
 
             <!-- Network nodes -->
-            <circle cx="82" cy="175" r="7" fill="none" stroke="#00F5FF" stroke-width="2" class="rsk-node"/>
-            <circle cx="82" cy="175" r="2.5" fill="#00F5FF"/>
+            <circle cx="82" cy="175" r="7" fill="none" stroke="#DCFF00" stroke-width="2" class="rsk-node"/>
+            <circle cx="82" cy="175" r="2.5" fill="#DCFF00"/>
 
-            <circle cx="382" cy="155" r="7" fill="none" stroke="#FF006E" stroke-width="2" class="rsk-node"/>
-            <circle cx="382" cy="155" r="2.5" fill="#FF006E"/>
+            <circle cx="382" cy="155" r="7" fill="none" stroke="#FF5528" stroke-width="2" class="rsk-node"/>
+            <circle cx="382" cy="155" r="2.5" fill="#FF5528"/>
 
-            <circle cx="118" cy="362" r="6" fill="none" stroke="#00FF94" stroke-width="2" class="rsk-node"/>
-            <circle cx="118" cy="362" r="2" fill="#00FF94"/>
+            <circle cx="118" cy="362" r="6" fill="none" stroke="#DCFF00" stroke-width="2" class="rsk-node"/>
+            <circle cx="118" cy="362" r="2" fill="#DCFF00"/>
 
-            <circle cx="392" cy="318" r="6" fill="none" stroke="#FFDD00" stroke-width="2" class="rsk-node"/>
-            <circle cx="392" cy="318" r="2" fill="#FFDD00"/>
+            <circle cx="392" cy="318" r="6" fill="none" stroke="#6450D2" stroke-width="2" class="rsk-node"/>
+            <circle cx="392" cy="318" r="2" fill="#6450D2"/>
 
             <!-- Connection lines -->
-            <line x1="82" y1="175" x2="382" y2="155" stroke="rgba(0,245,255,0.28)" stroke-width="1" stroke-dasharray="6,5"/>
-            <line x1="82" y1="175" x2="118" y2="362" stroke="rgba(0,255,148,0.24)" stroke-width="1" stroke-dasharray="6,5"/>
-            <line x1="382" y1="155" x2="392" y2="318" stroke="rgba(255,221,0,0.28)" stroke-width="1" stroke-dasharray="6,5"/>
+            <line x1="82" y1="175" x2="382" y2="155" stroke="rgba(220,255,0,0.28)" stroke-width="1" stroke-dasharray="6,5"/>
+            <line x1="82" y1="175" x2="118" y2="362" stroke="rgba(220,255,0,0.24)" stroke-width="1" stroke-dasharray="6,5"/>
+            <line x1="382" y1="155" x2="392" y2="318" stroke="rgba(100,80,210,0.28)" stroke-width="1" stroke-dasharray="6,5"/>
 
             <!-- Floating fragments -->
             <rect x="28" y="52" width="30" height="20" rx="4"
-              stroke="#00F5FF" stroke-width="1.5" fill="rgba(0,245,255,0.07)"
+              stroke="#DCFF00" stroke-width="1.5" fill="rgba(220,255,0,0.07)"
               transform="rotate(22 43 62)" class="rsk-frag"/>
             <rect x="392" y="62" width="36" height="22" rx="4"
-              stroke="#FF006E" stroke-width="1.5" fill="rgba(255,0,110,0.07)"
+              stroke="#FF5528" stroke-width="1.5" fill="rgba(255,85,40,0.07)"
               transform="rotate(-16 410 73)" class="rsk-frag"/>
             <polygon points="412,342 436,384 388,384"
-              stroke="#00FF94" stroke-width="1.5" fill="rgba(0,255,148,0.07)"
+              stroke="#DCFF00" stroke-width="1.5" fill="rgba(220,255,0,0.07)"
               class="rsk-frag"/>
             <polygon points="46,398 68,430 24,430"
-              stroke="#FFDD00" stroke-width="1.5" fill="rgba(255,221,0,0.07)"
+              stroke="#6450D2" stroke-width="1.5" fill="rgba(100,80,210,0.07)"
               class="rsk-frag"/>
 
             <!-- Concentric dashed rings -->
-            <circle cx="230" cy="198" r="148" fill="none" stroke="rgba(255,0,110,0.18)" stroke-width="1" stroke-dasharray="8,7"/>
-            <circle cx="230" cy="198" r="178" fill="none" stroke="rgba(0,245,255,0.12)" stroke-width="1" stroke-dasharray="4,9"/>
+            <circle cx="230" cy="198" r="148" fill="none" stroke="rgba(255,85,40,0.18)" stroke-width="1" stroke-dasharray="8,7"/>
+            <circle cx="230" cy="198" r="178" fill="none" stroke="rgba(220,255,0,0.12)" stroke-width="1" stroke-dasharray="4,9"/>
           </svg>
         </div>
 
@@ -616,7 +616,7 @@
         const btn = form.querySelector('button[type="submit"]');
         btn.textContent = successMsg;
         btn.disabled = true;
-        btn.style.background = '#1A8BAE';
+        btn.style.background = '#6450D2';
       });
     }
     handleFormSubmit('contactForm', 'Message Sent — We\'ll be in touch');
