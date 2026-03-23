@@ -908,7 +908,8 @@ ul { list-style: none; }
 
 .insight-tag {
   display: inline-block;
-  color: var(--gold);
+  background: var(--gold);
+  color: var(--navy);
   font-family: 'Montserrat', sans-serif;
   font-size: 0.64rem;
   font-weight: 700;
@@ -916,8 +917,8 @@ ul { list-style: none; }
   text-transform: uppercase;
   margin-bottom: 20px;
   align-self: flex-start;
-  border-bottom: 1.5px solid var(--gold-pale);
-  padding-bottom: 2px;
+  border-radius: 999px;
+  padding: 4px 12px;
 }
 
 .insight-card h4 {
@@ -933,7 +934,7 @@ ul { list-style: none; }
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: var(--gold);
+  color: var(--navy);
   font-family: 'Montserrat', sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
