@@ -852,23 +852,20 @@ ul { list-style: none; }
 }
 
 .step-number {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--navy);
-  margin-bottom: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--gold);
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-.step-number::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--navy-light);
-  max-width: 40px;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--navy);
+  margin-bottom: 24px;
+  flex-shrink: 0;
 }
 
 .step-content h3 {
