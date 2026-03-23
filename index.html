@@ -88,24 +88,20 @@
               </filter>
             </defs>
 
-            <!-- Background glow blobs -->
-            <ellipse cx="290" cy="185" rx="195" ry="165" fill="url(#rg-pink)"/>
-            <ellipse cx="140" cy="300" rx="130" ry="110" fill="url(#rg-cyan)"/>
-
             <!-- Outer jagged polygon (main risk shape) -->
             <polygon points="230,22 358,82 398,215 335,348 152,355 82,238 112,92"
               stroke="#FF5528" stroke-width="1.5" fill="rgba(255,85,40,0.05)"
-              class="rsk-poly-outer" filter="url(#f-pink)"/>
+              class="rsk-poly-outer"/>
 
             <!-- Inner fragmented polygon -->
             <polygon points="230,68 328,118 352,212 292,312 172,318 118,210 142,114"
               stroke="#DCFF00" stroke-width="1" fill="rgba(220,255,0,0.04)"
-              class="rsk-poly-inner" filter="url(#f-cyan)"/>
+              class="rsk-poly-inner"/>
 
             <!-- Central warning triangle -->
             <polygon points="230,138 298,258 162,258"
               stroke="#6450D2" stroke-width="2" fill="rgba(100,80,210,0.09)"
-              class="rsk-warn-tri" filter="url(#f-pink)"/>
+              class="rsk-warn-tri"/>
             <!-- Exclamation mark -->
             <rect x="226" y="168" width="8" height="46" rx="3" fill="#6450D2" class="rsk-excl"/>
             <circle cx="230" cy="244" r="4.5" fill="#6450D2" class="rsk-excl-dot"/>
@@ -114,7 +110,7 @@
             <polyline
               points="38,365 78,308 114,332 156,270 196,302 230,245 265,285 308,215 344,262 384,192 424,228"
               stroke="#FF5528" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
-              class="rsk-volatile-line" filter="url(#f-pink)"/>
+              class="rsk-volatile-line"/>
 
             <!-- Accent data points on line -->
             <circle cx="156" cy="270" r="5" fill="#DCFF00" class="rsk-node-accent"/>
