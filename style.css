@@ -7,9 +7,9 @@
   --navy:       #1A0F3C;
   --navy-mid:   #2D1F6B;
   --navy-light: #4035A0;
-  --gold:       #FF5528;
-  --gold-light: #FF8A66;
-  --gold-pale:  #FFE0D4;
+  --gold:       #DCFF00;
+  --gold-light: #DCFF00;
+  --gold-pale:  #F4FFB3;
   --white:      #FFFFFF;
   --grey-50:    #F7F9FB;
   --grey-100:   #EEF2F6;
@@ -122,7 +122,7 @@ ul { list-style: none; }
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #FF5528 0%, #FF8A66 100%);
+  background: #DCFF00;
   color: var(--white);
   box-shadow: 0 0 20px rgba(255,85,40,0.38);
 }
@@ -219,7 +219,7 @@ ul { list-style: none; }
 .nav-link:hover { color: var(--white); background: rgba(255,255,255,0.06); }
 
 .nav-cta {
-  background: linear-gradient(135deg, #FF5528 0%, #FF8A66 100%);
+  background: #DCFF00;
   color: var(--white) !important;
   padding: 9px 18px;
   margin-left: 8px;
@@ -512,7 +512,7 @@ ul { list-style: none; }
   font-family: 'Montserrat', sans-serif;
   font-size: 1.1rem;
   font-weight: 800;
-  color: #FF8A66;
+  color: #DCFF00;
 }
 
 .hv-chip-label {
@@ -1167,11 +1167,11 @@ ul { list-style: none; }
   gap: 16px;
 }
 
-.footer-bottom p { color: rgba(255,255,255,0.25); font-size: 0.80rem; }
+.footer-bottom p { color: #FFFFFF; font-size: 0.80rem; }
 
 .footer-legal { display: flex; gap: 24px; }
 .footer-legal a {
-  color: rgba(255,255,255,0.25);
+  color: #FFFFFF;
   font-size: 0.80rem;
   transition: color var(--transition);
 }
