@@ -86,9 +86,7 @@ ul { list-style: none; }
 .section-badge {
   display: inline-block;
   background: transparent;
-  color: var(--gold);
-  -webkit-text-stroke: 1px var(--navy);
-  paint-order: stroke fill;
+  color: var(--navy);
   font-family: 'Montserrat', sans-serif;
   font-size: 0.68rem;
   font-weight: 700;
@@ -96,14 +94,13 @@ ul { list-style: none; }
   text-transform: uppercase;
   padding: 0;
   border-radius: 0;
-  border-bottom: 2px solid var(--gold);
+  border-bottom: 2px solid var(--navy);
   padding-bottom: 2px;
 }
 
 .section-badge--light {
-  color: var(--gold-light);
-  -webkit-text-stroke: 0;
-  border-bottom-color: var(--gold-light);
+  color: var(--gold);
+  border-bottom-color: var(--gold);
 }
 
 /* ---------- Buttons ---------- */
@@ -665,7 +662,7 @@ ul { list-style: none; }
 .service-card--featured::after { background: var(--gold-light); }
 .service-card--featured h3 { color: var(--white); }
 .service-card--featured p  { color: rgba(255,255,255,0.6); }
-.service-card--featured .service-link { color: var(--gold-light); -webkit-text-stroke: 0; }
+.service-card--featured .service-link { color: var(--gold); }
 
 .service-icon {
   width: 40px;
@@ -674,12 +671,12 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
-  color: var(--gold);
+  color: var(--navy);
   margin-bottom: 20px;
   flex-shrink: 0;
 }
 
-.service-card--featured .service-icon { color: var(--gold-light); }
+.service-card--featured .service-icon { color: var(--gold); }
 
 .service-card h3 { margin-bottom: 12px; font-size: 1rem; letter-spacing: -0.01em; }
 .service-card p { font-size: 0.9rem; flex: 1; line-height: 1.7; }
@@ -688,9 +685,7 @@ ul { list-style: none; }
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: var(--gold);
-  -webkit-text-stroke: 1px var(--navy);
-  paint-order: stroke fill;
+  color: var(--navy);
   font-family: 'Montserrat', sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
@@ -860,9 +855,7 @@ ul { list-style: none; }
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--gold);
-  -webkit-text-stroke: 1px var(--navy);
-  paint-order: stroke fill;
+  color: var(--navy);
   margin-bottom: 24px;
   display: flex;
   align-items: center;
@@ -872,7 +865,7 @@ ul { list-style: none; }
   content: '';
   flex: 1;
   height: 1px;
-  background: var(--gold-pale);
+  background: var(--navy-light);
   max-width: 40px;
 }
 
