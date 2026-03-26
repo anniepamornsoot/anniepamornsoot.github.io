@@ -398,28 +398,32 @@ ul { list-style: none; }
 
 .stat {
   text-align: center;
-  padding: 0 60px;
+  padding: 0 50px;
+  max-width: 260px;
 }
-.stat-num {
-  font-family: var(--font-serif);
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 300;
+.stat-icon {
+  font-size: 1.6rem;
   color: var(--gold);
-  line-height: 1;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
-.stat-num span { font-size: 0.6em; }
+.stat-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 6px;
+}
 .stat-label {
-  font-size: 0.7rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  font-size: 0.75rem;
   color: var(--grey);
+  line-height: 1.5;
 }
 
 .stat-divider {
   width: 1px;
-  height: 56px;
+  height: 80px;
   background: rgba(58, 173, 168, 0.2);
+  flex-shrink: 0;
 }
 
 /* ============================================================
@@ -816,23 +820,35 @@ ul { list-style: none; }
 
 .big-stat {
   background: var(--white);
-  padding: 44px 36px;
-  text-align: center;
+  padding: 40px 36px;
+  border-top: 3px solid transparent;
+  transition: border-color 0.3s;
 }
-.big-num {
-  font-family: var(--font-serif);
-  font-size: clamp(3rem, 5vw, 5rem);
-  font-weight: 300;
+.big-stat:hover { border-top-color: var(--gold-lt); }
+.big-stat-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
   color: var(--gold);
-  line-height: 1;
-  margin-bottom: 12px;
+  background: rgba(58,173,168,0.1);
+  border: 1px solid rgba(58,173,168,0.25);
+  margin-bottom: 20px;
 }
-.big-num span { font-size: 0.55em; }
-.big-label {
-  font-size: 0.68rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+.big-stat h4 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+.big-stat p {
+  font-size: 0.85rem;
   color: var(--grey);
+  line-height: 1.75;
+  margin-bottom: 0;
 }
 
 /* ---- Testimonials light theme ---- */

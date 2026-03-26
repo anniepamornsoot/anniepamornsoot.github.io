@@ -83,23 +83,27 @@
   <section class="stats-strip">
     <div class="stats-inner">
       <div class="stat">
-        <div class="stat-num">250<span>+</span></div>
-        <div class="stat-label">Properties Sold</div>
+        <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+        <div class="stat-title">Licensed Thai Broker</div>
+        <div class="stat-label">Fully regulated &amp; legally compliant</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
-        <div class="stat-num">18</div>
-        <div class="stat-label">Years in Phuket</div>
+        <div class="stat-icon"><i class="fas fa-users"></i></div>
+        <div class="stat-title">Expat Specialists</div>
+        <div class="stat-label">Dedicated to international families</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
-        <div class="stat-num">40<span>+</span></div>
-        <div class="stat-label">Nationalities Served</div>
+        <div class="stat-icon"><i class="fas fa-shield-alt"></i></div>
+        <div class="stat-title">Full Legal Support</div>
+        <div class="stat-label">Due diligence from search to title deed</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
-        <div class="stat-num">98<span>%</span></div>
-        <div class="stat-label">Client Satisfaction</div>
+        <div class="stat-icon"><i class="fas fa-concierge-bell"></i></div>
+        <div class="stat-title">End-to-End Service</div>
+        <div class="stat-label">Schools, visas, utilities &amp; beyond</div>
       </div>
     </div>
   </section>
@@ -391,20 +395,24 @@
       </div>
       <div class="about-stats">
         <div class="big-stat">
-          <div class="big-num">250<span>+</span></div>
-          <div class="big-label">Families Placed</div>
+          <div class="big-stat-icon"><i class="fas fa-map-marked-alt"></i></div>
+          <h4>Deep Local Knowledge</h4>
+          <p>We know every neighbourhood, developer, and hidden gem across Phuket's diverse property landscape.</p>
         </div>
         <div class="big-stat">
-          <div class="big-num">18</div>
-          <div class="big-label">Years Experience</div>
+          <div class="big-stat-icon"><i class="fas fa-file-contract"></i></div>
+          <h4>Legal &amp; Due Diligence</h4>
+          <p>Every property is fully vetted — title deed checks, chanote verification, and foreign ownership structuring.</p>
         </div>
         <div class="big-stat">
-          <div class="big-num">฿2B<span>+</span></div>
-          <div class="big-label">In Transactions</div>
+          <div class="big-stat-icon"><i class="fas fa-school"></i></div>
+          <h4>Family Relocation</h4>
+          <p>From school applications and healthcare registration to community introductions — we settle your whole family in.</p>
         </div>
         <div class="big-stat">
-          <div class="big-num">40<span>+</span></div>
-          <div class="big-label">Nations Represented</div>
+          <div class="big-stat-icon"><i class="fas fa-heart"></i></div>
+          <h4>Ongoing Support</h4>
+          <p>Our relationship doesn't end at handover. We're your long-term concierge for life in Phuket.</p>
         </div>
       </div>
     </div>
@@ -688,35 +696,6 @@
       '.prop-card, .guide-card, .testi-card, .stat, .big-stat, .area-panel, .approach-step'
     ).forEach(el => { el.classList.add('fade-in'); observer.observe(el); });
 
-    // --- Counter Animation ---
-    function animateCounter(el, target, suffix) {
-      let start = 0;
-      const step = Math.ceil(target / 60);
-      const timer = setInterval(() => {
-        start = Math.min(start + step, target);
-        el.textContent = start + suffix;
-        if (start >= target) clearInterval(timer);
-      }, 25);
-    }
-    const statsObserver = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          statsObserver.unobserve(e.target);
-          const nums = e.target.querySelectorAll('.big-num');
-          nums.forEach(num => {
-            const text = num.textContent;
-            const match = text.match(/[\d,]+/);
-            if (match) {
-              const val = parseInt(match[0].replace(',', ''));
-              const suffix = text.replace(/[\d,]+/, '').trim();
-              animateCounter(num, val, suffix);
-            }
-          });
-        }
-      });
-    }, { threshold: 0.3 });
-    const aboutSection = document.querySelector('.about');
-    if (aboutSection) statsObserver.observe(aboutSection);
 
     // --- Form Submit ---
     document.getElementById('contactForm').addEventListener('submit', function(e) {
