@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MNA DD Solutions | Technology Due Diligence for Australian Private Equity</title>
-  <meta name="description" content="MNA DD Solutions delivers technology-led due diligence and value creation for Australian mid-market private equity firms. Uncover hidden risks, identify strategic opportunities, make confident decisions.">
+  <title>Pamornsoot Properties | Phuket Luxury Real Estate for Expats</title>
+  <meta name="description" content="Discover luxury villas, beachfront condos, and retirement homes in Phuket, Thailand. Pamornsoot Properties — trusted by expats and families relocating to paradise.">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,14 +22,15 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#home" class="nav-logo">
-        <span class="logo-mna">MNA</span><span class="logo-dd"> DD</span><span class="logo-solutions"> Solutions</span>
+        <span class="logo-primary">PAMORNSOOT</span>
+        <span class="logo-sub">PROPERTIES · PHUKET</span>
       </a>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#approach" class="nav-link">Our Approach</a></li>
-        <li><a href="#why-us" class="nav-link">Why Us</a></li>
-        <li><a href="#insights" class="nav-link">Insights</a></li>
-        <li><a href="#contact" class="nav-link nav-cta">Get in Touch</a></li>
+        <li><a href="#properties" class="nav-link">Properties</a></li>
+        <li><a href="#areas" class="nav-link">Areas</a></li>
+        <li><a href="#expat-guide" class="nav-link">Expat Guide</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Enquire Now</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
@@ -39,142 +39,41 @@
   </nav>
 
   <!-- ============================================================
-       HERO SECTION
+       HERO
   ============================================================ -->
   <section class="hero" id="home">
-    <div class="hero-bg-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-      <div class="shape shape-4"></div>
-      <div class="hero-dots"></div>
+    <div class="hero-slides">
+      <div class="hero-slide slide-1 active"></div>
+      <div class="hero-slide slide-2"></div>
+      <div class="hero-slide slide-3"></div>
     </div>
-    <div class="hero-layout">
-      <div class="hero-container">
-        <div class="hero-badge">Technology Due Diligence &amp; Value Creation</div>
-        <h1 class="hero-headline">
-          Clarity Where<br>
-          <span class="highlight">Technology Meets Capital</span>
-        </h1>
-        <p class="hero-sub">
-          We serve Australian mid-market private equity with a modern, technology-led approach to due diligence—translating complexity into clear, commercially actionable decisions across the entire M&amp;A lifecycle.
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Start a Conversation</a>
-          <a href="#services" class="btn btn-ghost">Our Services</a>
-        </div>
-      </div>
+    <div class="hero-overlay"></div>
 
-      <!-- Right-side visual: abstract risk composition -->
-      <div class="hero-visual" aria-hidden="true">
-        <div class="risk-abstract">
-          <svg class="risk-svg" viewBox="0 0 460 420" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <radialGradient id="rg-pink" cx="55%" cy="40%" r="50%">
-                <stop offset="0%" stop-color="#FF5528" stop-opacity="0.40"/>
-                <stop offset="100%" stop-color="#FF5528" stop-opacity="0"/>
-              </radialGradient>
-              <radialGradient id="rg-cyan" cx="30%" cy="65%" r="50%">
-                <stop offset="0%" stop-color="#DCFF00" stop-opacity="0.32"/>
-                <stop offset="100%" stop-color="#DCFF00" stop-opacity="0"/>
-              </radialGradient>
-              <filter id="f-pink" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
-                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-              </filter>
-              <filter id="f-cyan" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
-                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-              </filter>
-            </defs>
-
-            <!-- Outer jagged polygon (main risk shape) -->
-            <polygon points="230,22 358,82 398,215 335,348 152,355 82,238 112,92"
-              stroke="#FF5528" stroke-width="1.5" fill="rgba(255,85,40,0.05)"
-              class="rsk-poly-outer"/>
-
-            <!-- Inner fragmented polygon -->
-            <polygon points="230,68 328,118 352,212 292,312 172,318 118,210 142,114"
-              stroke="#DCFF00" stroke-width="1" fill="rgba(220,255,0,0.04)"
-              class="rsk-poly-inner"/>
-
-            <!-- Central warning triangle -->
-            <polygon points="230,138 298,258 162,258"
-              stroke="#FF2D2D" stroke-width="2" fill="rgba(255,45,45,0.09)"
-              class="rsk-warn-tri"/>
-            <!-- Exclamation mark -->
-            <rect x="226" y="168" width="8" height="46" rx="3" fill="#FF2D2D" class="rsk-excl"/>
-            <circle cx="230" cy="244" r="4.5" fill="#FF2D2D" class="rsk-excl-dot"/>
-
-            <!-- Volatile market line -->
-            <polyline
-              points="38,365 78,308 114,332 156,270 196,302 230,245 265,285 308,215 344,262 384,192 424,228"
-              stroke="#FF5528" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
-              class="rsk-volatile-line"/>
-
-            <!-- Accent data points on line -->
-            <circle cx="156" cy="270" r="5" fill="#DCFF00" class="rsk-node-accent"/>
-            <circle cx="308" cy="215" r="5" fill="#6450D2" class="rsk-node-accent"/>
-            <circle cx="230" cy="245" r="6" fill="#FF5528" class="rsk-node-accent"/>
-
-            <!-- Network nodes -->
-            <circle cx="82" cy="175" r="7" fill="none" stroke="#DCFF00" stroke-width="2" class="rsk-node"/>
-            <circle cx="82" cy="175" r="2.5" fill="#DCFF00"/>
-
-            <circle cx="382" cy="155" r="7" fill="none" stroke="#FF5528" stroke-width="2" class="rsk-node"/>
-            <circle cx="382" cy="155" r="2.5" fill="#FF5528"/>
-
-            <circle cx="118" cy="362" r="6" fill="none" stroke="#DCFF00" stroke-width="2" class="rsk-node"/>
-            <circle cx="118" cy="362" r="2" fill="#DCFF00"/>
-
-            <circle cx="392" cy="318" r="6" fill="none" stroke="#6450D2" stroke-width="2" class="rsk-node"/>
-            <circle cx="392" cy="318" r="2" fill="#6450D2"/>
-
-            <!-- Connection lines -->
-            <line x1="82" y1="175" x2="382" y2="155" stroke="rgba(220,255,0,0.28)" stroke-width="1" stroke-dasharray="6,5"/>
-            <line x1="82" y1="175" x2="118" y2="362" stroke="rgba(220,255,0,0.24)" stroke-width="1" stroke-dasharray="6,5"/>
-            <line x1="382" y1="155" x2="392" y2="318" stroke="rgba(100,80,210,0.28)" stroke-width="1" stroke-dasharray="6,5"/>
-
-            <!-- Floating fragments -->
-            <rect x="28" y="52" width="30" height="20" rx="4"
-              stroke="#DCFF00" stroke-width="1.5" fill="rgba(220,255,0,0.07)"
-              transform="rotate(22 43 62)" class="rsk-frag"/>
-            <rect x="392" y="62" width="36" height="22" rx="4"
-              stroke="#FF5528" stroke-width="1.5" fill="rgba(255,85,40,0.07)"
-              transform="rotate(-16 410 73)" class="rsk-frag"/>
-            <polygon points="412,342 436,384 388,384"
-              stroke="#DCFF00" stroke-width="1.5" fill="rgba(220,255,0,0.07)"
-              class="rsk-frag"/>
-            <polygon points="46,398 68,430 24,430"
-              stroke="#6450D2" stroke-width="1.5" fill="rgba(100,80,210,0.07)"
-              class="rsk-frag"/>
-
-            <!-- Concentric dashed rings -->
-            <circle cx="230" cy="198" r="148" fill="none" stroke="rgba(255,85,40,0.18)" stroke-width="1" stroke-dasharray="8,7"/>
-            <circle cx="230" cy="198" r="178" fill="none" stroke="rgba(220,255,0,0.12)" stroke-width="1" stroke-dasharray="4,9"/>
-          </svg>
-        </div>
-
-        <!-- Floating stat chips -->
-        <div class="hv-chip hv-chip-1">
-          <span class="hv-chip-num">150+</span>
-          <span class="hv-chip-label">Deals Assessed</span>
-        </div>
-        <div class="hv-chip hv-chip-2">
-          <span class="hv-chip-icon">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          </span>
-          <span class="hv-chip-label">Report Delivered</span>
-        </div>
-        <div class="hv-chip hv-chip-3">
-          <span class="hv-chip-num">12+</span>
-          <span class="hv-chip-label">Yrs Experience</span>
-        </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Phuket · Thailand</div>
+      <h1 class="hero-headline">
+        Your Dream Life<br>
+        <em>Awaits in Paradise</em>
+      </h1>
+      <p class="hero-sub">
+        Exclusive villas, beachfront residences &amp; retirement homes<br>
+        curated for families and expats seeking a life well-lived.
+      </p>
+      <div class="hero-actions">
+        <a href="#properties" class="btn btn-gold">View Properties</a>
+        <a href="#expat-guide" class="btn btn-outline">Expat Guide</a>
       </div>
     </div>
 
-    <div class="hero-scroll-indicator">
-      <span>Scroll to explore</span>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+    <div class="hero-slide-dots" id="slideDots">
+      <button class="dot active" data-slide="0"></button>
+      <button class="dot" data-slide="1"></button>
+      <button class="dot" data-slide="2"></button>
     </div>
   </section>
 
@@ -182,248 +81,378 @@
        STATS STRIP
   ============================================================ -->
   <section class="stats-strip">
-    <div class="stats-container">
-      <div class="stat-item">
-        <div class="stat-number">Mid-Market</div>
-        <div class="stat-label">PE Focus</div>
+    <div class="stats-inner">
+      <div class="stat">
+        <div class="stat-num">250<span>+</span></div>
+        <div class="stat-label">Properties Sold</div>
       </div>
       <div class="stat-divider"></div>
-      <div class="stat-item">
-        <div class="stat-number">Full Lifecycle</div>
-        <div class="stat-label">M&amp;A Coverage</div>
+      <div class="stat">
+        <div class="stat-num">18</div>
+        <div class="stat-label">Years in Phuket</div>
       </div>
       <div class="stat-divider"></div>
-      <div class="stat-item">
-        <div class="stat-number">100% Australian</div>
-        <div class="stat-label">Market Expertise</div>
+      <div class="stat">
+        <div class="stat-num">40<span>+</span></div>
+        <div class="stat-label">Nationalities Served</div>
       </div>
       <div class="stat-divider"></div>
-      <div class="stat-item">
-        <div class="stat-number">Data-Driven</div>
-        <div class="stat-label">Transparent Insight</div>
+      <div class="stat">
+        <div class="stat-num">98<span>%</span></div>
+        <div class="stat-label">Client Satisfaction</div>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       SERVICES
+       FEATURED PROPERTIES
   ============================================================ -->
-  <section class="services" id="services">
-    <div class="section-container">
+  <section class="properties" id="properties">
+    <div class="section-wrap">
       <div class="section-header">
-        <div class="section-badge">What We Do</div>
-        <h2>End-to-End Technology Intelligence<br>Across the M&amp;A Lifecycle</h2>
-        <p>From pre-deal screening through to post-acquisition value creation, we deliver the technology insight that gives Australian PE firms a genuine edge.</p>
+        <div class="section-tag">Featured Listings</div>
+        <h2>Exceptional Properties<br><em>Hand-Picked for You</em></h2>
+        <p>From hillside villas with panoramic sea views to tranquil pool residences — every home in our portfolio is chosen for quality, location, and lifestyle.</p>
       </div>
 
-      <div class="services-grid">
+      <div class="prop-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="villa">Villas</button>
+        <button class="filter-btn" data-filter="condo">Condos</button>
+        <button class="filter-btn" data-filter="beachfront">Beachfront</button>
+        <button class="filter-btn" data-filter="retirement">Retirement</button>
+      </div>
 
-        <div class="service-card service-card--featured">
-          <div class="service-icon">
-            <i class="fas fa-search-dollar"></i>
+      <div class="prop-grid">
+
+        <div class="prop-card" data-type="villa beachfront">
+          <div class="prop-img prop-img-1">
+            <div class="prop-badge">New Listing</div>
+            <div class="prop-overlay">
+              <a href="#contact" class="prop-btn">Enquire</a>
+            </div>
           </div>
-          <h3>Technology Due Diligence</h3>
-          <p>Rigorous, independent assessment of a target's technology stack, architecture, and engineering capability. We surface hidden risks before they become deal-breakers—and quantify them in commercial terms.</p>
-          <a href="#contact" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+          <div class="prop-info">
+            <div class="prop-location"><i class="fas fa-map-marker-alt"></i> Surin Beach</div>
+            <h3 class="prop-title">Beachfront Villa — Surin</h3>
+            <div class="prop-specs">
+              <span><i class="fas fa-bed"></i> 5 Bed</span>
+              <span><i class="fas fa-bath"></i> 5 Bath</span>
+              <span><i class="fas fa-expand-arrows-alt"></i> 680 m²</span>
+            </div>
+            <div class="prop-price">฿ 38,500,000</div>
+          </div>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-robot"></i>
+        <div class="prop-card" data-type="villa retirement">
+          <div class="prop-img prop-img-2">
+            <div class="prop-badge prop-badge--gold">Best Value</div>
+            <div class="prop-overlay">
+              <a href="#contact" class="prop-btn">Enquire</a>
+            </div>
           </div>
-          <h3>AI &amp; Digital Assessment</h3>
-          <p>Evaluate the maturity, scalability, and commercial viability of AI capabilities and digital assets—distinguishing genuine differentiators from expensive liabilities.</p>
-          <a href="#contact" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+          <div class="prop-info">
+            <div class="prop-location"><i class="fas fa-map-marker-alt"></i> Rawai</div>
+            <h3 class="prop-title">Private Pool Villa — Rawai</h3>
+            <div class="prop-specs">
+              <span><i class="fas fa-bed"></i> 3 Bed</span>
+              <span><i class="fas fa-bath"></i> 3 Bath</span>
+              <span><i class="fas fa-expand-arrows-alt"></i> 420 m²</span>
+            </div>
+            <div class="prop-price">฿ 14,900,000</div>
+          </div>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-shield-alt"></i>
+        <div class="prop-card" data-type="condo">
+          <div class="prop-img prop-img-3">
+            <div class="prop-overlay">
+              <a href="#contact" class="prop-btn">Enquire</a>
+            </div>
           </div>
-          <h3>Cybersecurity Due Diligence</h3>
-          <p>Identify cybersecurity vulnerabilities, compliance gaps, and data governance risks that could affect valuation, integration timelines, or post-close liabilities.</p>
-          <a href="#contact" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+          <div class="prop-info">
+            <div class="prop-location"><i class="fas fa-map-marker-alt"></i> Kamala</div>
+            <h3 class="prop-title">Sea-View Penthouse — Kamala</h3>
+            <div class="prop-specs">
+              <span><i class="fas fa-bed"></i> 2 Bed</span>
+              <span><i class="fas fa-bath"></i> 2 Bath</span>
+              <span><i class="fas fa-expand-arrows-alt"></i> 185 m²</span>
+            </div>
+            <div class="prop-price">฿ 9,200,000</div>
+          </div>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-chart-line"></i>
+        <div class="prop-card" data-type="villa">
+          <div class="prop-img prop-img-4">
+            <div class="prop-badge prop-badge--exclusive">Exclusive</div>
+            <div class="prop-overlay">
+              <a href="#contact" class="prop-btn">Enquire</a>
+            </div>
           </div>
-          <h3>Value Creation Planning</h3>
-          <p>Beyond risk—we identify strategic technology opportunities that drive EBITDA growth, operational efficiency, and competitive moat post-acquisition.</p>
-          <a href="#contact" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+          <div class="prop-info">
+            <div class="prop-location"><i class="fas fa-map-marker-alt"></i> Bang Tao</div>
+            <h3 class="prop-title">Tropical Estate — Bang Tao</h3>
+            <div class="prop-specs">
+              <span><i class="fas fa-bed"></i> 6 Bed</span>
+              <span><i class="fas fa-bath"></i> 7 Bath</span>
+              <span><i class="fas fa-expand-arrows-alt"></i> 1,200 m²</span>
+            </div>
+            <div class="prop-price">฿ 72,000,000</div>
+          </div>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-door-open"></i>
+        <div class="prop-card" data-type="retirement condo">
+          <div class="prop-img prop-img-5">
+            <div class="prop-overlay">
+              <a href="#contact" class="prop-btn">Enquire</a>
+            </div>
           </div>
-          <h3>Exit Readiness</h3>
-          <p>Prepare your portfolio company for a premium exit with a technology narrative that stands up to buyer scrutiny. We maximise technology value and eliminate late-stage surprises.</p>
-          <a href="#contact" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+          <div class="prop-info">
+            <div class="prop-location"><i class="fas fa-map-marker-alt"></i> Kata Noi</div>
+            <h3 class="prop-title">Garden Residence — Kata Noi</h3>
+            <div class="prop-specs">
+              <span><i class="fas fa-bed"></i> 2 Bed</span>
+              <span><i class="fas fa-bath"></i> 2 Bath</span>
+              <span><i class="fas fa-expand-arrows-alt"></i> 210 m²</span>
+            </div>
+            <div class="prop-price">฿ 7,800,000</div>
+          </div>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-handshake"></i>
+        <div class="prop-card" data-type="beachfront villa">
+          <div class="prop-img prop-img-6">
+            <div class="prop-badge">Sea View</div>
+            <div class="prop-overlay">
+              <a href="#contact" class="prop-btn">Enquire</a>
+            </div>
           </div>
-          <h3>Vendor &amp; Commercial Tech Review</h3>
-          <p>Assess third-party technology contracts, vendor dependencies, and licensing obligations to ensure commercial terms reflect true technology risk and leverage.</p>
-          <a href="#contact" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+          <div class="prop-info">
+            <div class="prop-location"><i class="fas fa-map-marker-alt"></i> Cape Yamu</div>
+            <h3 class="prop-title">Clifftop Villa — Cape Yamu</h3>
+            <div class="prop-specs">
+              <span><i class="fas fa-bed"></i> 4 Bed</span>
+              <span><i class="fas fa-bath"></i> 4 Bath</span>
+              <span><i class="fas fa-expand-arrows-alt"></i> 560 m²</span>
+            </div>
+            <div class="prop-price">฿ 29,500,000</div>
+          </div>
         </div>
 
+      </div>
+
+      <div class="prop-cta">
+        <a href="#contact" class="btn btn-gold">View All Properties</a>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       WHY US
+       AREAS — Horizontal Hover Expand (ogroup-style)
   ============================================================ -->
-  <section class="why-us" id="why-us">
-    <div class="section-container">
-      <div class="why-us-inner">
-        <div class="why-us-content">
-          <div class="section-badge section-badge--light">Why MNA DD Solutions</div>
-          <h2>Technology Expertise With<br>Commercial Conviction</h2>
-          <p class="why-us-intro">We don't just assess technology—we translate it into insight that drives confident investment decisions. Here's what sets us apart.</p>
-
-          <div class="differentiators">
-            <div class="differentiator">
-              <div class="diff-icon"><i class="fas fa-bullseye"></i></div>
-              <div class="diff-content">
-                <h4>Commercial Clarity</h4>
-                <p>We translate technical complexity into clear, commercially actionable decisions. Every finding is tied to deal value, risk quantification, or strategic opportunity.</p>
-              </div>
-            </div>
-            <div class="differentiator">
-              <div class="diff-icon"><i class="fas fa-balance-scale"></i></div>
-              <div class="diff-content">
-                <h4>Resolute Integrity</h4>
-                <p>We operate with unwavering transparency. Our assessments are data-driven and independent—you receive insight you can rely on, not the answer you want to hear.</p>
-              </div>
-            </div>
-            <div class="differentiator">
-              <div class="diff-icon"><i class="fas fa-bolt"></i></div>
-              <div class="diff-content">
-                <h4>Deal-Speed Agility</h4>
-                <p>We adapt quickly to deal dynamics—compressed timelines, shifting scope, late-breaking diligence—without compromising depth or precision.</p>
-              </div>
-            </div>
-            <div class="differentiator">
-              <div class="diff-icon"><i class="fas fa-users"></i></div>
-              <div class="diff-content">
-                <h4>True Partnership</h4>
-                <p>We work as genuine partners, building enduring trust through consistent, high-quality delivery across every engagement and every stage of the deal lifecycle.</p>
-              </div>
-            </div>
-          </div>
+  <section class="areas" id="areas">
+    <div class="areas-header">
+      <div class="section-tag section-tag--light">Prime Locations</div>
+      <h2>Discover Phuket's<br><em>Most Sought-After Areas</em></h2>
+    </div>
+    <div class="areas-grid">
+      <div class="area-panel area-1">
+        <div class="area-overlay"></div>
+        <div class="area-label">
+          <span class="area-num">01</span>
+          <h3>Surin &amp; Bang Tao</h3>
+          <p>Ultra-luxury estates and world-class beach clubs on Phuket's prestigious west coast.</p>
+          <a href="#contact" class="area-link">Explore <i class="fas fa-arrow-right"></i></a>
         </div>
-
-        <div class="why-us-visual">
-          <div class="visual-card visual-card--top">
-            <div class="vc-icon"><i class="fas fa-check-circle"></i></div>
-            <div class="vc-text">
-              <strong>Hidden Risk Uncovered</strong>
-              <span>Before it becomes a deal-breaker</span>
-            </div>
-          </div>
-          <div class="visual-card visual-card--mid">
-            <div class="vc-icon"><i class="fas fa-lightbulb"></i></div>
-            <div class="vc-text">
-              <strong>Strategic Opportunity Identified</strong>
-              <span>Turning insight into investment thesis</span>
-            </div>
-          </div>
-          <div class="visual-card visual-card--bot">
-            <div class="vc-icon"><i class="fas fa-handshake"></i></div>
-            <div class="vc-text">
-              <strong>Confident Deal Execution</strong>
-              <span>With a partner you can trust</span>
-            </div>
-          </div>
-          <div class="visual-bg-circle"></div>
+      </div>
+      <div class="area-panel area-2">
+        <div class="area-overlay"></div>
+        <div class="area-label">
+          <span class="area-num">02</span>
+          <h3>Kamala</h3>
+          <p>Peaceful hillside living with stunning Andaman Sea panoramas — a favourite for families.</p>
+          <a href="#contact" class="area-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="area-panel area-3">
+        <div class="area-overlay"></div>
+        <div class="area-label">
+          <span class="area-num">03</span>
+          <h3>Kata &amp; Karon</h3>
+          <p>Vibrant beach communities with great amenities, international schools, and café culture.</p>
+          <a href="#contact" class="area-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="area-panel area-4">
+        <div class="area-overlay"></div>
+        <div class="area-label">
+          <span class="area-num">04</span>
+          <h3>Rawai &amp; Nai Harn</h3>
+          <p>The expat heartland — affordable, authentic, and perfectly placed for the southern charms.</p>
+          <a href="#contact" class="area-link">Explore <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       OUR APPROACH
+       EXPAT GUIDE
   ============================================================ -->
-  <section class="approach" id="approach">
-    <div class="section-container">
+  <section class="expat-guide" id="expat-guide">
+    <div class="section-wrap">
       <div class="section-header">
-        <div class="section-badge">Our Approach</div>
-        <h2>Structured. Rigorous. Built for PE.</h2>
-        <p>Our methodology is designed for the pace and precision of private equity due diligence—delivering actionable insight at every stage.</p>
+        <div class="section-tag">Life in Phuket</div>
+        <h2>Everything You Need to Know<br><em>Before You Move</em></h2>
+        <p>Relocating with family or retiring abroad is a big decision. We've been helping expats navigate Phuket life for nearly two decades — here's what matters most.</p>
       </div>
 
-      <div class="approach-steps">
-        <div class="approach-step">
-          <div class="step-number">01</div>
-          <div class="step-content">
-            <h3>Scoping &amp; Prioritisation</h3>
-            <p>We work with your deal team to rapidly define the right scope—aligned to your investment thesis, risk appetite, and timeline. No generic checklists; every engagement is tailored.</p>
-          </div>
-          <div class="step-connector"></div>
+      <div class="guide-grid">
+        <div class="guide-card">
+          <div class="guide-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>International Schools</h3>
+          <p>Phuket is home to over a dozen accredited international schools offering British, American, IB, and Australian curricula — with waiting lists filling fast. We guide families to the right areas for school proximity.</p>
+          <ul class="guide-list">
+            <li>BISP (British International School)</li>
+            <li>HeadStart International School</li>
+            <li>QSI International School</li>
+            <li>UWC Thailand</li>
+          </ul>
         </div>
-        <div class="approach-step">
-          <div class="step-number">02</div>
-          <div class="step-content">
-            <h3>Deep-Dive Analysis</h3>
-            <p>Our team conducts rigorous technical and commercial analysis—management interviews, architecture review, data room assessment, and independent benchmarking—to surface what matters most.</p>
-          </div>
-          <div class="step-connector"></div>
+        <div class="guide-card">
+          <div class="guide-icon"><i class="fas fa-hospital"></i></div>
+          <h3>World-Class Healthcare</h3>
+          <p>Phuket's hospitals are among Southeast Asia's finest, with internationally trained staff and JCI-accredited facilities. Peace of mind comes standard when you live here.</p>
+          <ul class="guide-list">
+            <li>Bangkok Hospital Phuket</li>
+            <li>Mission Hospital Phuket</li>
+            <li>Vachira Phuket Hospital</li>
+            <li>24/7 expat clinics</li>
+          </ul>
         </div>
-        <div class="approach-step">
-          <div class="step-number">03</div>
-          <div class="step-content">
-            <h3>Commercially Actionable Insight</h3>
-            <p>We deliver clear, board-ready findings with risk ratings, value creation opportunities, and recommended deal conditions—giving you the confidence to transact, negotiate, or walk away.</p>
-          </div>
+        <div class="guide-card">
+          <div class="guide-icon"><i class="fas fa-passport"></i></div>
+          <h3>Visas &amp; Residency</h3>
+          <p>From Thailand Elite visas to long-term retirement (Non-OA) and education visas — we connect you with trusted immigration lawyers to make your move seamless and legal.</p>
+          <ul class="guide-list">
+            <li>Thailand Elite Visa (5–20 yr)</li>
+            <li>Non-OA Retirement Visa</li>
+            <li>Non-B Work Permit</li>
+            <li>LTR (Long-Term Resident) Visa</li>
+          </ul>
+        </div>
+        <div class="guide-card">
+          <div class="guide-icon"><i class="fas fa-balance-scale"></i></div>
+          <h3>Property Ownership</h3>
+          <p>Foreigners can legally own condominiums freehold, or structure villa ownership through leasehold agreements and Thai limited companies. We ensure your investment is fully protected.</p>
+          <ul class="guide-list">
+            <li>Condo freehold (up to 49%)</li>
+            <li>30+30+30 yr leasehold</li>
+            <li>Thai company structures</li>
+            <li>Full due diligence support</li>
+          </ul>
+        </div>
+        <div class="guide-card">
+          <div class="guide-icon"><i class="fas fa-sun"></i></div>
+          <h3>The Phuket Lifestyle</h3>
+          <p>Year-round sunshine, world-class dining, sailing, golf, yoga retreats, and a thriving expat community. Phuket is not just a place to live — it's a way of living.</p>
+          <ul class="guide-list">
+            <li>300+ sunny days per year</li>
+            <li>International dining &amp; nightlife</li>
+            <li>Golf courses &amp; marinas</li>
+            <li>Strong expat community</li>
+          </ul>
+        </div>
+        <div class="guide-card">
+          <div class="guide-icon"><i class="fas fa-piggy-bank"></i></div>
+          <h3>Cost of Living</h3>
+          <p>Compared to Western cities, Phuket offers exceptional value. A comfortable family lifestyle with domestic help, dining out regularly, and private schooling is attainable at a fraction of the cost.</p>
+          <ul class="guide-list">
+            <li>Household staff from ฿15,000/mo</li>
+            <li>Fine dining from ฿500/person</li>
+            <li>International school from ฿350,000/yr</li>
+            <li>Private healthcare packages</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       INSIGHTS / LEAD GEN CTA
+       ABOUT / PROVEN PERFORMANCE (ogroup-style large numbers)
   ============================================================ -->
-  <section class="insights" id="insights">
-    <div class="section-container">
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-content">
+        <div class="section-tag section-tag--light">About Us</div>
+        <h2>Phuket's Most Trusted<br><em>Real Estate Partner</em></h2>
+        <p>Annie Pamornsoot founded Pamornsoot Properties after personally navigating Phuket's property market as both a local expert and a member of the international community herself. Since 2007, we have matched over 250 families and individuals with their perfect Phuket home.</p>
+        <p>We believe buying a home abroad should feel exciting — not overwhelming. Our team handles everything from property search and legal due diligence to school introductions and utility setup, so your transition to paradise is seamless.</p>
+        <div class="about-actions">
+          <a href="#contact" class="btn btn-gold">Talk to Annie</a>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="big-stat">
+          <div class="big-num">250<span>+</span></div>
+          <div class="big-label">Families Placed</div>
+        </div>
+        <div class="big-stat">
+          <div class="big-num">18</div>
+          <div class="big-label">Years Experience</div>
+        </div>
+        <div class="big-stat">
+          <div class="big-num">฿2B<span>+</span></div>
+          <div class="big-label">In Transactions</div>
+        </div>
+        <div class="big-stat">
+          <div class="big-num">40<span>+</span></div>
+          <div class="big-label">Nations Represented</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS
+  ============================================================ -->
+  <section class="testimonials">
+    <div class="section-wrap">
       <div class="section-header">
-        <div class="section-badge">Insights</div>
-        <h2>Technology Intelligence for<br>Australian Private Equity</h2>
-        <p>Practical perspectives on technology risk, value creation, and the M&amp;A market—delivered to your inbox.</p>
+        <div class="section-tag">Client Stories</div>
+        <h2>What Our Clients Say</h2>
       </div>
-
-      <div class="insights-grid">
-        <div class="insight-card">
-          <div class="insight-tag">Due Diligence</div>
-          <h4>The Five Technology Risks PE Firms Miss Most Often</h4>
-          <p>Legacy architecture, undisclosed technical debt, and shadow IT are consistently underweighted in deal assessments. Here's what to look for.</p>
-          <a href="#contact" class="insight-link">Read more <i class="fas fa-arrow-right"></i></a>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p>Annie found us our dream retirement villa in Rawai within two weeks of our first meeting. Her knowledge of the legal process for foreigners was invaluable — we felt safe the entire time.</p>
+          <div class="testi-author">
+            <div class="testi-avatar testi-av-1"></div>
+            <div>
+              <strong>David &amp; Margaret H.</strong>
+              <span>Retired, British — Rawai</span>
+            </div>
+          </div>
         </div>
-        <div class="insight-card">
-          <div class="insight-tag">Value Creation</div>
-          <h4>From Risk Mitigation to Value Driver: Reframing Technology in M&amp;A</h4>
-          <p>The most successful PE exits we've seen treat technology as a value lever from day one—not a compliance exercise at exit readiness.</p>
-          <a href="#contact" class="insight-link">Read more <i class="fas fa-arrow-right"></i></a>
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p>We moved our family of four from Singapore. Annie not only found us a beautiful home near BISP, she connected us with the school's admissions office and our local community group. Truly exceptional service.</p>
+          <div class="testi-author">
+            <div class="testi-avatar testi-av-2"></div>
+            <div>
+              <strong>Michael &amp; Sarah T.</strong>
+              <span>Family Relocation, Australian — Kamala</span>
+            </div>
+          </div>
         </div>
-        <div class="insight-card">
-          <div class="insight-tag">AI &amp; Digital</div>
-          <h4>Assessing AI Claims in the Australian Mid-Market</h4>
-          <p>Many targets overstate their AI maturity. A structured assessment framework cuts through the noise and separates genuine capability from marketing language.</p>
-          <a href="#contact" class="insight-link">Read more <i class="fas fa-arrow-right"></i></a>
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p>I've bought property in five countries. The Pamornsoot team handled every detail with more professionalism and care than any agent I've encountered. My Bang Tao villa is perfect.</p>
+          <div class="testi-author">
+            <div class="testi-avatar testi-av-3"></div>
+            <div>
+              <strong>Klaus W.</strong>
+              <span>Investor &amp; Resident, German — Bang Tao</span>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="insights-cta">
-        <p>Get our latest insights delivered to your inbox.</p>
-        <form class="email-form" id="insightsForm">
-          <input type="email" placeholder="Your work email address" required>
-          <button type="submit" class="btn btn-primary">Subscribe</button>
-        </form>
       </div>
     </div>
   </section>
@@ -432,68 +461,95 @@
        CONTACT
   ============================================================ -->
   <section class="contact" id="contact">
-    <div class="section-container">
-      <div class="contact-inner">
-        <div class="contact-content">
-          <div class="section-badge section-badge--light">Get in Touch</div>
-          <h2>Ready to Transact With Confidence?</h2>
-          <p>Whether you're approaching a new deal or preparing a portfolio company for exit, we'd welcome the conversation. Tell us what you're working on.</p>
-          <div class="contact-details">
-            <div class="contact-detail">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Australia — serving mid-market PE nationally</span>
+    <div class="contact-inner">
+      <div class="contact-content">
+        <div class="section-tag section-tag--light">Get in Touch</div>
+        <h2>Begin Your<br><em>Phuket Journey</em></h2>
+        <p>Whether you're planning a visit to view properties, or ready to make the move, we're here to guide you every step of the way. Send us a message — we respond within 24 hours.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Office</strong>
+              <span>123 Cherngtalay Road, Thalang, Phuket 83110</span>
             </div>
-            <div class="contact-detail">
-              <i class="fas fa-envelope"></i>
-              <span>hello@mnasolutions.com.au</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <strong>Phone / WhatsApp</strong>
+              <span>+66 (0) 76 XXX XXXX</span>
             </div>
-            <div class="contact-detail">
-              <i class="fab fa-linkedin"></i>
-              <span>Connect on LinkedIn</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <span>annie@pamornsootproperties.com</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-line"></i>
+            <div>
+              <strong>LINE ID</strong>
+              <span>@pamornsootproperty</span>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="contact-form-wrap">
-          <form class="contact-form" id="contactForm">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" placeholder="Alex" required>
-              </div>
-              <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
-              </div>
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" placeholder="Your first name" required>
             </div>
             <div class="form-group">
-              <label for="company">Firm / Company</label>
-              <input type="text" id="company" name="company" placeholder="Your PE firm or advisory" required>
+              <label>Last Name</label>
+              <input type="text" placeholder="Your last name" required>
             </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="alex@yourfirm.com.au" required>
-            </div>
-            <div class="form-group">
-              <label for="service">What can we help with?</label>
-              <select id="service" name="service">
-                <option value="">Select a service area</option>
-                <option value="tech-dd">Technology Due Diligence</option>
-                <option value="ai-digital">AI &amp; Digital Assessment</option>
-                <option value="cyber">Cybersecurity Due Diligence</option>
-                <option value="value-creation">Value Creation Planning</option>
-                <option value="exit">Exit Readiness</option>
-                <option value="vendor">Vendor &amp; Commercial Tech Review</option>
-                <option value="other">Other / Not sure yet</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Tell us about your situation</label>
-              <textarea id="message" name="message" rows="4" placeholder="Brief description of the deal context or what you're looking for..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn--full">Send Message <i class="fas fa-arrow-right"></i></button>
-          </form>
-        </div>
+          </div>
+          <div class="form-group">
+            <label>Nationality / Country of Residence</label>
+            <input type="text" placeholder="e.g. Australian, based in Sydney">
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>WhatsApp / Phone</label>
+            <input type="tel" placeholder="+1 234 567 8900">
+          </div>
+          <div class="form-group">
+            <label>I am looking for…</label>
+            <select>
+              <option value="">Select your interest</option>
+              <option>Family home — relocating with children</option>
+              <option>Retirement home</option>
+              <option>Investment property</option>
+              <option>Holiday villa / rental</option>
+              <option>General enquiry about Phuket life</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Budget Range (THB)</label>
+            <select>
+              <option value="">Select budget</option>
+              <option>Under ฿5,000,000</option>
+              <option>฿5M – ฿10M</option>
+              <option>฿10M – ฿20M</option>
+              <option>฿20M – ฿50M</option>
+              <option>฿50M+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Tell us more</label>
+            <textarea rows="4" placeholder="Timeline, preferred area, must-haves, family size, school requirements…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold btn--full" id="submitBtn">Send Enquiry <i class="fas fa-arrow-right"></i></button>
+        </form>
       </div>
     </div>
   </section>
@@ -502,47 +558,57 @@
        FOOTER
   ============================================================ -->
   <footer class="footer">
-    <div class="footer-container">
+    <div class="footer-inner">
       <div class="footer-top">
         <div class="footer-brand">
           <div class="footer-logo">
-            <span class="logo-mna">MNA</span><span class="logo-dd"> DD</span><span class="logo-solutions"> Solutions</span>
+            <span class="logo-primary">PAMORNSOOT</span>
+            <span class="logo-sub">PROPERTIES · PHUKET</span>
           </div>
-          <p>Technology-led due diligence and value creation for Australian mid-market private equity.</p>
+          <p>Your trusted guide to luxury real estate and a life well-lived in Phuket, Thailand. Serving expats, families, and retirees since 2007.</p>
           <div class="footer-social">
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LINE"><i class="fab fa-line"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
-
         <div class="footer-links">
           <div class="footer-col">
-            <h5>Services</h5>
+            <h5>Properties</h5>
             <ul>
-              <li><a href="#services">Technology Due Diligence</a></li>
-              <li><a href="#services">AI &amp; Digital Assessment</a></li>
-              <li><a href="#services">Cybersecurity Due Diligence</a></li>
-              <li><a href="#services">Value Creation Planning</a></li>
-              <li><a href="#services">Exit Readiness</a></li>
-              <li><a href="#services">Vendor Tech Review</a></li>
+              <li><a href="#properties">Luxury Villas</a></li>
+              <li><a href="#properties">Beachfront Homes</a></li>
+              <li><a href="#properties">Condominiums</a></li>
+              <li><a href="#properties">Retirement Homes</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h5>Company</h5>
+            <h5>Areas</h5>
             <ul>
-              <li><a href="#why-us">Why Us</a></li>
-              <li><a href="#approach">Our Approach</a></li>
-              <li><a href="#insights">Insights</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#areas">Surin &amp; Bang Tao</a></li>
+              <li><a href="#areas">Kamala</a></li>
+              <li><a href="#areas">Kata &amp; Karon</a></li>
+              <li><a href="#areas">Rawai &amp; Nai Harn</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Expat Resources</h5>
+            <ul>
+              <li><a href="#expat-guide">International Schools</a></li>
+              <li><a href="#expat-guide">Healthcare</a></li>
+              <li><a href="#expat-guide">Visa Information</a></li>
+              <li><a href="#expat-guide">Property Ownership</a></li>
             </ul>
           </div>
         </div>
       </div>
-
       <div class="footer-bottom">
-        <p>&copy; 2025 MNA DD Solutions. All rights reserved.</p>
+        <p>&copy; 2026 Pamornsoot Properties Co., Ltd. All rights reserved. Licensed Thai Real Estate Broker.</p>
         <div class="footer-legal">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Use</a>
+          <a href="#">Cookie Policy</a>
         </div>
       </div>
     </div>
@@ -552,21 +618,19 @@
        JAVASCRIPT
   ============================================================ -->
   <script>
-    // Sticky nav on scroll
+    // --- Sticky Nav ---
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 60);
+      navbar.classList.toggle('scrolled', window.scrollY > 80);
     });
 
-    // Mobile hamburger
+    // --- Hamburger ---
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('navMenu');
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('active');
       navMenu.classList.toggle('open');
     });
-
-    // Close menu on nav link click
     document.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', () => {
         hamburger.classList.remove('active');
@@ -574,49 +638,94 @@
       });
     });
 
-    // Smooth scroll
+    // --- Smooth Scroll ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
           e.preventDefault();
-          const offset = 80;
-          const top = target.getBoundingClientRect().top + window.scrollY - offset;
-          window.scrollTo({ top, behavior: 'smooth' });
+          window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
         }
       });
     });
 
-    // Intersection observer for fade-in animations
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll(
-      '.service-card, .differentiator, .approach-step, .insight-card, .stat-item'
-    ).forEach(el => {
-      el.classList.add('fade-in');
-      observer.observe(el);
-    });
-
-    // Form submission feedback
-    function handleFormSubmit(formId, successMsg) {
-      const form = document.getElementById(formId);
-      if (!form) return;
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const btn = form.querySelector('button[type="submit"]');
-        btn.textContent = successMsg;
-        btn.disabled = true;
-        btn.style.background = '#6450D2';
-      });
+    // --- Hero Slideshow ---
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.dot');
+    let current = 0;
+    function goToSlide(n) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = n;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
     }
-    handleFormSubmit('contactForm', 'Message Sent — We\'ll be in touch');
-    handleFormSubmit('insightsForm', 'Subscribed!');
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => goToSlide(+dot.dataset.slide));
+    });
+    setInterval(() => goToSlide((current + 1) % slides.length), 5500);
+
+    // --- Property Filter ---
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const propCards = document.querySelectorAll('.prop-card');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        propCards.forEach(card => {
+          const types = card.dataset.type || '';
+          card.style.display = (filter === 'all' || types.includes(filter)) ? '' : 'none';
+        });
+      });
+    });
+
+    // --- Intersection Observer (fade in) ---
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(
+      '.prop-card, .guide-card, .testi-card, .stat, .big-stat, .area-panel, .approach-step'
+    ).forEach(el => { el.classList.add('fade-in'); observer.observe(el); });
+
+    // --- Counter Animation ---
+    function animateCounter(el, target, suffix) {
+      let start = 0;
+      const step = Math.ceil(target / 60);
+      const timer = setInterval(() => {
+        start = Math.min(start + step, target);
+        el.textContent = start + suffix;
+        if (start >= target) clearInterval(timer);
+      }, 25);
+    }
+    const statsObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          statsObserver.unobserve(e.target);
+          const nums = e.target.querySelectorAll('.big-num');
+          nums.forEach(num => {
+            const text = num.textContent;
+            const match = text.match(/[\d,]+/);
+            if (match) {
+              const val = parseInt(match[0].replace(',', ''));
+              const suffix = text.replace(/[\d,]+/, '').trim();
+              animateCounter(num, val, suffix);
+            }
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+    const aboutSection = document.querySelector('.about');
+    if (aboutSection) statsObserver.observe(aboutSection);
+
+    // --- Form Submit ---
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      btn.innerHTML = '<i class="fas fa-check"></i> Enquiry Sent — We\'ll be in touch within 24 hours';
+      btn.disabled = true;
+      btn.style.background = '#2a7a4b';
+    });
   </script>
 
 </body>
