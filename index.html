@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pamornsoot Properties | Phuket Luxury Real Estate for Expats</title>
-  <meta name="description" content="Discover luxury villas, beachfront condos, and retirement homes in Phuket, Thailand. Pamornsoot Properties — trusted by expats and families relocating to paradise.">
+  <title>Tailandesita | Discover Thailand with Esmiranda</title>
+  <meta name="description" content="Tailandesita — personalized tours across Thailand led by Esmiranda from Bangkok. Temples, street food, islands, and hidden gems. Book your adventure today.">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -22,15 +22,15 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#home" class="nav-logo">
-        <span class="logo-primary">PAMORNSOOT</span>
-        <span class="logo-sub">PROPERTIES · PHUKET</span>
+        <span class="logo-icon"><i class="fas fa-sun"></i></span>
+        <span class="logo-text">Tailandesita</span>
       </a>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#properties" class="nav-link">Properties</a></li>
-        <li><a href="#areas" class="nav-link">Areas</a></li>
-        <li><a href="#expat-guide" class="nav-link">Expat Guide</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#contact" class="nav-link nav-cta">Enquire Now</a></li>
+        <li><a href="#tours" class="nav-link">Tours</a></li>
+        <li><a href="#destinations" class="nav-link">Destinations</a></li>
+        <li><a href="#about" class="nav-link">About Esmiranda</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Book a Trip</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
@@ -39,426 +39,356 @@
   </nav>
 
   <!-- ============================================================
-       HERO
+       HERO + SEARCH BAR
   ============================================================ -->
   <section class="hero" id="home">
-    <div class="hero-slides">
-      <div class="hero-slide slide-1 active"></div>
-      <div class="hero-slide slide-2"></div>
-      <div class="hero-slide slide-3"></div>
-    </div>
+    <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
-      <div class="hero-eyebrow">Phuket · Thailand</div>
+      <p class="hero-eyebrow">Bangkok, Thailand</p>
       <h1 class="hero-headline">
-        Your Dream Life<br>
-        <em>Awaits in Paradise</em>
+        Explore Thailand<br>
+        <em>Your Way</em>
       </h1>
       <p class="hero-sub">
-        Exclusive villas, beachfront residences &amp; retirement homes<br>
-        curated for families and expats seeking a life well-lived.
+        Personalized tours led by a local who knows every hidden temple,
+        floating market, and secret beach. Small groups, big adventures.
       </p>
-      <div class="hero-actions">
-        <a href="#properties" class="btn btn-gold">View Properties</a>
-        <a href="#expat-guide" class="btn btn-outline">Expat Guide</a>
-      </div>
+    </div>
+
+    <!-- SEARCH BAR — the most important component -->
+    <div class="search-bar-wrap">
+      <form class="search-bar" id="searchForm">
+        <div class="search-field">
+          <label for="searchDest"><i class="fas fa-map-marker-alt"></i> Destination</label>
+          <select id="searchDest">
+            <option value="">Where do you want to go?</option>
+            <option>Bangkok</option>
+            <option>Chiang Mai</option>
+            <option>Chiang Rai</option>
+            <option>Phuket</option>
+            <option>Krabi &amp; Phi Phi</option>
+            <option>Koh Samui</option>
+            <option>Ayutthaya</option>
+            <option>Kanchanaburi</option>
+            <option>Pai</option>
+            <option>Khao Sok</option>
+          </select>
+        </div>
+        <div class="search-divider"></div>
+        <div class="search-field">
+          <label for="searchType"><i class="fas fa-compass"></i> Tour Type</label>
+          <select id="searchType">
+            <option value="">What kind of experience?</option>
+            <option>Cultural &amp; Temples</option>
+            <option>Food &amp; Street Markets</option>
+            <option>Island &amp; Beach</option>
+            <option>Trekking &amp; Nature</option>
+            <option>City &amp; Nightlife</option>
+            <option>Multi-Day Adventure</option>
+          </select>
+        </div>
+        <div class="search-divider"></div>
+        <div class="search-field">
+          <label for="searchDate"><i class="fas fa-calendar-alt"></i> Date</label>
+          <input type="date" id="searchDate">
+        </div>
+        <div class="search-divider"></div>
+        <div class="search-field">
+          <label for="searchGuests"><i class="fas fa-user-friends"></i> Guests</label>
+          <select id="searchGuests">
+            <option value="">How many?</option>
+            <option>1 person</option>
+            <option>2 people</option>
+            <option>3–4 people</option>
+            <option>5–8 people</option>
+            <option>9+ (group)</option>
+          </select>
+        </div>
+        <button type="submit" class="search-btn">
+          <i class="fas fa-search"></i>
+          <span>Search</span>
+        </button>
+      </form>
     </div>
 
     <div class="hero-scroll">
       <div class="scroll-line"></div>
       <span>Scroll</span>
     </div>
-
-    <div class="hero-slide-dots" id="slideDots">
-      <button class="dot active" data-slide="0"></button>
-      <button class="dot" data-slide="1"></button>
-      <button class="dot" data-slide="2"></button>
-    </div>
   </section>
 
   <!-- ============================================================
-       STATS STRIP
+       QUICK STATS
   ============================================================ -->
   <section class="stats-strip">
     <div class="stats-inner">
       <div class="stat">
-        <div class="stat-icon"><i class="fas fa-certificate"></i></div>
-        <div class="stat-title">Licensed Thai Broker</div>
-        <div class="stat-label">Fully regulated &amp; legally compliant</div>
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Happy Travelers</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
-        <div class="stat-icon"><i class="fas fa-users"></i></div>
-        <div class="stat-title">Expat Specialists</div>
-        <div class="stat-label">Dedicated to international families</div>
+        <div class="stat-number">50+</div>
+        <div class="stat-label">Unique Tours</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
-        <div class="stat-icon"><i class="fas fa-shield-alt"></i></div>
-        <div class="stat-title">Full Legal Support</div>
-        <div class="stat-label">Due diligence from search to title deed</div>
+        <div class="stat-number">15+</div>
+        <div class="stat-label">Destinations</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat">
-        <div class="stat-icon"><i class="fas fa-concierge-bell"></i></div>
-        <div class="stat-title">End-to-End Service</div>
-        <div class="stat-label">Schools, visas, utilities &amp; beyond</div>
+        <div class="stat-number">4.9</div>
+        <div class="stat-label">Average Rating</div>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       FEATURED PROPERTIES
+       FEATURED TOURS
   ============================================================ -->
-  <section class="properties" id="properties">
+  <section class="tours" id="tours">
     <div class="section-wrap">
       <div class="section-header">
-        <div class="section-tag">Featured Listings</div>
-        <h2>Exceptional Properties<br><em>Hand-Picked for You</em></h2>
-        <p>From hillside villas with panoramic sea views to tranquil pool residences — every home in our portfolio is chosen for quality, location, and lifestyle.</p>
+        <div class="section-tag">Featured Tours</div>
+        <h2>Popular Experiences<br><em>Handpicked by Esmiranda</em></h2>
+        <p>From sunrise temple visits to overnight island escapes — every tour is designed to show you the real Thailand.</p>
       </div>
 
-      <div class="prop-filter">
+      <div class="tour-filter">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="villa">Villas</button>
-        <button class="filter-btn" data-filter="condo">Condos</button>
-        <button class="filter-btn" data-filter="beachfront">Beachfront</button>
-        <button class="filter-btn" data-filter="retirement">Retirement</button>
+        <button class="filter-btn" data-filter="cultural">Cultural</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+        <button class="filter-btn" data-filter="beach">Beach</button>
+        <button class="filter-btn" data-filter="adventure">Adventure</button>
+        <button class="filter-btn" data-filter="multiday">Multi-Day</button>
       </div>
 
-      <div class="prop-grid">
+      <div class="tour-grid">
 
-        <div class="prop-card" data-type="villa beachfront">
-          <div class="prop-img prop-img-1">
-            <div class="prop-badge">New Listing</div>
-            <div class="prop-overlay">
-              <a href="#contact" class="prop-btn">Enquire</a>
-            </div>
+        <div class="tour-card" data-type="cultural">
+          <div class="tour-img tour-img-1">
+            <div class="tour-badge">Best Seller</div>
+            <div class="tour-duration"><i class="fas fa-clock"></i> Full Day</div>
           </div>
-          <div class="prop-info">
-            <div class="prop-location"><i class="fas fa-map-marker-alt"></i> Surin Beach</div>
-            <h3 class="prop-title">Beachfront Villa — Surin</h3>
-            <div class="prop-specs">
-              <span><i class="fas fa-bed"></i> 5 Bed</span>
-              <span><i class="fas fa-bath"></i> 5 Bath</span>
-              <span><i class="fas fa-expand-arrows-alt"></i> 680 m²</span>
+          <div class="tour-info">
+            <div class="tour-location"><i class="fas fa-map-marker-alt"></i> Bangkok</div>
+            <h3>Grand Palace &amp; Hidden Temples</h3>
+            <p>Explore Bangkok's most sacred temples with stories you won't find in guidebooks.</p>
+            <div class="tour-meta">
+              <div class="tour-rating"><i class="fas fa-star"></i> 4.9 <span>(128)</span></div>
+              <div class="tour-price">From <strong>฿2,500</strong></div>
             </div>
-            <div class="prop-price">฿ 38,500,000</div>
           </div>
         </div>
 
-        <div class="prop-card" data-type="villa retirement">
-          <div class="prop-img prop-img-2">
-            <div class="prop-badge prop-badge--gold">Best Value</div>
-            <div class="prop-overlay">
-              <a href="#contact" class="prop-btn">Enquire</a>
-            </div>
+        <div class="tour-card" data-type="food">
+          <div class="tour-img tour-img-2">
+            <div class="tour-badge tour-badge--new">New</div>
+            <div class="tour-duration"><i class="fas fa-clock"></i> Evening</div>
           </div>
-          <div class="prop-info">
-            <div class="prop-location"><i class="fas fa-map-marker-alt"></i> Rawai</div>
-            <h3 class="prop-title">Private Pool Villa — Rawai</h3>
-            <div class="prop-specs">
-              <span><i class="fas fa-bed"></i> 3 Bed</span>
-              <span><i class="fas fa-bath"></i> 3 Bath</span>
-              <span><i class="fas fa-expand-arrows-alt"></i> 420 m²</span>
+          <div class="tour-info">
+            <div class="tour-location"><i class="fas fa-map-marker-alt"></i> Bangkok</div>
+            <h3>Street Food by Night</h3>
+            <p>Chinatown to Khao San — taste 10+ dishes at the city's best hidden stalls.</p>
+            <div class="tour-meta">
+              <div class="tour-rating"><i class="fas fa-star"></i> 5.0 <span>(87)</span></div>
+              <div class="tour-price">From <strong>฿1,800</strong></div>
             </div>
-            <div class="prop-price">฿ 14,900,000</div>
           </div>
         </div>
 
-        <div class="prop-card" data-type="condo">
-          <div class="prop-img prop-img-3">
-            <div class="prop-overlay">
-              <a href="#contact" class="prop-btn">Enquire</a>
-            </div>
+        <div class="tour-card" data-type="beach">
+          <div class="tour-img tour-img-3">
+            <div class="tour-duration"><i class="fas fa-clock"></i> Full Day</div>
           </div>
-          <div class="prop-info">
-            <div class="prop-location"><i class="fas fa-map-marker-alt"></i> Kamala</div>
-            <h3 class="prop-title">Sea-View Penthouse — Kamala</h3>
-            <div class="prop-specs">
-              <span><i class="fas fa-bed"></i> 2 Bed</span>
-              <span><i class="fas fa-bath"></i> 2 Bath</span>
-              <span><i class="fas fa-expand-arrows-alt"></i> 185 m²</span>
+          <div class="tour-info">
+            <div class="tour-location"><i class="fas fa-map-marker-alt"></i> Krabi</div>
+            <h3>Four Islands Longtail Adventure</h3>
+            <p>Crystal waters, hidden lagoons, and a beach lunch on a secluded island.</p>
+            <div class="tour-meta">
+              <div class="tour-rating"><i class="fas fa-star"></i> 4.8 <span>(64)</span></div>
+              <div class="tour-price">From <strong>฿3,200</strong></div>
             </div>
-            <div class="prop-price">฿ 9,200,000</div>
           </div>
         </div>
 
-        <div class="prop-card" data-type="villa">
-          <div class="prop-img prop-img-4">
-            <div class="prop-badge prop-badge--exclusive">Exclusive</div>
-            <div class="prop-overlay">
-              <a href="#contact" class="prop-btn">Enquire</a>
-            </div>
+        <div class="tour-card" data-type="adventure">
+          <div class="tour-img tour-img-4">
+            <div class="tour-duration"><i class="fas fa-clock"></i> Full Day</div>
           </div>
-          <div class="prop-info">
-            <div class="prop-location"><i class="fas fa-map-marker-alt"></i> Bang Tao</div>
-            <h3 class="prop-title">Tropical Estate — Bang Tao</h3>
-            <div class="prop-specs">
-              <span><i class="fas fa-bed"></i> 6 Bed</span>
-              <span><i class="fas fa-bath"></i> 7 Bath</span>
-              <span><i class="fas fa-expand-arrows-alt"></i> 1,200 m²</span>
+          <div class="tour-info">
+            <div class="tour-location"><i class="fas fa-map-marker-alt"></i> Chiang Mai</div>
+            <h3>Jungle Trek &amp; Waterfall Swim</h3>
+            <p>Hike through lush northern jungle to a hidden waterfall. Includes local lunch.</p>
+            <div class="tour-meta">
+              <div class="tour-rating"><i class="fas fa-star"></i> 4.9 <span>(52)</span></div>
+              <div class="tour-price">From <strong>฿2,800</strong></div>
             </div>
-            <div class="prop-price">฿ 72,000,000</div>
           </div>
         </div>
 
-        <div class="prop-card" data-type="retirement condo">
-          <div class="prop-img prop-img-5">
-            <div class="prop-overlay">
-              <a href="#contact" class="prop-btn">Enquire</a>
-            </div>
+        <div class="tour-card" data-type="multiday adventure">
+          <div class="tour-img tour-img-5">
+            <div class="tour-badge tour-badge--special">Top Rated</div>
+            <div class="tour-duration"><i class="fas fa-clock"></i> 3 Days</div>
           </div>
-          <div class="prop-info">
-            <div class="prop-location"><i class="fas fa-map-marker-alt"></i> Kata Noi</div>
-            <h3 class="prop-title">Garden Residence — Kata Noi</h3>
-            <div class="prop-specs">
-              <span><i class="fas fa-bed"></i> 2 Bed</span>
-              <span><i class="fas fa-bath"></i> 2 Bath</span>
-              <span><i class="fas fa-expand-arrows-alt"></i> 210 m²</span>
+          <div class="tour-info">
+            <div class="tour-location"><i class="fas fa-map-marker-alt"></i> Khao Sok</div>
+            <h3>Khao Sok Lake &amp; Rainforest</h3>
+            <p>Stay in floating bungalows, kayak through ancient rainforest, and stargaze.</p>
+            <div class="tour-meta">
+              <div class="tour-rating"><i class="fas fa-star"></i> 5.0 <span>(41)</span></div>
+              <div class="tour-price">From <strong>฿8,500</strong></div>
             </div>
-            <div class="prop-price">฿ 7,800,000</div>
           </div>
         </div>
 
-        <div class="prop-card" data-type="beachfront villa">
-          <div class="prop-img prop-img-6">
-            <div class="prop-badge">Sea View</div>
-            <div class="prop-overlay">
-              <a href="#contact" class="prop-btn">Enquire</a>
-            </div>
+        <div class="tour-card" data-type="cultural food">
+          <div class="tour-img tour-img-6">
+            <div class="tour-duration"><i class="fas fa-clock"></i> Full Day</div>
           </div>
-          <div class="prop-info">
-            <div class="prop-location"><i class="fas fa-map-marker-alt"></i> Cape Yamu</div>
-            <h3 class="prop-title">Clifftop Villa — Cape Yamu</h3>
-            <div class="prop-specs">
-              <span><i class="fas fa-bed"></i> 4 Bed</span>
-              <span><i class="fas fa-bath"></i> 4 Bath</span>
-              <span><i class="fas fa-expand-arrows-alt"></i> 560 m²</span>
+          <div class="tour-info">
+            <div class="tour-location"><i class="fas fa-map-marker-alt"></i> Ayutthaya</div>
+            <h3>Ancient Capital Day Trip</h3>
+            <p>Cycle through UNESCO ruins, visit riverside temples, and feast on local noodles.</p>
+            <div class="tour-meta">
+              <div class="tour-rating"><i class="fas fa-star"></i> 4.8 <span>(73)</span></div>
+              <div class="tour-price">From <strong>฿2,900</strong></div>
             </div>
-            <div class="prop-price">฿ 29,500,000</div>
           </div>
         </div>
 
       </div>
 
-      <div class="prop-cta">
-        <a href="#contact" class="btn btn-gold">View All Properties</a>
+      <div class="tour-cta">
+        <a href="#contact" class="btn btn-primary">View All Tours</a>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       AREAS — Horizontal Hover Expand (ogroup-style)
+       DESTINATIONS
   ============================================================ -->
-  <section class="areas" id="areas">
-    <div class="areas-header">
-      <div class="section-tag section-tag--light">Prime Locations</div>
-      <h2>Discover Phuket's<br><em>Most Sought-After Areas</em></h2>
+  <section class="destinations" id="destinations">
+    <div class="dest-header">
+      <div class="section-tag section-tag--light">Destinations</div>
+      <h2>Discover Thailand's<br><em>Most Beautiful Places</em></h2>
     </div>
-    <div class="areas-grid">
-      <div class="area-panel area-1">
-        <div class="area-overlay"></div>
-        <div class="area-label">
-          <span class="area-num">01</span>
-          <h3>Surin &amp; Bang Tao</h3>
-          <p>Ultra-luxury estates and world-class beach clubs on Phuket's prestigious west coast.</p>
-          <a href="#contact" class="area-link">Explore <i class="fas fa-arrow-right"></i></a>
+    <div class="dest-grid">
+      <div class="dest-panel dest-1">
+        <div class="dest-overlay"></div>
+        <div class="dest-label">
+          <span class="dest-count">12 tours</span>
+          <h3>Bangkok</h3>
+          <p>Temples, street food, floating markets, and electric nightlife.</p>
         </div>
       </div>
-      <div class="area-panel area-2">
-        <div class="area-overlay"></div>
-        <div class="area-label">
-          <span class="area-num">02</span>
-          <h3>Kamala</h3>
-          <p>Peaceful hillside living with stunning Andaman Sea panoramas — a favourite for families.</p>
-          <a href="#contact" class="area-link">Explore <i class="fas fa-arrow-right"></i></a>
+      <div class="dest-panel dest-2">
+        <div class="dest-overlay"></div>
+        <div class="dest-label">
+          <span class="dest-count">8 tours</span>
+          <h3>Chiang Mai</h3>
+          <p>Mountain temples, night bazaars, and lush jungle adventures.</p>
         </div>
       </div>
-      <div class="area-panel area-3">
-        <div class="area-overlay"></div>
-        <div class="area-label">
-          <span class="area-num">03</span>
-          <h3>Kata &amp; Karon</h3>
-          <p>Vibrant beach communities with great amenities, international schools, and café culture.</p>
-          <a href="#contact" class="area-link">Explore <i class="fas fa-arrow-right"></i></a>
+      <div class="dest-panel dest-3">
+        <div class="dest-overlay"></div>
+        <div class="dest-label">
+          <span class="dest-count">6 tours</span>
+          <h3>Islands &amp; Beaches</h3>
+          <p>Krabi, Phi Phi, Koh Samui — turquoise waters and white sand.</p>
         </div>
       </div>
-      <div class="area-panel area-4">
-        <div class="area-overlay"></div>
-        <div class="area-label">
-          <span class="area-num">04</span>
-          <h3>Rawai &amp; Nai Harn</h3>
-          <p>The expat heartland — affordable, authentic, and perfectly placed for the southern charms.</p>
-          <a href="#contact" class="area-link">Explore <i class="fas fa-arrow-right"></i></a>
+      <div class="dest-panel dest-4">
+        <div class="dest-overlay"></div>
+        <div class="dest-label">
+          <span class="dest-count">5 tours</span>
+          <h3>Ayutthaya &amp; Beyond</h3>
+          <p>UNESCO heritage, river life, and the heart of ancient Siam.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       EXPAT GUIDE
-  ============================================================ -->
-  <section class="expat-guide" id="expat-guide">
-    <div class="section-wrap">
-      <div class="section-header">
-        <div class="section-tag">Life in Phuket</div>
-        <h2>Everything You Need to Know<br><em>Before You Move</em></h2>
-        <p>Relocating with family or retiring abroad is a big decision. We've been helping expats navigate Phuket life for nearly two decades — here's what matters most.</p>
-      </div>
-
-      <div class="guide-grid">
-        <div class="guide-card">
-          <div class="guide-icon"><i class="fas fa-graduation-cap"></i></div>
-          <h3>International Schools</h3>
-          <p>Phuket is home to over a dozen accredited international schools offering British, American, IB, and Australian curricula — with waiting lists filling fast. We guide families to the right areas for school proximity.</p>
-          <ul class="guide-list">
-            <li>BISP (British International School)</li>
-            <li>HeadStart International School</li>
-            <li>QSI International School</li>
-            <li>UWC Thailand</li>
-          </ul>
-        </div>
-        <div class="guide-card">
-          <div class="guide-icon"><i class="fas fa-hospital"></i></div>
-          <h3>World-Class Healthcare</h3>
-          <p>Phuket's hospitals are among Southeast Asia's finest, with internationally trained staff and JCI-accredited facilities. Peace of mind comes standard when you live here.</p>
-          <ul class="guide-list">
-            <li>Bangkok Hospital Phuket</li>
-            <li>Mission Hospital Phuket</li>
-            <li>Vachira Phuket Hospital</li>
-            <li>24/7 expat clinics</li>
-          </ul>
-        </div>
-        <div class="guide-card">
-          <div class="guide-icon"><i class="fas fa-passport"></i></div>
-          <h3>Visas &amp; Residency</h3>
-          <p>From Thailand Elite visas to long-term retirement (Non-OA) and education visas — we connect you with trusted immigration lawyers to make your move seamless and legal.</p>
-          <ul class="guide-list">
-            <li>Thailand Elite Visa (5–20 yr)</li>
-            <li>Non-OA Retirement Visa</li>
-            <li>Non-B Work Permit</li>
-            <li>LTR (Long-Term Resident) Visa</li>
-          </ul>
-        </div>
-        <div class="guide-card">
-          <div class="guide-icon"><i class="fas fa-balance-scale"></i></div>
-          <h3>Property Ownership</h3>
-          <p>Foreigners can legally own condominiums freehold, or structure villa ownership through leasehold agreements and Thai limited companies. We ensure your investment is fully protected.</p>
-          <ul class="guide-list">
-            <li>Condo freehold (up to 49%)</li>
-            <li>30+30+30 yr leasehold</li>
-            <li>Thai company structures</li>
-            <li>Full due diligence support</li>
-          </ul>
-        </div>
-        <div class="guide-card">
-          <div class="guide-icon"><i class="fas fa-sun"></i></div>
-          <h3>The Phuket Lifestyle</h3>
-          <p>Year-round sunshine, world-class dining, sailing, golf, yoga retreats, and a thriving expat community. Phuket is not just a place to live — it's a way of living.</p>
-          <ul class="guide-list">
-            <li>300+ sunny days per year</li>
-            <li>International dining &amp; nightlife</li>
-            <li>Golf courses &amp; marinas</li>
-            <li>Strong expat community</li>
-          </ul>
-        </div>
-        <div class="guide-card">
-          <div class="guide-icon"><i class="fas fa-piggy-bank"></i></div>
-          <h3>Cost of Living</h3>
-          <p>Compared to Western cities, Phuket offers exceptional value. A comfortable family lifestyle with domestic help, dining out regularly, and private schooling is attainable at a fraction of the cost.</p>
-          <ul class="guide-list">
-            <li>Household staff from ฿15,000/mo</li>
-            <li>Fine dining from ฿500/person</li>
-            <li>International school from ฿350,000/yr</li>
-            <li>Private healthcare packages</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       ABOUT / PROVEN PERFORMANCE (ogroup-style large numbers)
+       ABOUT ESMIRANDA
   ============================================================ -->
   <section class="about" id="about">
     <div class="about-inner">
-      <div class="about-content">
-        <div class="section-tag section-tag--light">About Us</div>
-        <h2>Phuket's Most Trusted<br><em>Real Estate Partner</em></h2>
-        <p>Annie Pamornsoot founded Pamornsoot Properties after personally navigating Phuket's property market as both a local expert and a member of the international community herself. Since 2007, we have matched over 250 families and individuals with their perfect Phuket home.</p>
-        <p>We believe buying a home abroad should feel exciting — not overwhelming. Our team handles everything from property search and legal due diligence to school introductions and utility setup, so your transition to paradise is seamless.</p>
-        <div class="about-actions">
-          <a href="#contact" class="btn btn-gold">Talk to Annie</a>
+      <div class="about-image">
+        <div class="about-img-placeholder">
+          <i class="fas fa-user-circle"></i>
         </div>
       </div>
-      <div class="about-stats">
-        <div class="big-stat">
-          <div class="big-stat-icon"><i class="fas fa-map-marked-alt"></i></div>
-          <h4>Deep Local Knowledge</h4>
-          <p>We know every neighbourhood, developer, and hidden gem across Phuket's diverse property landscape.</p>
+      <div class="about-content">
+        <div class="section-tag">Meet Your Guide</div>
+        <h2>Hi, I'm Esmiranda</h2>
+        <p>I founded Tailandesita because I believe the best way to experience Thailand is through someone who truly lives it. Born and raised near Bangkok, I've spent years uncovering the hidden corners of this country — from secret street food stalls to mountain temples that few tourists ever see.</p>
+        <p>Every tour is personally led by me. No large groups, no cookie-cutter itineraries. Just authentic experiences tailored to what you want to see, taste, and feel. Whether you're a solo traveler, a couple, or a small group of friends — I'll make sure your Thailand trip is unforgettable.</p>
+        <div class="about-highlights">
+          <div class="about-hl">
+            <i class="fas fa-heart"></i>
+            <span>Personally guided tours</span>
+          </div>
+          <div class="about-hl">
+            <i class="fas fa-users"></i>
+            <span>Small groups only (max 8)</span>
+          </div>
+          <div class="about-hl">
+            <i class="fas fa-language"></i>
+            <span>English &amp; Thai speaking</span>
+          </div>
+          <div class="about-hl">
+            <i class="fas fa-route"></i>
+            <span>Custom itineraries available</span>
+          </div>
         </div>
-        <div class="big-stat">
-          <div class="big-stat-icon"><i class="fas fa-file-contract"></i></div>
-          <h4>Legal &amp; Due Diligence</h4>
-          <p>Every property is fully vetted — title deed checks, chanote verification, and foreign ownership structuring.</p>
-        </div>
-        <div class="big-stat">
-          <div class="big-stat-icon"><i class="fas fa-school"></i></div>
-          <h4>Family Relocation</h4>
-          <p>From school applications and healthcare registration to community introductions — we settle your whole family in.</p>
-        </div>
-        <div class="big-stat">
-          <div class="big-stat-icon"><i class="fas fa-heart"></i></div>
-          <h4>Ongoing Support</h4>
-          <p>Our relationship doesn't end at handover. We're your long-term concierge for life in Phuket.</p>
-        </div>
+        <a href="#contact" class="btn btn-primary">Plan a Trip with Me</a>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       TESTIMONIALS
+       REVIEWS
   ============================================================ -->
-  <section class="testimonials">
+  <section class="reviews" id="reviews">
     <div class="section-wrap">
       <div class="section-header">
-        <div class="section-tag">Client Stories</div>
-        <h2>What Our Clients Say</h2>
+        <div class="section-tag">Traveler Reviews</div>
+        <h2>What People Are Saying</h2>
       </div>
-      <div class="testi-grid">
-        <div class="testi-card">
-          <div class="testi-quote">"</div>
-          <p>Annie found us our dream retirement villa in Rawai within two weeks of our first meeting. Her knowledge of the legal process for foreigners was invaluable — we felt safe the entire time.</p>
-          <div class="testi-author">
-            <div class="testi-avatar testi-av-1"></div>
-            <div>
-              <strong>David &amp; Margaret H.</strong>
-              <span>Retired, British — Rawai</span>
-            </div>
+      <div class="review-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"Esmiranda took us to places we would never have found on our own. The street food tour was the highlight of our entire trip to Asia. She's warm, knowledgeable, and genuinely passionate."</p>
+          <div class="review-author">
+            <strong>Sophie &amp; Mark</strong>
+            <span>London, UK</span>
           </div>
         </div>
-        <div class="testi-card">
-          <div class="testi-quote">"</div>
-          <p>We moved our family of four from Singapore. Annie not only found us a beautiful home near BISP, she connected us with the school's admissions office and our local community group. Truly exceptional service.</p>
-          <div class="testi-author">
-            <div class="testi-avatar testi-av-2"></div>
-            <div>
-              <strong>Michael &amp; Sarah T.</strong>
-              <span>Family Relocation, Australian — Kamala</span>
-            </div>
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"I traveled solo and was nervous, but Esmiranda made me feel like I was exploring with a friend. The Khao Sok trip was life-changing. Already planning my next tour with her!"</p>
+          <div class="review-author">
+            <strong>Yuki T.</strong>
+            <span>Tokyo, Japan</span>
           </div>
         </div>
-        <div class="testi-card">
-          <div class="testi-quote">"</div>
-          <p>I've bought property in five countries. The Pamornsoot team handled every detail with more professionalism and care than any agent I've encountered. My Bang Tao villa is perfect.</p>
-          <div class="testi-author">
-            <div class="testi-avatar testi-av-3"></div>
-            <div>
-              <strong>Klaus W.</strong>
-              <span>Investor &amp; Resident, German — Bang Tao</span>
-            </div>
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"We booked the 3-day Chiang Mai experience for our family. Esmiranda was incredible with our kids and showed us a side of Thailand we'd never have seen on a big group tour."</p>
+          <div class="review-author">
+            <strong>The Martinez Family</strong>
+            <span>Barcelona, Spain</span>
           </div>
         </div>
       </div>
@@ -466,41 +396,41 @@
   </section>
 
   <!-- ============================================================
-       CONTACT
+       CONTACT / BOOKING
   ============================================================ -->
   <section class="contact" id="contact">
     <div class="contact-inner">
       <div class="contact-content">
-        <div class="section-tag section-tag--light">Get in Touch</div>
-        <h2>Begin Your<br><em>Phuket Journey</em></h2>
-        <p>Whether you're planning a visit to view properties, or ready to make the move, we're here to guide you every step of the way. Send us a message — we respond within 24 hours.</p>
+        <div class="section-tag section-tag--light">Book Your Tour</div>
+        <h2>Ready for an<br><em>Adventure?</em></h2>
+        <p>Send me a message and I'll personally get back to you within 24 hours with a custom itinerary suggestion. No pressure, just good vibes and great plans.</p>
         <div class="contact-details">
           <div class="contact-item">
             <i class="fas fa-map-marker-alt"></i>
             <div>
-              <strong>Office</strong>
-              <span>123 Cherngtalay Road, Thalang, Phuket 83110</span>
+              <strong>Based in</strong>
+              <span>Bangkok, Thailand</span>
             </div>
           </div>
           <div class="contact-item">
-            <i class="fas fa-phone"></i>
+            <i class="fab fa-whatsapp"></i>
             <div>
-              <strong>Phone / WhatsApp</strong>
-              <span>+66 (0) 76 XXX XXXX</span>
+              <strong>WhatsApp</strong>
+              <span>+66 (0) XX XXX XXXX</span>
             </div>
           </div>
           <div class="contact-item">
             <i class="fas fa-envelope"></i>
             <div>
               <strong>Email</strong>
-              <span>annie@pamornsootproperties.com</span>
+              <span>esmiranda@tailandesita.com</span>
             </div>
           </div>
           <div class="contact-item">
-            <i class="fab fa-line"></i>
+            <i class="fab fa-instagram"></i>
             <div>
-              <strong>LINE ID</strong>
-              <span>@pamornsootproperty</span>
+              <strong>Instagram</strong>
+              <span>@tailandesita</span>
             </div>
           </div>
         </div>
@@ -510,53 +440,48 @@
         <form class="contact-form" id="contactForm">
           <div class="form-row">
             <div class="form-group">
-              <label>First Name</label>
-              <input type="text" placeholder="Your first name" required>
+              <label>Your Name</label>
+              <input type="text" placeholder="Full name" required>
             </div>
             <div class="form-group">
-              <label>Last Name</label>
-              <input type="text" placeholder="Your last name" required>
+              <label>Email</label>
+              <input type="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Travel Dates</label>
+              <input type="text" placeholder="e.g. March 15–22, 2026">
+            </div>
+            <div class="form-group">
+              <label>Group Size</label>
+              <select>
+                <option value="">How many travelers?</option>
+                <option>Solo</option>
+                <option>2 people</option>
+                <option>3–4 people</option>
+                <option>5–8 people</option>
+                <option>9+ (special group)</option>
+              </select>
             </div>
           </div>
           <div class="form-group">
-            <label>Nationality / Country of Residence</label>
-            <input type="text" placeholder="e.g. Australian, based in Sydney">
-          </div>
-          <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" placeholder="your@email.com" required>
-          </div>
-          <div class="form-group">
-            <label>WhatsApp / Phone</label>
-            <input type="tel" placeholder="+1 234 567 8900">
-          </div>
-          <div class="form-group">
-            <label>I am looking for…</label>
+            <label>What interests you?</label>
             <select>
-              <option value="">Select your interest</option>
-              <option>Family home — relocating with children</option>
-              <option>Retirement home</option>
-              <option>Investment property</option>
-              <option>Holiday villa / rental</option>
-              <option>General enquiry about Phuket life</option>
+              <option value="">Select tour type</option>
+              <option>Cultural &amp; Temples</option>
+              <option>Food &amp; Street Markets</option>
+              <option>Island &amp; Beach</option>
+              <option>Trekking &amp; Nature</option>
+              <option>Multi-Day Adventure</option>
+              <option>Custom Itinerary</option>
             </select>
           </div>
           <div class="form-group">
-            <label>Budget Range (THB)</label>
-            <select>
-              <option value="">Select budget</option>
-              <option>Under ฿5,000,000</option>
-              <option>฿5M – ฿10M</option>
-              <option>฿10M – ฿20M</option>
-              <option>฿20M – ฿50M</option>
-              <option>฿50M+</option>
-            </select>
+            <label>Tell me about your dream trip</label>
+            <textarea rows="4" placeholder="What are you hoping to see, do, or eat? Any special requests?"></textarea>
           </div>
-          <div class="form-group">
-            <label>Tell us more</label>
-            <textarea rows="4" placeholder="Timeline, preferred area, must-haves, family size, school requirements…"></textarea>
-          </div>
-          <button type="submit" class="btn btn-gold btn--full" id="submitBtn">Send Enquiry <i class="fas fa-arrow-right"></i></button>
+          <button type="submit" class="btn btn-primary btn--full" id="submitBtn">Send Message <i class="fas fa-paper-plane"></i></button>
         </form>
       </div>
     </div>
@@ -570,53 +495,52 @@
       <div class="footer-top">
         <div class="footer-brand">
           <div class="footer-logo">
-            <span class="logo-primary">PAMORNSOOT</span>
-            <span class="logo-sub">PROPERTIES · PHUKET</span>
+            <span class="logo-icon"><i class="fas fa-sun"></i></span>
+            <span class="logo-text">Tailandesita</span>
           </div>
-          <p>Your trusted guide to luxury real estate and a life well-lived in Phuket, Thailand. Serving expats, families, and retirees since 2007.</p>
+          <p>Personalized tours across Thailand, led by a local who cares. Small groups, big memories.</p>
           <div class="footer-social">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="LINE"><i class="fab fa-line"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
             <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
         <div class="footer-links">
           <div class="footer-col">
-            <h5>Properties</h5>
+            <h5>Tours</h5>
             <ul>
-              <li><a href="#properties">Luxury Villas</a></li>
-              <li><a href="#properties">Beachfront Homes</a></li>
-              <li><a href="#properties">Condominiums</a></li>
-              <li><a href="#properties">Retirement Homes</a></li>
+              <li><a href="#tours">Cultural &amp; Temples</a></li>
+              <li><a href="#tours">Food Tours</a></li>
+              <li><a href="#tours">Beach &amp; Islands</a></li>
+              <li><a href="#tours">Multi-Day Trips</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h5>Areas</h5>
+            <h5>Destinations</h5>
             <ul>
-              <li><a href="#areas">Surin &amp; Bang Tao</a></li>
-              <li><a href="#areas">Kamala</a></li>
-              <li><a href="#areas">Kata &amp; Karon</a></li>
-              <li><a href="#areas">Rawai &amp; Nai Harn</a></li>
+              <li><a href="#destinations">Bangkok</a></li>
+              <li><a href="#destinations">Chiang Mai</a></li>
+              <li><a href="#destinations">Krabi &amp; Islands</a></li>
+              <li><a href="#destinations">Ayutthaya</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h5>Expat Resources</h5>
+            <h5>Company</h5>
             <ul>
-              <li><a href="#expat-guide">International Schools</a></li>
-              <li><a href="#expat-guide">Healthcare</a></li>
-              <li><a href="#expat-guide">Visa Information</a></li>
-              <li><a href="#expat-guide">Property Ownership</a></li>
+              <li><a href="#about">About Esmiranda</a></li>
+              <li><a href="#reviews">Reviews</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">FAQ</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Pamornsoot Properties Co., Ltd. All rights reserved. Licensed Thai Real Estate Broker.</p>
+        <p>&copy; 2026 Tailandesita. All rights reserved.</p>
         <div class="footer-legal">
           <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-          <a href="#">Cookie Policy</a>
+          <a href="#">Terms of Service</a>
         </div>
       </div>
     </div>
@@ -657,35 +581,49 @@
       });
     });
 
-    // --- Hero Slideshow ---
-    const slides = document.querySelectorAll('.hero-slide');
-    const dots = document.querySelectorAll('.dot');
-    let current = 0;
-    function goToSlide(n) {
-      slides[current].classList.remove('active');
-      dots[current].classList.remove('active');
-      current = n;
-      slides[current].classList.add('active');
-      dots[current].classList.add('active');
-    }
-    dots.forEach(dot => {
-      dot.addEventListener('click', () => goToSlide(+dot.dataset.slide));
-    });
-    setInterval(() => goToSlide((current + 1) % slides.length), 5500);
-
-    // --- Property Filter ---
+    // --- Tour Filter ---
     const filterBtns = document.querySelectorAll('.filter-btn');
-    const propCards = document.querySelectorAll('.prop-card');
+    const tourCards = document.querySelectorAll('.tour-card');
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         filterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         const filter = btn.dataset.filter;
-        propCards.forEach(card => {
+        tourCards.forEach(card => {
           const types = card.dataset.type || '';
           card.style.display = (filter === 'all' || types.includes(filter)) ? '' : 'none';
         });
       });
+    });
+
+    // --- Search Bar ---
+    document.getElementById('searchForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const dest = document.getElementById('searchDest').value;
+      const type = document.getElementById('searchType').value;
+      // Scroll to tours section and filter if applicable
+      const toursSection = document.getElementById('tours');
+      toursSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      // Simple filter based on search
+      if (type) {
+        const typeMap = {
+          'Cultural & Temples': 'cultural',
+          'Food & Street Markets': 'food',
+          'Island & Beach': 'beach',
+          'Trekking & Nature': 'adventure',
+          'City & Nightlife': 'cultural',
+          'Multi-Day Adventure': 'multiday'
+        };
+        const filterValue = typeMap[type] || 'all';
+        filterBtns.forEach(b => {
+          b.classList.toggle('active', b.dataset.filter === filterValue);
+        });
+        tourCards.forEach(card => {
+          const types = card.dataset.type || '';
+          card.style.display = (filterValue === 'all' || types.includes(filterValue)) ? '' : 'none';
+        });
+      }
     });
 
     // --- Intersection Observer (fade in) ---
@@ -693,15 +631,14 @@
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.12 });
     document.querySelectorAll(
-      '.prop-card, .guide-card, .testi-card, .stat, .big-stat, .area-panel, .approach-step'
+      '.tour-card, .review-card, .stat, .dest-panel, .about-hl, .contact-item'
     ).forEach(el => { el.classList.add('fade-in'); observer.observe(el); });
-
 
     // --- Form Submit ---
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
       const btn = document.getElementById('submitBtn');
-      btn.innerHTML = '<i class="fas fa-check"></i> Enquiry Sent — We\'ll be in touch within 24 hours';
+      btn.innerHTML = '<i class="fas fa-check"></i> Message Sent — I\'ll reply within 24 hours!';
       btn.disabled = true;
       btn.style.background = '#2a7a4b';
     });
