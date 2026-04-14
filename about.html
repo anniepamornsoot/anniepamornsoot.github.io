@@ -53,37 +53,39 @@
   </section>
 
   <!-- ============================================================
-       STORY SECTION 1 — The Beginning
+       STORY SECTION 1 — Full-bleed image with floating card
   ============================================================ -->
-  <section class="story-section">
-    <div class="container">
-      <div class="story-block story-block--reverse">
-        <div class="story-content">
-          <p class="story-cursive">Let me rewind a little...</p>
-          <h2 class="story-heading">I wasn't born here. I chose to be here.</h2>
-          <p class="story-text">Years ago, I made the decision to leave everything familiar behind and start a new chapter in Thailand. No family connections, no company transfer &mdash; just a deep feeling that this was where I was meant to be.</p>
-          <p class="story-text">Those first months? Exhilarating and terrifying in equal measure. Finding an apartment, opening a bank account, navigating a new language, figuring out which neighbourhood actually suited my lifestyle &mdash; I learned it all the hard way.</p>
-        </div>
-        <div class="story-image">
-          <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?w=700&q=80" alt="Phuket coastal scenery">
-        </div>
-      </div>
+  <section class="story-spread">
+    <div class="story-spread-image">
+      <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?w=1600&q=80" alt="Phuket coastal scenery">
+    </div>
+    <div class="story-spread-card">
+      <p class="story-cursive">Let me rewind a little...</p>
+      <h2 class="story-heading">I wasn't born here.<br>I chose to be here.</h2>
+      <p class="story-text">Years ago, I made the decision to leave everything familiar behind and start a new chapter in Thailand. No family connections, no company transfer &mdash; just a deep feeling that this was where I was meant to be.</p>
+      <p class="story-text">Those first months? Exhilarating and terrifying in equal measure. Finding an apartment, opening a bank account, navigating a new language, figuring out which neighbourhood actually suited my lifestyle &mdash; I learned it all the hard way.</p>
     </div>
   </section>
 
   <!-- ============================================================
-       STORY SECTION 2 — With Kids
+       STORY SECTION 2 — Overlapping asymmetric layout
   ============================================================ -->
-  <section class="story-section story-section--alt">
+  <section class="story-overlap">
     <div class="container">
-      <div class="story-block">
-        <div class="story-image">
-          <img src="https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?w=700&q=80" alt="Family life in Phuket">
+      <div class="story-overlap-grid">
+        <div class="story-overlap-visual">
+          <div class="story-overlap-img story-overlap-img--main">
+            <img src="https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?w=800&q=80" alt="Family life in Phuket">
+          </div>
+          <div class="story-overlap-img story-overlap-img--accent">
+            <img src="https://images.unsplash.com/photo-1484820540004-14229fe36ca4?w=500&q=80" alt="Children playing at the beach">
+          </div>
         </div>
-        <div class="story-content">
+        <div class="story-overlap-content">
           <p class="story-cursive">Then everything changed...</p>
           <h2 class="story-heading">I experienced Phuket as a parent &mdash; and it's a completely different world.</h2>
-          <p class="story-text">Living in Phuket as a single person is one thing. Living here with kids? The questions multiply overnight. Which school has the right curriculum? Is this neighbourhood safe for children? Where will they make friends? Is there a good paediatrician nearby?</p>
+          <div class="story-overlap-divider"></div>
+          <p class="story-text">Living in Phuket as a single person is one thing. Living here with kids? The questions multiply overnight. Which school has the right curriculum? Is this neighbourhood safe for children? Where will they make friends?</p>
           <p class="story-text">I've navigated all of this firsthand. I know which international schools actually deliver on their promises. I know which areas have the best community feel for families. And I know what it's like to worry about whether you're making the right call for your children.</p>
         </div>
       </div>
@@ -270,7 +272,7 @@
       navbar.classList.toggle('scrolled', window.scrollY > 60);
     });
 
-    const revealEls = document.querySelectorAll('.story-content, .story-image, .belief-content, .years-content, .years-stats, .funfact-card, .about-hero-image, .about-hero-content, .about-cta-content');
+    const revealEls = document.querySelectorAll('.story-content, .story-image, .story-spread-card, .story-overlap-visual, .story-overlap-content, .belief-content, .years-content, .years-stats, .funfact-card, .about-hero-image, .about-hero-content, .about-cta-content');
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
