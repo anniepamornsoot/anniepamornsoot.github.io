@@ -1092,6 +1092,383 @@ ul { list-style: none; }
 }
 
 /* ============================================================
+   NAVBAR — SOLID VARIANT (for inner pages)
+   ============================================================ */
+.navbar--solid {
+  background: var(--cream);
+  padding: 14px 0;
+  box-shadow: 0 1px 20px rgba(0,0,0,.06);
+}
+
+.navbar--solid .logo-text {
+  color: var(--dark);
+}
+
+.navbar--solid .nav-link {
+  color: var(--text);
+}
+.navbar--solid .nav-link:hover {
+  color: var(--dark);
+}
+
+.navbar--solid .nav-link--cta {
+  background: var(--dark);
+  color: var(--white) !important;
+}
+.navbar--solid .nav-link--cta:hover {
+  background: var(--gold-dark);
+}
+
+.navbar--solid .nav-toggle span {
+  background: var(--dark);
+}
+
+.nav-link--active {
+  color: var(--gold-dark) !important;
+}
+
+/* ============================================================
+   ABOUT PAGE — HERO
+   ============================================================ */
+.about-hero {
+  padding: 140px 0 80px;
+  background: var(--cream);
+}
+
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.about-hero-image {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.about-hero-image img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.about-hero-content {
+  padding: 20px 0;
+}
+
+.about-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 600;
+  color: var(--dark);
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+
+.about-hero-title em {
+  font-style: italic;
+  color: var(--gold-dark);
+}
+
+.about-hero-text {
+  font-size: 1.05rem;
+  color: var(--text);
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+
+/* ============================================================
+   ABOUT PAGE — STORY SECTIONS
+   ============================================================ */
+.story-section {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.story-section--alt {
+  background: var(--cream);
+}
+
+.story-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.story-block--reverse {
+  direction: rtl;
+}
+
+.story-block--reverse > * {
+  direction: ltr;
+}
+
+.story-image {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.story-image img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.story-cursive {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--gold-dark);
+  margin-bottom: 12px;
+}
+
+.story-heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  color: var(--dark);
+  line-height: 1.35;
+  margin-bottom: 20px;
+}
+
+.story-text {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.85;
+  margin-bottom: 14px;
+}
+
+.story-text em {
+  color: var(--gold-dark);
+  font-style: italic;
+}
+
+/* ============================================================
+   ABOUT PAGE — BELIEF STATEMENT
+   ============================================================ */
+.belief-section {
+  padding: 80px 0;
+  background: var(--dark);
+}
+
+.belief-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.belief-heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 500;
+  color: var(--white);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* ============================================================
+   ABOUT PAGE — 7 YEARS STATS
+   ============================================================ */
+.years-section {
+  padding: 100px 0;
+  background: var(--cream-medium);
+}
+
+.years-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.years-text {
+  font-size: 1.05rem;
+  color: var(--text);
+  line-height: 1.85;
+  margin-top: 8px;
+}
+
+.years-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.year-stat {
+  background: var(--white);
+  padding: 32px 28px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.year-stat-number {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--gold-dark);
+  margin-bottom: 8px;
+}
+
+.year-stat-label {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+/* ============================================================
+   ABOUT PAGE — FUN FACTS
+   ============================================================ */
+.funfacts-section {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.funfacts-cursive {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--gold-dark);
+  margin-bottom: 4px;
+}
+
+.funfacts-title {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 40px;
+}
+
+.funfacts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.funfact-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.funfact-image {
+  height: 280px;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.funfact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.funfact-card:hover .funfact-image img {
+  transform: scale(1.05);
+}
+
+.funfact-text {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.7;
+  padding: 20px 4px;
+}
+
+/* ============================================================
+   ABOUT PAGE — CTA
+   ============================================================ */
+.about-cta {
+  padding: 100px 0;
+  background: var(--cream);
+  text-align: center;
+}
+
+.about-cta-content {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.about-cta-text {
+  font-size: 1.05rem;
+  color: var(--text);
+  line-height: 1.85;
+  margin-bottom: 32px;
+}
+
+.about-cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-cta-buttons .btn i {
+  margin-left: 6px;
+}
+
+/* ============================================================
+   ABOUT PAGE — RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .about-hero-grid,
+  .story-block,
+  .story-block--reverse,
+  .years-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .story-block--reverse {
+    direction: ltr;
+  }
+
+  .about-hero-image img {
+    height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 110px 0 60px;
+  }
+
+  .funfacts-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .years-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .story-image img {
+    height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-cta-buttons .btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .years-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
    SCROLL REVEAL ANIMATIONS
    ============================================================ */
 .reveal {
