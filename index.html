@@ -480,51 +480,63 @@
   ============================================================ -->
   <footer class="footerv2">
     <div class="container">
-      <div class="footerv2-wordmark">
-        <span class="footerv2-wordmark-kicker">Made with care on the island</span>
-        <h2>Phuket <em>Living.</em></h2>
+      <div class="footerv2-cta">
+        <div class="footerv2-cta-text">
+          <h2 class="footerv2-cta-title">This feels <em>right.</em></h2>
+          <p>Book a 30-minute call. No pitch, no pressure &mdash; just a conversation about whether Phuket fits your family.</p>
+        </div>
+        <div class="footerv2-cta-actions">
+          <a href="#contact" class="footerv2-book">Book your call <i class="fas fa-arrow-up-right-from-square"></i></a>
+          <a href="mailto:hello@phuketliving.co" class="footerv2-email">hello@phuketliving.co</a>
+        </div>
       </div>
+
       <div class="footerv2-top">
         <div class="footerv2-brand">
           <span class="footerv2-logo">Phuket <em>Living</em></span>
-          <p>Honest, unbiased guidance from someone who actually lives here. Helping families find home, not just a house.</p>
-          <div class="footerv2-social">
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="LINE"><i class="fab fa-line"></i></a>
-            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          </div>
+          <span class="footerv2-tag">This feels right</span>
+          <p>A relocation partner for expat families moving to Phuket. Curated homes, lifestyle-first guidance.</p>
         </div>
         <div class="footerv2-links">
           <h4>Explore</h4>
           <ul>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#properties">Properties</a></li>
+            <li><a href="#areas">Areas</a></li>
+            <li><a href="#">Shortlists</a></li>
             <li><a href="#journal">Journal</a></li>
           </ul>
         </div>
         <div class="footerv2-links">
-          <h4>Resources</h4>
+          <h4>Services</h4>
           <ul>
-            <li><a href="#">International Schools</a></li>
-            <li><a href="#">Visa Information</a></li>
-            <li><a href="#">Healthcare Guide</a></li>
-            <li><a href="#">Cost of Living</a></li>
+            <li><a href="#services">Relocation</a></li>
+            <li><a href="#">Schools</a></li>
+            <li><a href="#">Legal &amp; visas</a></li>
+            <li><a href="#">Settling in</a></li>
           </ul>
         </div>
         <div class="footerv2-links">
-          <h4>Contact</h4>
+          <h4>Company</h4>
           <ul>
-            <li><a href="mailto:hello@phuketliving.com">hello@phuketliving.com</a></li>
-            <li><a href="#">WhatsApp</a></li>
-            <li><a href="#">@phuketliving</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">Approach</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footerv2-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#contact">Book a call</a></li>
+            <li><a href="https://instagram.com/phuketliving" target="_blank">Instagram</a></li>
+            <li><a href="#" target="_blank">TikTok</a></li>
+            <li><a href="mailto:hello@phuketliving.co">Email</a></li>
           </ul>
         </div>
       </div>
       <div class="footerv2-bottom">
         <p>&copy; 2026 Phuket Living. All rights reserved.</p>
-        <p>Made with care in Phuket, Thailand</p>
+        <p>Made on the island.</p>
       </div>
     </div>
   </footer>
@@ -563,7 +575,7 @@
       icon.classList.toggle('fas');
     }));
 
-    const revealEls = document.querySelectorAll('.hv2-hero-card, .hv2-hero-photo, .howhelp-card, .meetv2-photo, .meetv2-body, .propv2-card, .journal-card, .testim-v2-card, .insta-tile, .contactv2-left, .contactv2-form, .believe-title, .believe-sub, .footerv2-wordmark');
+    const revealEls = document.querySelectorAll('.hv2-hero-card, .hv2-hero-photo, .howhelp-card, .meetv2-photo, .meetv2-body, .propv2-card, .journal-card, .testim-v2-card, .insta-tile, .contactv2-left, .contactv2-form, .believe-title, .believe-sub, .footerv2-cta, .footerv2-top');
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
