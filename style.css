@@ -119,13 +119,13 @@ ul { list-style: none; }
 }
 
 .btn--primary {
-  background: var(--dark);
+  background: var(--sage-dark);
   color: var(--white);
-  border-color: var(--dark);
+  border-color: var(--sage-dark);
 }
 .btn--primary:hover {
-  background: var(--cocoa);
-  border-color: var(--cocoa);
+  background: var(--sage);
+  border-color: var(--sage);
 }
 
 .btn--outline {
@@ -140,11 +140,11 @@ ul { list-style: none; }
 
 .btn--secondary {
   background: transparent;
-  color: var(--dark);
-  border-color: var(--dark);
+  color: var(--sage-dark);
+  border-color: var(--sage-dark);
 }
 .btn--secondary:hover {
-  background: var(--dark);
+  background: var(--sage-dark);
   color: var(--white);
 }
 
@@ -1165,6 +1165,7 @@ ul { list-style: none; }
 .about-hero-image {
   border-radius: var(--radius);
   overflow: hidden;
+  position: relative;
 }
 
 .about-hero-image img {
@@ -1174,8 +1175,45 @@ ul { list-style: none; }
   border-radius: var(--radius);
 }
 
+.about-hero-badge {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  background: var(--paper);
+  color: var(--sage-dark);
+  font-family: var(--font);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+}
+
 .about-hero-content {
   padding: 20px 0;
+}
+
+.about-hero-sig {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 28px;
+}
+.about-hero-sig-line {
+  display: block;
+  width: 36px;
+  height: 2px;
+  background: var(--sage);
+  border-radius: 1px;
+}
+.about-hero-sig-text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--sage-dark);
+  font-weight: 400;
 }
 
 .about-hero-title {
@@ -1327,9 +1365,9 @@ ul { list-style: none; }
 
 .story-overlap-divider {
   width: 48px;
-  height: 3px;
-  background: var(--cocoa);
-  border-radius: 2px;
+  height: 2px;
+  background: var(--sage);
+  border-radius: 1px;
   margin: 8px 0 20px;
 }
 
@@ -1415,83 +1453,130 @@ ul { list-style: none; }
    ABOUT PAGE — 7 YEARS STATS
    ============================================================ */
 .years-section {
-  padding: 100px 0;
-  background: var(--paper);
+  padding: 120px 0;
+  background: var(--ivory);
+  border-top: 1px solid rgba(74, 52, 38, 0.08);
+  border-bottom: 1px solid rgba(74, 52, 38, 0.08);
 }
 
-.years-grid {
+.years-header {
+  margin-bottom: 72px;
+  max-width: 560px;
+}
+
+.years-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: center;
-}
-
-.years-text {
-  font-size: 1rem;
-  color: var(--text-light);
-  line-height: 1.75;
-  margin-top: 8px;
-}
-
-.years-stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
 }
 
 .year-stat {
-  background: var(--ivory);
-  padding: 36px 28px;
-  border-radius: var(--radius);
-  text-align: center;
-  border: 1px solid rgba(74, 52, 38, 0.06);
+  padding: 36px 32px 36px 0;
+  border-top: 2px solid var(--sage);
+  position: relative;
 }
+.year-stat:last-child { padding-right: 0; }
 
 .year-stat-number {
   display: block;
   font-family: var(--font-display);
-  font-size: 2.6rem;
+  font-size: clamp(3rem, 5vw, 4.5rem);
   font-weight: 500;
   font-style: italic;
   color: var(--terracotta);
-  letter-spacing: -1px;
-  margin-bottom: 10px;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 18px;
 }
 
 .year-stat-label {
+  display: block;
   font-family: var(--font);
   font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 1.5px;
+  font-weight: 600;
+  letter-spacing: 2px;
   text-transform: uppercase;
+  color: var(--ink);
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.year-stat-desc {
+  font-size: 14px;
   color: var(--text-light);
-  line-height: 1.5;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ============================================================
+   ABOUT PAGE — PULL QUOTE
+   ============================================================ */
+.pull-quote {
+  padding: 100px 0;
+  background: var(--paper);
+}
+.pull-quote-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.55;
+  letter-spacing: -0.3px;
+  text-align: center;
+  max-width: 840px;
+  margin: 0 auto;
+  position: relative;
+  border: none;
+  padding: 0;
+}
+.pull-quote-mark {
+  font-family: var(--font-display);
+  font-size: 5rem;
+  line-height: 0.5;
+  color: var(--sage);
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.pull-quote-text em {
+  font-style: italic;
+  color: var(--sage-dark);
+  font-weight: 400;
 }
 
 /* ============================================================
    ABOUT PAGE — FUN FACTS
    ============================================================ */
 .funfacts-section {
-  padding: 100px 0;
+  padding: 120px 0;
   background: var(--ivory);
+}
+
+.funfacts-header {
+  margin-bottom: 56px;
 }
 
 .funfacts-cursive {
   font-family: var(--font-display);
   font-style: italic;
   font-weight: 400;
-  font-size: 1.3rem;
-  color: var(--cocoa);
-  margin-bottom: 6px;
+  font-size: 1.15rem;
+  color: var(--sage-dark);
+  margin-bottom: 10px;
 }
 
 .funfacts-title {
   font-family: var(--font-display);
-  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   font-weight: 500;
   color: var(--ink);
-  letter-spacing: -0.3px;
-  margin-bottom: 40px;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+.funfacts-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--cocoa);
 }
 
 .funfacts-grid {
@@ -1522,11 +1607,23 @@ ul { list-style: none; }
   transform: scale(1.05);
 }
 
+.funfact-body {
+  padding: 20px 4px 0;
+}
+.funfact-num {
+  display: block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--sage-dark);
+  margin-bottom: 8px;
+  font-weight: 400;
+}
 .funfact-text {
   font-size: 0.95rem;
   color: var(--text-light);
   line-height: 1.7;
-  padding: 20px 4px;
+  margin: 0;
 }
 
 /* ============================================================
@@ -1568,8 +1665,7 @@ ul { list-style: none; }
   .about-hero-grid,
   .story-block,
   .story-block--reverse,
-  .story-overlap-grid,
-  .years-grid {
+  .story-overlap-grid {
     grid-template-columns: 1fr;
     gap: 40px;
   }
@@ -1589,6 +1685,7 @@ ul { list-style: none; }
     width: 100%;
     border-radius: 0;
     box-shadow: none;
+    border: none;
   }
 
   .story-spread-image {
@@ -1611,6 +1708,12 @@ ul { list-style: none; }
   .story-overlap-img--accent img {
     height: 200px;
   }
+
+  .years-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  .year-stat { padding-right: 0; }
 }
 
 @media (max-width: 768px) {
@@ -1620,11 +1723,13 @@ ul { list-style: none; }
 
   .funfacts-grid {
     grid-template-columns: 1fr;
-    max-width: 400px;
+    max-width: 440px;
   }
 
-  .years-stats {
+  .years-section { padding: 80px 0; }
+  .years-row {
     grid-template-columns: 1fr 1fr;
+    gap: 24px;
   }
 
   .story-image img {
@@ -1658,6 +1763,9 @@ ul { list-style: none; }
   .story-overlap-img--main img {
     height: 300px;
   }
+
+  .pull-quote { padding: 72px 0; }
+  .pull-quote-mark { font-size: 3.5rem; margin-bottom: 14px; }
 }
 
 @media (max-width: 480px) {
@@ -1672,7 +1780,7 @@ ul { list-style: none; }
     text-align: center;
   }
 
-  .years-stats {
+  .years-row {
     grid-template-columns: 1fr;
   }
 }
