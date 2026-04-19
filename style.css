@@ -67,20 +67,21 @@ ul { list-style: none; }
 /* --- Typography --- */
 .section-label {
   font-family: var(--font);
-  font-size: 0.8rem;
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 2.5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--cocoa);
-  margin-bottom: 12px;
+  margin-bottom: 22px;
 }
 
 .section-title {
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
-  font-weight: 600;
-  color: var(--dark);
-  line-height: 1.25;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.15;
+  letter-spacing: -0.3px;
   margin-bottom: 16px;
 }
 
@@ -1113,9 +1114,10 @@ ul { list-style: none; }
    NAVBAR — SOLID VARIANT (for inner pages)
    ============================================================ */
 .navbar--solid {
-  background: var(--cream);
+  background: var(--paper);
   padding: 14px 0;
-  box-shadow: 0 1px 20px rgba(0,0,0,.06);
+  box-shadow: 0 1px 20px rgba(74, 52, 38, 0.06);
+  border-bottom: 1px solid rgba(74, 52, 38, 0.06);
 }
 
 .navbar--solid .logo-text {
@@ -1150,7 +1152,7 @@ ul { list-style: none; }
    ============================================================ */
 .about-hero {
   padding: 140px 0 80px;
-  background: var(--cream);
+  background: var(--paper);
 }
 
 .about-hero-grid {
@@ -1178,22 +1180,24 @@ ul { list-style: none; }
 
 .about-hero-title {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5vw, 3.2rem);
-  font-weight: 600;
-  color: var(--dark);
-  line-height: 1.2;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.1;
+  letter-spacing: -0.5px;
   margin-bottom: 28px;
 }
 
 .about-hero-title em {
   font-style: italic;
-  color: var(--cocoa);
+  color: var(--terracotta);
+  font-weight: 400;
 }
 
 .about-hero-text {
-  font-size: 1.05rem;
-  color: var(--text);
-  line-height: 1.85;
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.75;
   margin-bottom: 16px;
 }
 
@@ -1201,12 +1205,12 @@ ul { list-style: none; }
    ABOUT PAGE — STORY SECTIONS (shared)
    ============================================================ */
 .story-section {
-  padding: 80px 0;
-  background: var(--white);
+  padding: 100px 0;
+  background: var(--paper);
 }
 
 .story-section--alt {
-  background: var(--cream);
+  background: var(--ivory);
 }
 
 .story-block {
@@ -1261,11 +1265,12 @@ ul { list-style: none; }
   bottom: 48px;
   right: 5%;
   width: 520px;
-  background: rgba(250, 247, 242, 0.96);
+  background: rgba(248, 244, 236, 0.97);
   backdrop-filter: blur(8px);
   padding: 48px;
   border-radius: var(--radius);
   box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(74, 52, 38, 0.06);
 }
 
 /* ============================================================
@@ -1273,7 +1278,7 @@ ul { list-style: none; }
    ============================================================ */
 .story-overlap {
   padding: 100px 0;
-  background: var(--cream);
+  background: var(--ivory);
 }
 
 .story-overlap-grid {
@@ -1309,7 +1314,7 @@ ul { list-style: none; }
   width: 55%;
   border-radius: var(--radius);
   overflow: hidden;
-  border: 5px solid var(--cream);
+  border: 5px solid var(--ivory);
   box-shadow: var(--shadow);
 }
 
@@ -1331,24 +1336,32 @@ ul { list-style: none; }
 .story-cursive {
   font-family: var(--font-display);
   font-style: italic;
+  font-weight: 400;
   font-size: 1.15rem;
   color: var(--cocoa);
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .story-heading {
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 600;
-  color: var(--dark);
-  line-height: 1.35;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.2;
+  letter-spacing: -0.3px;
   margin-bottom: 20px;
+}
+
+.story-heading em {
+  font-style: italic;
+  color: var(--cocoa);
+  font-weight: 400;
 }
 
 .story-text {
   font-size: 1rem;
-  color: var(--text);
-  line-height: 1.85;
+  color: var(--text-light);
+  line-height: 1.75;
   margin-bottom: 14px;
 }
 
@@ -1361,22 +1374,40 @@ ul { list-style: none; }
    ABOUT PAGE — BELIEF STATEMENT
    ============================================================ */
 .belief-section {
-  padding: 80px 0;
-  background: var(--dark);
+  padding: 100px 0;
+  background: var(--ink);
+  position: relative;
+  overflow: hidden;
+}
+
+.belief-section::before {
+  content: "\201C";
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-display);
+  font-size: 240px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.05);
+  font-weight: 500;
+  pointer-events: none;
 }
 
 .belief-content {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 
 .belief-heading {
   font-family: var(--font-display);
-  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
   font-weight: 500;
-  color: var(--white);
-  line-height: 1.6;
+  color: var(--paper);
+  line-height: 1.5;
+  letter-spacing: -0.2px;
   font-style: italic;
 }
 
@@ -1385,7 +1416,7 @@ ul { list-style: none; }
    ============================================================ */
 .years-section {
   padding: 100px 0;
-  background: var(--cream-medium);
+  background: var(--paper);
 }
 
 .years-grid {
@@ -1396,36 +1427,43 @@ ul { list-style: none; }
 }
 
 .years-text {
-  font-size: 1.05rem;
-  color: var(--text);
-  line-height: 1.85;
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.75;
   margin-top: 8px;
 }
 
 .years-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  gap: 24px;
 }
 
 .year-stat {
-  background: var(--white);
-  padding: 32px 28px;
+  background: var(--ivory);
+  padding: 36px 28px;
   border-radius: var(--radius);
   text-align: center;
+  border: 1px solid rgba(74, 52, 38, 0.06);
 }
 
 .year-stat-number {
   display: block;
   font-family: var(--font-display);
-  font-size: 2.4rem;
-  font-weight: 600;
-  color: var(--cocoa);
-  margin-bottom: 8px;
+  font-size: 2.6rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--terracotta);
+  letter-spacing: -1px;
+  margin-bottom: 10px;
 }
 
 .year-stat-label {
-  font-size: 0.88rem;
+  font-family: var(--font);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
   color: var(--text-light);
   line-height: 1.5;
 }
@@ -1434,23 +1472,25 @@ ul { list-style: none; }
    ABOUT PAGE — FUN FACTS
    ============================================================ */
 .funfacts-section {
-  padding: 80px 0;
-  background: var(--white);
+  padding: 100px 0;
+  background: var(--ivory);
 }
 
 .funfacts-cursive {
   font-family: var(--font-display);
   font-style: italic;
+  font-weight: 400;
   font-size: 1.3rem;
   color: var(--cocoa);
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .funfacts-title {
   font-family: var(--font-display);
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: var(--dark);
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: -0.3px;
   margin-bottom: 40px;
 }
 
@@ -1484,7 +1524,7 @@ ul { list-style: none; }
 
 .funfact-text {
   font-size: 0.95rem;
-  color: var(--text);
+  color: var(--text-light);
   line-height: 1.7;
   padding: 20px 4px;
 }
@@ -1493,20 +1533,20 @@ ul { list-style: none; }
    ABOUT PAGE — CTA
    ============================================================ */
 .about-cta {
-  padding: 100px 0;
-  background: var(--cream);
+  padding: 120px 0;
+  background: var(--paper);
   text-align: center;
 }
 
 .about-cta-content {
-  max-width: 640px;
+  max-width: 680px;
   margin: 0 auto;
 }
 
 .about-cta-text {
-  font-size: 1.05rem;
-  color: var(--text);
-  line-height: 1.85;
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.75;
   margin-bottom: 32px;
 }
 
