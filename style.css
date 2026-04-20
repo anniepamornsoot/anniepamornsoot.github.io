@@ -3912,3 +3912,244 @@ body.home-v2 {
   .similar-section { padding: 64px 0; }
   .property-body { padding: 48px 0 64px; }
 }
+
+/* ============================================================
+   SHARED PAGE HERO (Properties, Journal, Contact, Article)
+   ============================================================ */
+.page-hero {
+  background: var(--paper);
+  padding: 120px 0 72px;
+  border-bottom: 1px solid rgba(31,25,23,0.06);
+}
+
+.page-hero .section-label {
+  margin-bottom: 20px;
+}
+
+.page-hero-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2.6rem, 5.6vw, 4.6rem);
+  line-height: 1.05;
+  letter-spacing: -1.2px;
+  color: var(--ink);
+  margin: 0 0 24px;
+  max-width: 18ch;
+}
+
+.page-hero-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--cocoa);
+}
+
+.page-hero-sub {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--text-light);
+  max-width: 58ch;
+  margin: 0;
+}
+
+/* ============================================================
+   PROPERTIES LIST — FILTERS
+   ============================================================ */
+.prop-filters {
+  background: var(--paper);
+  padding: 40px 0 8px;
+  position: sticky;
+  top: 72px;
+  z-index: 20;
+  border-bottom: 1px solid rgba(31,25,23,0.06);
+}
+
+.prop-filters-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px 56px;
+  align-items: center;
+}
+
+.prop-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.prop-filter-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--sage-dark);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.prop-filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.prop-pill {
+  background: transparent;
+  border: 1px solid rgba(31,25,23,0.14);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.prop-pill:hover {
+  border-color: var(--cocoa);
+  color: var(--cocoa);
+}
+
+.prop-pill.is-active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+/* ============================================================
+   PROPERTIES LIST — GRID SECTION
+   ============================================================ */
+.prop-grid-section {
+  background: var(--paper);
+  padding: 72px 0 96px;
+}
+
+.prop-grid-section .propsv2-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 28px;
+  margin-bottom: 72px;
+}
+
+.prop-cta-band {
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: var(--radius);
+  padding: 44px 56px;
+  display: grid;
+  grid-template-columns: 1.6fr auto;
+  gap: 36px;
+  align-items: center;
+}
+
+.prop-cta-band p {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: var(--paper);
+  margin: 0;
+  max-width: 56ch;
+}
+
+.prop-cta-band .btn {
+  justify-self: end;
+  background: var(--sage-dark);
+  border-color: var(--sage-dark);
+  color: var(--paper);
+  white-space: nowrap;
+}
+
+.prop-cta-band .btn:hover {
+  background: transparent;
+  border-color: var(--paper);
+  color: var(--paper);
+}
+
+/* ============================================================
+   PROPERTIES LIST — AREAS SECTION (text cards, scoped override)
+   ============================================================ */
+.areas-section {
+  background: var(--ivory);
+  padding: 96px 0;
+}
+
+.areas-head {
+  margin-bottom: 48px;
+  max-width: 640px;
+}
+
+.areas-head .section-label {
+  margin-bottom: 16px;
+}
+
+.areas-head .section-title {
+  margin: 0;
+}
+
+.areas-section .areas-grid {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.areas-section .area-card {
+  position: static;
+  background: var(--paper);
+  border: 1px solid rgba(31,25,23,0.07);
+  border-radius: var(--radius);
+  padding: 36px 36px 40px;
+  min-height: 0;
+  cursor: default;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+  overflow: visible;
+}
+
+.areas-section .area-card:hover {
+  border-color: var(--sage);
+  transform: translateY(-2px);
+}
+
+.areas-section .area-card h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--ink);
+  margin: 0 0 10px;
+  letter-spacing: -0.3px;
+}
+
+.areas-section .area-card p {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  margin: 0;
+}
+
+/* ============================================================
+   PROPERTIES LIST — RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .page-hero { padding: 104px 0 56px; }
+  .prop-filters { position: static; padding: 32px 0 8px; }
+  .prop-filters-row { gap: 20px 32px; }
+  .prop-grid-section { padding: 56px 0 72px; }
+  .prop-grid-section .propsv2-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 56px; }
+  .prop-cta-band { grid-template-columns: 1fr; padding: 36px 32px; gap: 24px; }
+  .prop-cta-band .btn { justify-self: start; }
+  .prop-cta-band p { font-size: 1.3rem; }
+  .areas-section { padding: 72px 0; }
+  .areas-section .areas-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .page-hero { padding: 92px 0 44px; }
+  .page-hero-title { font-size: 2.2rem; }
+  .prop-filters-row { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .prop-filter-group { align-items: flex-start; flex-direction: column; gap: 10px; }
+  .prop-grid-section .propsv2-grid { grid-template-columns: 1fr; }
+  .prop-cta-band { padding: 28px 22px; }
+  .prop-cta-band p { font-size: 1.15rem; }
+  .areas-section .areas-grid { grid-template-columns: 1fr; }
+  .areas-section .area-card { padding: 28px 24px 32px; }
+}
