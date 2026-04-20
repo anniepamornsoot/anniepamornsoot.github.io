@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Phuket Living — Let's Have a Conversation</title>
+  <meta name="description" content="Book a free 30-minute call, send a message, or reach out on WhatsApp, Instagram or LINE. Always a human reply — never a template.">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar--solid" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><span class="logo-text">Phuket Living</span></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="properties.html" class="nav-link">Properties</a></li>
+        <li><a href="journal.html" class="nav-link">Journal</a></li>
+        <li><a href="contact.html" class="nav-link nav-link--cta nav-link--active">Contact Me</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label">Say Hi</p>
+      <h1 class="page-hero-title">Tell me where you are<br>in your <em>journey.</em></h1>
+      <p class="page-hero-sub">Dreaming, planning, or ready to view &mdash; every family starts somewhere different. Send a note and I'll reply personally within 24 hours. No template, no sales funnel.</p>
+    </div>
+  </section>
+
+  <!-- CHANNELS GRID -->
+  <section class="contact-channels-section">
+    <div class="container">
+      <div class="contact-channels-grid">
+        <a href="mailto:hello@phuketliving.co" class="contact-channel-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>hello@phuketliving.co</p>
+          <span class="contact-channel-meta">Reply within 24 hours</span>
+        </a>
+        <a href="#" class="contact-channel-card contact-channel-card--accent">
+          <i class="fab fa-whatsapp"></i>
+          <h3>WhatsApp</h3>
+          <p>+66 95 123 4567</p>
+          <span class="contact-channel-meta">Fastest for urgent things</span>
+        </a>
+        <a href="https://instagram.com/phuketliving" target="_blank" rel="noopener" class="contact-channel-card">
+          <i class="fab fa-instagram"></i>
+          <h3>Instagram</h3>
+          <p>@phuketliving</p>
+          <span class="contact-channel-meta">DMs always open</span>
+        </a>
+        <a href="#" class="contact-channel-card">
+          <i class="fab fa-line"></i>
+          <h3>LINE</h3>
+          <p>@phuketliving</p>
+          <span class="contact-channel-meta">For on-island chats</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="contact-form-section">
+    <div class="container">
+      <div class="contact-form-grid">
+        <div class="contact-form-side">
+          <p class="section-label">Or use the form</p>
+          <h2 class="section-title">Prefer to <em>write it out?</em></h2>
+          <p class="contact-form-text">Sometimes a longer message is easier. Share as much or as little as you want &mdash; I'll read it all before I reply.</p>
+
+          <div class="contact-promises">
+            <div class="contact-promise"><i class="fas fa-clock"></i><div><strong>Within 24 hours</strong><span>Always a human reply</span></div></div>
+            <div class="contact-promise"><i class="fas fa-shield-alt"></i><div><strong>Your details stay with me</strong><span>No third-party lists, ever</span></div></div>
+            <div class="contact-promise"><i class="fas fa-heart"></i><div><strong>No pressure, no pitch</strong><span>Just a conversation</span></div></div>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="event.preventDefault(); this.reset(); alert('Thank you! I\'ll be in touch within 24 hours.');">
+          <div class="contact-form-row">
+            <label>
+              <span>Your name</span>
+              <input type="text" required placeholder="Sarah Thompson">
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" required placeholder="sarah@email.com">
+            </label>
+          </div>
+          <label>
+            <span>Where are you in your journey?</span>
+            <select>
+              <option>Just dreaming &mdash; exploring the idea</option>
+              <option>Planning a move in the next 3&ndash;12 months</option>
+              <option>Ready to view homes soon</option>
+              <option>Already on-island, need help settling in</option>
+              <option>Something else</option>
+            </select>
+          </label>
+          <div class="contact-form-row">
+            <label>
+              <span>Family size</span>
+              <select>
+                <option>Just me</option>
+                <option>Couple, no kids</option>
+                <option>Family with 1 child</option>
+                <option>Family with 2+ children</option>
+              </select>
+            </label>
+            <label>
+              <span>Approximate budget (THB/month)</span>
+              <select>
+                <option>Under ฿40,000</option>
+                <option>฿40,000&ndash;80,000</option>
+                <option>฿80,000&ndash;150,000</option>
+                <option>Over ฿150,000</option>
+                <option>Not sure yet</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            <span>Tell me a bit more</span>
+            <textarea rows="5" placeholder="What's on your mind? Ages of kids, preferred areas, timeline, specific questions — anything helps."></textarea>
+          </label>
+          <label class="contact-form-check">
+            <input type="checkbox">
+            <span>Keep me on the Slow Letters list &mdash; one honest email every few weeks</span>
+          </label>
+          <button type="submit" class="btn btn--primary btn--full">Send the message</button>
+          <p class="contact-form-footnote">By sending, you agree to my simple <a href="#">privacy approach</a>. Your details stay with me.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ short -->
+  <section class="contact-faq">
+    <div class="container">
+      <div class="faq-head">
+        <p class="section-label">Quick Answers</p>
+        <h2 class="section-title">Before you <em>write in.</em></h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary><span>Is there a cost to our first conversation?</span><i class="fas fa-plus"></i></summary>
+          <p>No. The first 30-minute call is always free and there's no obligation afterwards. If we don't feel like the right fit, I'll happily point you elsewhere.</p>
+        </details>
+        <details class="faq-item">
+          <summary><span>How quickly do you usually reply?</span><i class="fas fa-plus"></i></summary>
+          <p>Within 24 hours on weekdays, sometimes faster. If you need something urgent, WhatsApp is the best channel.</p>
+        </details>
+        <details class="faq-item">
+          <summary><span>What timezone do you work in?</span><i class="fas fa-plus"></i></summary>
+          <p>I'm on GMT+7 (Phuket). I usually reply to messages between 8am and 7pm local time, and I'm happy to do calls early morning or late evening to suit European or American families.</p>
+        </details>
+        <details class="faq-item">
+          <summary><span>Do you work with families who aren't moving permanently?</span><i class="fas fa-plus"></i></summary>
+          <p>Often. Sabbatical families, gap-year families, 6-month trial relocations &mdash; all welcome. The help looks slightly different, but the heart is the same.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footerv2">
+    <div class="container">
+      <div class="footerv2-cta">
+        <div class="footerv2-cta-text">
+          <h2 class="footerv2-cta-title">This feels <em>right.</em></h2>
+          <p>Book a 30-minute call. No pitch, no pressure &mdash; just a conversation about whether Phuket fits your family.</p>
+        </div>
+        <div class="footerv2-cta-actions">
+          <a href="#" class="footerv2-book">Book your call <i class="fas fa-arrow-up-right-from-square"></i></a>
+          <a href="mailto:hello@phuketliving.co" class="footerv2-email">hello@phuketliving.co</a>
+        </div>
+      </div>
+      <div class="footerv2-top">
+        <div class="footerv2-brand">
+          <span class="footerv2-logo">Phuket <em>Living</em></span>
+          <span class="footerv2-tag">This feels right</span>
+          <p>A relocation partner for expat families moving to Phuket. Curated homes, lifestyle-first guidance.</p>
+        </div>
+        <div class="footerv2-links"><h4>Explore</h4><ul><li><a href="properties.html">Properties</a></li><li><a href="properties.html#areas">Areas</a></li><li><a href="properties.html">Shortlists</a></li><li><a href="journal.html">Journal</a></li></ul></div>
+        <div class="footerv2-links"><h4>Services</h4><ul><li><a href="services.html#relocation">Relocation</a></li><li><a href="services.html#schools">Schools</a></li><li><a href="services.html#legal">Legal &amp; visas</a></li><li><a href="services.html#settling">Settling in</a></li></ul></div>
+        <div class="footerv2-links"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="services.html">Approach</a></li><li><a href="index.html#testimonials">Testimonials</a></li><li><a href="#">Press</a></li></ul></div>
+        <div class="footerv2-links"><h4>Connect</h4><ul><li><a href="contact.html">Book a call</a></li><li><a href="https://instagram.com/phuketliving" target="_blank" rel="noopener">Instagram</a></li><li><a href="#">TikTok</a></li><li><a href="mailto:hello@phuketliving.co">Email</a></li></ul></div>
+      </div>
+      <div class="footerv2-bottom">
+        <p>&copy; 2026 Phuket Living. All rights reserved.</p>
+        <p>Made on the island.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    navToggle.addEventListener('click', () => { navMenu.classList.toggle('open'); navToggle.classList.toggle('open'); });
+    navMenu.querySelectorAll('.nav-link').forEach(link => link.addEventListener('click', () => { navMenu.classList.remove('open'); navToggle.classList.remove('open'); }));
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 60); });
+
+    const revealEls = document.querySelectorAll('.contact-channel-card, .contact-form, .contact-form-side, .faq-item, .page-hero-title, .page-hero-sub');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('revealed'); revealObserver.unobserve(entry.target); } });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => { el.classList.add('reveal'); revealObserver.observe(el); });
+  </script>
+</body>
+</html>
