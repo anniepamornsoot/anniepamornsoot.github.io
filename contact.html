@@ -3,212 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Phuket Living — Let's Have a Conversation</title>
-  <meta name="description" content="Book a free 30-minute call, send a message, or reach out on WhatsApp, Instagram or LINE. Always a human reply — never a template.">
+  <title>Contact — Phuket Living</title>
+  <meta name="description" content="Get in touch with Annie. No pitch, no pressure — just an honest conversation about your move to Phuket.">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav class="navbar navbar--solid" id="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo"><span class="logo-text">Phuket Living</span></a>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="properties.html" class="nav-link">Properties</a></li>
-        <li><a href="journal.html" class="nav-link">Journal</a></li>
-        <li><a href="contact.html" class="nav-link nav-link--cta nav-link--active">Contact Me</a></li>
-      </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    </div>
-  </nav>
+<nav class="site-nav">
+  <a href="index.html" class="logo">Phuket <em>Living</em></a>
+  <div class="nav-links" id="navLinks">
+    <a href="areas.html">Areas</a>
+    <a href="properties.html">Properties</a>
+    <a href="about.html">About</a>
+    <a href="resources.html">Resources</a>
+  </div>
+  <a href="contact.html" class="nav-cta" style="background:var(--green-dark)">Get in touch</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
 
-  <section class="page-hero">
-    <div class="container">
-      <p class="section-label">Say Hi</p>
-      <h1 class="page-hero-title">Tell me where you are<br>in your <em>journey.</em></h1>
-      <p class="page-hero-sub">Dreaming, planning, or ready to view &mdash; every family starts somewhere different. Send a note and I'll reply personally within 24 hours. No template, no sales funnel.</p>
-    </div>
-  </section>
+<div class="hero hero--left" style="background:var(--surface2)">
+  <p class="eyebrow">Get in touch</p>
+  <h1 style="font-size:28px">Let's start with<br>how you want to <em>live.</em></h1>
+  <p class="sub">No pitch, no pressure. Just an honest conversation about your move — and whether Phuket is the right fit.</p>
+</div>
 
-  <!-- CHANNELS GRID -->
-  <section class="contact-channels-section">
-    <div class="container">
-      <div class="contact-channels-grid">
-        <a href="mailto:hello@phuketliving.co" class="contact-channel-card">
-          <i class="fas fa-envelope"></i>
-          <h3>Email</h3>
-          <p>hello@phuketliving.co</p>
-          <span class="contact-channel-meta">Reply within 24 hours</span>
-        </a>
-        <a href="#" class="contact-channel-card contact-channel-card--accent">
-          <i class="fab fa-whatsapp"></i>
-          <h3>WhatsApp</h3>
-          <p>+66 95 123 4567</p>
-          <span class="contact-channel-meta">Fastest for urgent things</span>
-        </a>
-        <a href="https://instagram.com/phuketliving" target="_blank" rel="noopener" class="contact-channel-card">
-          <i class="fab fa-instagram"></i>
-          <h3>Instagram</h3>
-          <p>@phuketliving</p>
-          <span class="contact-channel-meta">DMs always open</span>
-        </a>
-        <a href="#" class="contact-channel-card">
-          <i class="fab fa-line"></i>
-          <h3>LINE</h3>
-          <p>@phuketliving</p>
-          <span class="contact-channel-meta">For on-island chats</span>
-        </a>
+<div id="form-view">
+  <div class="contact-wrap">
+    <div class="form-card">
+      <div class="field-group">
+        <div class="field-wrap"><label class="field-label">Your name</label><input type="text" placeholder="e.g. Sarah Johnson" id="f-name"></div>
+        <div class="field-wrap"><label class="field-label">Email address</label><input type="email" placeholder="you@example.com" id="f-email"></div>
+      </div>
+      <div class="field-wrap"><label class="field-label">Where are you relocating from?</label><input type="text" placeholder="e.g. Melbourne, Australia"></div>
+      <div class="field-wrap"><label class="field-label">Family situation</label><div class="chip-row"><span class="chip" onclick="chipSel(this,'fam')">Couple, no kids</span><span class="chip" onclick="chipSel(this,'fam')">Family with young kids</span><span class="chip" onclick="chipSel(this,'fam')">Family with teens</span><span class="chip" onclick="chipSel(this,'fam')">Retiring couple</span><span class="chip" onclick="chipSel(this,'fam')">Solo</span></div></div>
+      <div class="field-wrap"><label class="field-label">What matters most to you?</label><div class="chip-row"><span class="chip" onclick="this.classList.toggle('sel')">Schools &amp; family routine</span><span class="chip" onclick="this.classList.toggle('sel')">Peace and quiet</span><span class="chip" onclick="this.classList.toggle('sel')">Remote work setup</span><span class="chip" onclick="this.classList.toggle('sel')">Healthcare access</span><span class="chip" onclick="this.classList.toggle('sel')">Expat community</span><span class="chip" onclick="this.classList.toggle('sel')">Beach proximity</span></div><p class="field-hint">Select all that apply</p></div>
+      <div class="field-wrap"><label class="field-label">Rough monthly budget</label><select><option value="">Select a range</option><option>Under ฿30,000</option><option>฿30,000 – 50,000</option><option>฿50,000 – 80,000</option><option>฿80,000 – 120,000</option><option>฿120,000+</option><option>Not sure yet</option></select></div>
+      <div class="field-wrap"><label class="field-label">When are you planning to move?</label><div class="chip-row"><span class="chip" onclick="chipSel(this,'time')">Within 3 months</span><span class="chip" onclick="chipSel(this,'time')">3–6 months</span><span class="chip" onclick="chipSel(this,'time')">6–12 months</span><span class="chip" onclick="chipSel(this,'time')">Just exploring</span></div></div>
+      <div class="field-wrap" style="margin-bottom:20px"><label class="field-label">Anything else Annie should know?</label><textarea placeholder="Areas you've been considering, schools, questions — anything helps."></textarea><p class="field-hint">Optional, but the more context you share, the more useful the first conversation will be.</p></div>
+      <button class="submit-btn" onclick="submitForm()">Send message to Annie</button>
+      <p class="reassure">No spam. No follow-up pitch. Annie typically replies within 24 hours.</p>
+    </div>
+    <div>
+      <p class="sidebar-label">What happens next</p>
+      <div class="expect-row"><div class="expect-num">1</div><div><p class="expect-title">Annie reads your message personally</p><p class="expect-desc">Not a CRM autoresponder. She reads every inquiry herself and replies within 24 hours.</p></div></div>
+      <div class="expect-row"><div class="expect-num">2</div><div><p class="expect-title">A short conversation about your situation</p><p class="expect-desc">Via WhatsApp, email, or a short call — whichever you prefer. No commitment required.</p></div></div>
+      <div class="expect-row"><div class="expect-num">3</div><div><p class="expect-title">Area and property recommendations</p><p class="expect-desc">Based on what you've shared, Annie will suggest the areas and homes that actually fit.</p></div></div>
+      <div class="expect-row" style="margin-bottom:0"><div class="expect-num">4</div><div><p class="expect-title">Viewings — when you're ready</p><p class="expect-desc">No pressure to move fast. Annie accompanies every viewing in person.</p></div></div>
+      <div class="annie-card"><div class="annie-av">A</div><div><p class="annie-quote">"I reply to every message myself. Tell me as much or as little as you like — there's no wrong way to start."</p><p class="annie-name">— Annie, founder</p></div></div>
+      <div class="contact-direct">
+        <p>Prefer to reach out directly?</p>
+        <p class="dc">WhatsApp: <span>+66 XX XXX XXXX</span></p>
+        <p class="dc">Instagram: <span class="handle">@phuketliving</span></p>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- CONTACT FORM -->
-  <section class="contact-form-section">
-    <div class="container">
-      <div class="contact-form-grid">
-        <div class="contact-form-side">
-          <p class="section-label">Or use the form</p>
-          <h2 class="section-title">Prefer to <em>write it out?</em></h2>
-          <p class="contact-form-text">Sometimes a longer message is easier. Share as much or as little as you want &mdash; I'll read it all before I reply.</p>
+<div class="success-wrap" id="success-view">
+  <div class="success-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#1D9E75" stroke-width="1.5"/><path d="M7.5 12l3.5 3.5 6-7" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <h2 class="success-h">Message sent.<br><em>Annie will be in touch.</em></h2>
+  <p class="success-sub">She reads every inquiry personally and typically replies within 24 hours — often sooner. No automated responses, no sales pitch.</p>
+  <div class="success-detail"><p><strong>What to expect:</strong></p><p>A personal reply from Annie via email or WhatsApp, with a few follow-up questions about your situation — so she can point you in the right direction from the very first conversation.</p></div>
+  <div class="success-btns">
+    <a href="areas.html" class="success-cta">Explore areas while you wait →</a>
+    <button class="success-back" onclick="resetForm()">Send another message</button>
+  </div>
+</div>
 
-          <div class="contact-promises">
-            <div class="contact-promise"><i class="fas fa-clock"></i><div><strong>Within 24 hours</strong><span>Always a human reply</span></div></div>
-            <div class="contact-promise"><i class="fas fa-shield-alt"></i><div><strong>Your details stay with me</strong><span>No third-party lists, ever</span></div></div>
-            <div class="contact-promise"><i class="fas fa-heart"></i><div><strong>No pressure, no pitch</strong><span>Just a conversation</span></div></div>
-          </div>
-        </div>
+<footer class="site-footer">
+  <span class="footer-logo">Phuket Living</span>
+  <div class="footer-links"><a href="areas.html">Areas</a><a href="properties.html">Properties</a><a href="about.html">About</a><a href="resources.html">Resources</a></div>
+  <span class="footer-note">© 2025 Phuket Living</span>
+</footer>
 
-        <form class="contact-form" onsubmit="event.preventDefault(); this.reset(); alert('Thank you! I\'ll be in touch within 24 hours.');">
-          <div class="contact-form-row">
-            <label>
-              <span>Your name</span>
-              <input type="text" required placeholder="Sarah Thompson">
-            </label>
-            <label>
-              <span>Email</span>
-              <input type="email" required placeholder="sarah@email.com">
-            </label>
-          </div>
-          <label>
-            <span>Where are you in your journey?</span>
-            <select>
-              <option>Just dreaming &mdash; exploring the idea</option>
-              <option>Planning a move in the next 3&ndash;12 months</option>
-              <option>Ready to view homes soon</option>
-              <option>Already on-island, need help settling in</option>
-              <option>Something else</option>
-            </select>
-          </label>
-          <div class="contact-form-row">
-            <label>
-              <span>Family size</span>
-              <select>
-                <option>Just me</option>
-                <option>Couple, no kids</option>
-                <option>Family with 1 child</option>
-                <option>Family with 2+ children</option>
-              </select>
-            </label>
-            <label>
-              <span>Approximate budget (THB/month)</span>
-              <select>
-                <option>Under ฿40,000</option>
-                <option>฿40,000&ndash;80,000</option>
-                <option>฿80,000&ndash;150,000</option>
-                <option>Over ฿150,000</option>
-                <option>Not sure yet</option>
-              </select>
-            </label>
-          </div>
-          <label>
-            <span>Tell me a bit more</span>
-            <textarea rows="5" placeholder="What's on your mind? Ages of kids, preferred areas, timeline, specific questions — anything helps."></textarea>
-          </label>
-          <label class="contact-form-check">
-            <input type="checkbox">
-            <span>Keep me on the Slow Letters list &mdash; one honest email every few weeks</span>
-          </label>
-          <button type="submit" class="btn btn--primary btn--full">Send the message</button>
-          <p class="contact-form-footnote">By sending, you agree to my simple <a href="#">privacy approach</a>. Your details stay with me.</p>
-        </form>
-      </div>
-    </div>
-  </section>
+<script>
+document.getElementById('navToggle').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('open'));
 
-  <!-- FAQ short -->
-  <section class="contact-faq">
-    <div class="container">
-      <div class="faq-head">
-        <p class="section-label">Quick Answers</p>
-        <h2 class="section-title">Before you <em>write in.</em></h2>
-      </div>
-      <div class="faq-list">
-        <details class="faq-item" open>
-          <summary><span>Is there a cost to our first conversation?</span><i class="fas fa-plus"></i></summary>
-          <p>No. The first 30-minute call is always free and there's no obligation afterwards. If we don't feel like the right fit, I'll happily point you elsewhere.</p>
-        </details>
-        <details class="faq-item">
-          <summary><span>How quickly do you usually reply?</span><i class="fas fa-plus"></i></summary>
-          <p>Within 24 hours on weekdays, sometimes faster. If you need something urgent, WhatsApp is the best channel.</p>
-        </details>
-        <details class="faq-item">
-          <summary><span>What timezone do you work in?</span><i class="fas fa-plus"></i></summary>
-          <p>I'm on GMT+7 (Phuket). I usually reply to messages between 8am and 7pm local time, and I'm happy to do calls early morning or late evening to suit European or American families.</p>
-        </details>
-        <details class="faq-item">
-          <summary><span>Do you work with families who aren't moving permanently?</span><i class="fas fa-plus"></i></summary>
-          <p>Often. Sabbatical families, gap-year families, 6-month trial relocations &mdash; all welcome. The help looks slightly different, but the heart is the same.</p>
-        </details>
-      </div>
-    </div>
-  </section>
+function chipSel(el, group) {
+  el.closest('.chip-row').querySelectorAll('.chip').forEach(c => {
+    if (c.dataset.group === group || c.closest('.field-wrap') === el.closest('.field-wrap')) {}
+  });
+  el.closest('.chip-row').querySelectorAll('.chip').forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+}
 
-  <footer class="footerv2">
-    <div class="container">
-      <div class="footerv2-cta">
-        <div class="footerv2-cta-text">
-          <h2 class="footerv2-cta-title">This feels <em>right.</em></h2>
-          <p>Book a 30-minute call. No pitch, no pressure &mdash; just a conversation about whether Phuket fits your family.</p>
-        </div>
-        <div class="footerv2-cta-actions">
-          <a href="#" class="footerv2-book">Book your call <i class="fas fa-arrow-up-right-from-square"></i></a>
-          <a href="mailto:hello@phuketliving.co" class="footerv2-email">hello@phuketliving.co</a>
-        </div>
-      </div>
-      <div class="footerv2-top">
-        <div class="footerv2-brand">
-          <span class="footerv2-logo">Phuket <em>Living</em></span>
-          <span class="footerv2-tag">This feels right</span>
-          <p>A relocation partner for expat families moving to Phuket. Curated homes, lifestyle-first guidance.</p>
-        </div>
-        <div class="footerv2-links"><h4>Explore</h4><ul><li><a href="properties.html">Properties</a></li><li><a href="properties.html#areas">Areas</a></li><li><a href="properties.html">Shortlists</a></li><li><a href="journal.html">Journal</a></li></ul></div>
-        <div class="footerv2-links"><h4>Services</h4><ul><li><a href="services.html#relocation">Relocation</a></li><li><a href="services.html#schools">Schools</a></li><li><a href="services.html#legal">Legal &amp; visas</a></li><li><a href="services.html#settling">Settling in</a></li></ul></div>
-        <div class="footerv2-links"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="services.html">Approach</a></li><li><a href="index.html#testimonials">Testimonials</a></li><li><a href="#">Press</a></li></ul></div>
-        <div class="footerv2-links"><h4>Connect</h4><ul><li><a href="contact.html">Book a call</a></li><li><a href="https://instagram.com/phuketliving" target="_blank" rel="noopener">Instagram</a></li><li><a href="#">TikTok</a></li><li><a href="mailto:hello@phuketliving.co">Email</a></li></ul></div>
-      </div>
-      <div class="footerv2-bottom">
-        <p>&copy; 2026 Phuket Living. All rights reserved.</p>
-        <p>Made on the island.</p>
-      </div>
-    </div>
-  </footer>
+function submitForm() {
+  const name = document.getElementById('f-name').value.trim();
+  const email = document.getElementById('f-email').value.trim();
+  document.getElementById('f-name').style.borderColor = name ? '' : '#E24B4A';
+  document.getElementById('f-email').style.borderColor = email ? '' : '#E24B4A';
+  if (!name || !email) return;
+  document.getElementById('form-view').style.display = 'none';
+  document.getElementById('success-view').style.display = 'block';
+}
 
-  <script>
-    const navToggle = document.getElementById('navToggle');
-    const navMenu = document.getElementById('navMenu');
-    navToggle.addEventListener('click', () => { navMenu.classList.toggle('open'); navToggle.classList.toggle('open'); });
-    navMenu.querySelectorAll('.nav-link').forEach(link => link.addEventListener('click', () => { navMenu.classList.remove('open'); navToggle.classList.remove('open'); }));
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 60); });
-
-    const revealEls = document.querySelectorAll('.contact-channel-card, .contact-form, .contact-form-side, .faq-item, .page-hero-title, .page-hero-sub');
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('revealed'); revealObserver.unobserve(entry.target); } });
-    }, { threshold: 0.15 });
-    revealEls.forEach(el => { el.classList.add('reveal'); revealObserver.observe(el); });
-  </script>
+function resetForm() {
+  document.getElementById('form-view').style.display = 'block';
+  document.getElementById('success-view').style.display = 'none';
+}
+</script>
 </body>
 </html>

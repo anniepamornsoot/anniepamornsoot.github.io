@@ -3,597 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phuket Living | Your Trusted Guide to Relocating to Phuket</title>
-  <meta name="description" content="Helping expat families find their dream home in Phuket. Personal, unbiased relocation guidance from someone who actually lives here.">
-
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Phuket Living — Relocation for Expat Families</title>
+  <meta name="description" content="We help expat families relocate to Phuket with confidence — starting with how you want to live, not what's available.">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="home-v2">
+<body>
 
-  <!-- ============================================================
-       ANNOUNCEMENT BAR
-  ============================================================ -->
-  <div class="announce-bar">
-    <span><i class="fas fa-seedling"></i> Free 30-min relocation consultations available for April &mdash; limited spots</span>
+<nav class="site-nav">
+  <a href="index.html" class="logo">Phuket <em>Living</em></a>
+  <div class="nav-links" id="navLinks">
+    <a href="areas.html">Areas</a>
+    <a href="properties.html">Properties</a>
+    <a href="about.html">About</a>
+    <a href="resources.html">Resources</a>
   </div>
+  <a href="contact.html" class="nav-cta">Get in touch</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
 
-  <!-- ============================================================
-       NAVIGATION
-  ============================================================ -->
-  <nav class="navbar navbar--v2" id="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <span class="logo-text">Phuket <em>Living</em></span>
-      </a>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#properties" class="nav-link">Properties</a></li>
-        <li><a href="#journal" class="nav-link">Journal</a></li>
-        <li><a href="#contact" class="nav-link nav-link--cta">Contact Me</a></li>
-      </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+<div class="hero">
+  <p class="eyebrow">Phuket relocation · family-focused</p>
+  <h1>Choosing the <em>right area</em><br>matters more than<br>the right property.</h1>
+  <p class="sub">We help expat families relocate to Phuket with confidence — starting with how you want to live, not what's available.</p>
+  <div class="hero-btns">
+    <a href="areas.html" class="btn-primary">Explore areas →</a>
+    <a href="properties.html" class="btn-secondary">Browse properties</a>
+  </div>
+</div>
+
+<div class="section tinted">
+  <p class="section-label">Where you'll live</p>
+  <h2>Every area in Phuket<br>lives <em>differently.</em></h2>
+  <p class="sec-sub">Choose an area first — then we'll find the right home within it.</p>
+  <div class="cards-grid">
+    <a href="area-guide.html" class="card">
+      <div class="card-img"><svg width="40" height="40" viewBox="0 0 40 40"><rect x="6" y="20" width="28" height="16" rx="2" fill="#222"/><polygon points="2,21 20,8 38,21" fill="#222"/></svg><span class="area-badge" style="background:#E1F5EE;color:#085041">Bangtao</span></div>
+      <div class="card-body"><p class="card-title">Bangtao</p><p class="card-desc">International schools, expat community, structured lifestyle.</p><div class="card-tags"><span class="tag">Best for families</span></div></div>
+      <div class="card-cta"><span class="card-link">Full guide →</span></div>
+    </a>
+    <a href="area-guide.html" class="card">
+      <div class="card-img"><svg width="40" height="40" viewBox="0 0 40 40"><rect x="6" y="20" width="28" height="16" rx="2" fill="#222"/><polygon points="2,21 20,8 38,21" fill="#222"/></svg><span class="area-badge" style="background:#FAEEDA;color:#633806">Rawai</span></div>
+      <div class="card-body"><p class="card-title">Rawai</p><p class="card-desc">Quieter pace, local feel, sea views, close to Nai Harn beach.</p><div class="card-tags"><span class="tag">Best for relaxed living</span></div></div>
+      <div class="card-cta"><span class="card-link">Full guide →</span></div>
+    </a>
+    <div class="card">
+      <div class="card-img"><svg width="40" height="40" viewBox="0 0 40 40"><rect x="6" y="20" width="28" height="16" rx="2" fill="#222"/><polygon points="2,21 20,8 38,21" fill="#222"/></svg><span class="area-badge" style="background:#EEEDFE;color:#3C3489">Cherngtalay</span></div>
+      <div class="card-body"><p class="card-title">Cherngtalay</p><p class="card-desc">Modern, connected, growing expat hub near Laguna.</p><div class="card-tags"><span class="tag">Best for remote workers</span></div></div>
+      <div class="card-cta"><span class="card-link">Full guide →</span></div>
     </div>
-  </nav>
-
-  <!-- ============================================================
-       HERO — Photo + Floating Card + Rotating Badge
-  ============================================================ -->
-  <section class="hv2-hero" id="home">
-    <div class="hv2-hero-inner">
-      <div class="hv2-hero-photo">
-        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1000&q=80" alt="Your Phuket relocation guide">
-        <span class="hv2-hero-tag"><i class="fas fa-map-marker-alt"></i> Based in Bang Tao, Phuket</span>
-      </div>
-
-      <div class="hv2-hero-card">
-        <p class="hv2-hero-kicker"><span class="hv2-hero-dot"></span> Thinking about moving?</p>
-        <h1 class="hv2-hero-title">Relocating to <em>Phuket?</em><br>I'm Here to Make It Simple.</h1>
-        <p class="hv2-hero-sub">Personal, unbiased guidance from someone who actually lives here. From finding the right home to settling your family in &mdash; I'll walk with you every step.</p>
-        <div class="hv2-hero-cta">
-          <a href="#contact" class="hv2-btn-dark">Start the Conversation <i class="fas fa-arrow-right"></i></a>
-          <a href="about.html" class="hv2-btn-ghost">My Story</a>
-        </div>
-        <div class="hv2-hero-trust">
-          <span><strong>7+</strong> years on the island</span>
-          <span class="hv2-trust-sep"></span>
-          <span><strong>50+</strong> families relocated</span>
-        </div>
-      </div>
-
-      <div class="hv2-badge" aria-hidden="true">
-        <svg viewBox="0 0 200 200" width="160" height="160">
-          <defs>
-            <path id="badge-circle" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
-          </defs>
-          <circle cx="100" cy="100" r="78" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"/>
-          <text class="hv2-badge-text" font-family="DM Sans" font-size="12" letter-spacing="4" fill="currentColor">
-            <textPath href="#badge-circle" startOffset="0">RELOCATION GUIDE &middot; PHUKET &middot; SINCE 2019 &middot; </textPath>
-          </text>
-          <text x="100" y="106" text-anchor="middle" font-family="Playfair Display" font-style="italic" font-size="22" fill="currentColor">your</text>
-        </svg>
-      </div>
+    <div class="card">
+      <div class="card-img"><svg width="40" height="40" viewBox="0 0 40 40"><rect x="6" y="20" width="28" height="16" rx="2" fill="#222"/><polygon points="2,21 20,8 38,21" fill="#222"/></svg><span class="area-badge" style="background:#FAECE7;color:#712B13">Nai Harn</span></div>
+      <div class="card-body"><p class="card-title">Nai Harn</p><p class="card-desc">Calm, scenic, less touristy — great for a quieter chapter.</p><div class="card-tags"><span class="tag">Best for retirees</span></div></div>
+      <div class="card-cta"><span class="card-link">Full guide →</span></div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- ============================================================
-       HOW I HELP — 01 / 02 / 03
-  ============================================================ -->
-  <section class="howhelp" id="services">
-    <div class="container">
-      <div class="howhelp-head">
-        <p class="v2-kicker">Ways to work together</p>
-        <h2 class="v2-heading">Whether you're still dreaming or ready to pack your bags,<br>there's a way I can help.</h2>
-      </div>
-      <div class="howhelp-grid">
-        <div class="howhelp-card">
-          <div class="howhelp-img">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Property search">
-            <span class="howhelp-tag">Free for you</span>
-          </div>
-          <span class="howhelp-num">01 / Property Search</span>
-          <h3>Finding Your Home</h3>
-          <p>I connect you with the right homes for your family &mdash; pre-vetted, honestly reviewed, and matched to your budget and lifestyle. My fee comes from the owner, never you.</p>
-          <a href="#properties" class="howhelp-link">See properties <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="howhelp-card">
-          <div class="howhelp-img">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Area discovery tour in Phuket">
-            <span class="howhelp-tag">Ask for details</span>
-          </div>
-          <span class="howhelp-num">02 / Area Tours</span>
-          <h3>Half-Day Discovery Tours</h3>
-          <p>Before you commit to a move, spend a day with me. I'll show you the neighbourhoods, schools, and everyday spots that matter &mdash; filtered through what actually works for families.</p>
-          <a href="#contact" class="howhelp-link">Enquire now <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="howhelp-card">
-          <div class="howhelp-img">
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80" alt="Instagram conversation">
-            <span class="howhelp-tag">No commitment</span>
-          </div>
-          <span class="howhelp-num">03 / Still Deciding?</span>
-          <h3>Just Have a Question?</h3>
-          <p>No booking, no commitment. Send me a DM on Instagram and let's chat &mdash; about schools, visas, rent, or just what a Tuesday morning in Phuket really looks like.</p>
-          <a href="https://instagram.com/phuketliving" target="_blank" class="howhelp-link">DM on Instagram <i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="section">
+  <div class="section-header">
+    <div><p class="section-label">Handpicked homes</p><h2>A few homes we'd<br>recommend <em>right now.</em></h2></div>
+    <a href="properties.html" class="card-link">See all →</a>
+  </div>
+  <p class="sec-sub">Not a full catalogue — just the ones worth your attention this month.</p>
+  <div class="shortlist-bar"><span>Shortlist — <strong id="sl-count">0 properties selected</strong></span><a href="contact.html" class="req-btn" id="sl-btn" style="pointer-events:none;opacity:.5">Request viewings ↗</a></div>
+  <div class="cards-grid">
+    <div class="card"><div class="card-img"><svg width="36" height="36" viewBox="0 0 40 40"><rect x="6" y="20" width="28" height="16" rx="2" fill="#222"/><polygon points="2,21 20,8 38,21" fill="#222"/></svg><span class="area-badge" style="background:#E1F5EE;color:#085041">Bangtao</span><button class="add-btn" onclick="toggleSL(this)">+</button></div><div class="card-body"><p class="card-title">4-bed pool villa</p><p class="card-meta">320 sqm · private pool</p><p class="card-price">฿65,000 / mo</p><div class="card-tags"><span class="tag">Near schools</span><span class="tag">Pool</span></div></div></div>
+    <div class="card"><div class="card-img"><svg width="36" height="36" viewBox="0 0 40 40"><rect x="6" y="20" width="28" height="16" rx="2" fill="#222"/><polygon points="2,21 20,8 38,21" fill="#222"/></svg><span class="area-badge" style="background:#FAEEDA;color:#633806">Rawai</span><button class="add-btn" onclick="toggleSL(this)">+</button></div><div class="card-body"><p class="card-title">3-bed townhouse</p><p class="card-meta">210 sqm · sea views</p><p class="card-price">฿38,000 / mo</p><div class="card-tags"><span class="tag">Quiet</span><span class="tag">Sea views</span></div></div></div>
+    <div class="card"><div class="card-img"><svg width="36" height="36" viewBox="0 0 40 40"><rect x="6" y="20" width="28" height="16" rx="2" fill="#222"/><polygon points="2,21 20,8 38,21" fill="#222"/></svg><span class="area-badge" style="background:#EEEDFE;color:#3C3489">Cherngtalay</span><button class="add-btn" onclick="toggleSL(this)">+</button></div><div class="card-body"><p class="card-title">3-bed modern villa</p><p class="card-meta">260 sqm · pool</p><p class="card-price">฿52,000 / mo</p><div class="card-tags"><span class="tag">Pool</span><span class="tag">Community</span></div></div></div>
+  </div>
+</div>
 
-  <!-- ============================================================
-       MEET YOUR GUIDE — Portrait + Personal Intro
-  ============================================================ -->
-  <section class="meetv2" id="meet">
-    <div class="container">
-      <div class="meetv2-grid">
-        <div class="meetv2-photo">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900&q=80" alt="Your Phuket Living guide">
-          <span class="meetv2-caption">Hi, I'm your guide</span>
-        </div>
-        <div class="meetv2-body">
-          <p class="v2-kicker">Meet your guide</p>
-          <h2 class="meetv2-title">I'm your trusted<br>guide to moving<br>to <em>Phuket.</em></h2>
-          <p class="meetv2-text">I moved here seven years ago with nothing but a suitcase and a hunch. Today, I help families make the same leap &mdash; but without the overwhelm.</p>
-          <p class="meetv2-text">If you've been following me on Instagram, you already know my honest, no-sales-pitch approach. This is where the conversation gets real.</p>
-          <a href="about.html" class="v2-link">Read my story <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="section tinted">
+  <p class="section-label">How it works</p>
+  <h2>Three steps.<br>No <em>overwhelm.</em></h2>
+  <p class="sec-sub">We move at your pace — you're never pressured.</p>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><div><p class="step-title">Tell us how you want to live</p><p class="step-desc">Schools, lifestyle pace, budget, timeline. No form — just a conversation.</p></div></div>
+    <div class="step"><div class="step-num">2</div><div><p class="step-title">We match you to the right areas and homes</p><p class="step-desc">A curated shortlist — not 40 listings. Only properties that fit.</p></div></div>
+    <div class="step"><div class="step-num">3</div><div><p class="step-title">View properties with Annie in person</p><p class="step-desc">She accompanies every viewing and answers questions on the ground.</p></div></div>
+  </div>
+</div>
 
-  <!-- ============================================================
-       FEATURED PROPERTIES — Priority Section
-  ============================================================ -->
-  <section class="propsv2" id="properties">
-    <div class="container">
-      <div class="propsv2-head">
-        <div>
-          <p class="v2-kicker">Featured properties</p>
-          <h2 class="v2-heading">Find your <em>dream</em> property</h2>
-        </div>
-        <a href="#contact" class="v2-link v2-link--right">See all <i class="fas fa-arrow-right"></i></a>
-      </div>
+<div class="section">
+  <p class="section-label">Why families trust us</p>
+  <h2 style="margin-bottom:20px"><em>Clarity</em> in every step.</h2>
+  <div class="trust-grid">
+    <div class="trust-stat"><div class="trust-num">4.6★</div><div class="trust-label">Average rating</div></div>
+    <div class="trust-stat"><div class="trust-num">60+</div><div class="trust-label">Families relocated</div></div>
+    <div class="trust-stat"><div class="trust-num">6 areas</div><div class="trust-label">Covered in depth</div></div>
+  </div>
+  <div class="quote-card"><p class="quote-text">"We didn't know which area would suit us — Annie helped us think through our routine first. We ended up in Bangtao and it's been perfect for the kids."</p><p class="quote-attr">— Sarah, relocated from Melbourne · 2024</p></div>
+  <div class="quote-card"><p class="quote-text">"No pressure, no endless listings. She sent us three properties and one was exactly right. The process felt human."</p><p class="quote-attr">— James &amp; Claire, relocated from London · 2023</p></div>
+</div>
 
-      <div class="propsv2-filters">
-        <button class="chip chip--active">All Types</button>
-        <button class="chip">Villas</button>
-        <button class="chip">Apartments</button>
-        <button class="chip">Family Homes</button>
-        <button class="chip">Beachfront</button>
-        <button class="chip">Penthouses</button>
-      </div>
+<div class="footer-cta">
+  <h2>Relocating is a life decision,<br>not a property transaction.</h2>
+  <p>Start with a conversation — not a search.</p>
+  <a href="properties.html" class="btn-light">Browse properties →</a>
+  <a href="contact.html" class="btn-ghost">Get in touch</a>
+</div>
 
-      <div class="propsv2-grid">
-        <!-- Card 1 -->
-        <article class="propv2-card">
-          <div class="propv2-img">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Laguna Pool Villa">
-            <button class="propv2-fav" aria-label="Save"><i class="far fa-heart"></i></button>
-            <span class="propv2-badge">Family favourite</span>
-          </div>
-          <div class="propv2-body">
-            <div class="propv2-price-row">
-              <span class="propv2-price">฿85,000</span>
-              <span class="propv2-per">/month</span>
-            </div>
-            <h3 class="propv2-title">Elegant Contemporary Villa with Garden</h3>
-            <p class="propv2-loc"><i class="fas fa-map-marker-alt"></i> Laguna, Bang Tao &middot; Phuket</p>
-            <div class="propv2-meta">
-              <span><i class="fas fa-bed"></i> 4 Beds</span>
-              <span><i class="fas fa-bath"></i> 3 Baths</span>
-              <span><i class="fas fa-expand"></i> 320 sqm</span>
-            </div>
-            <a href="#contact" class="propv2-arrow" aria-label="View details"><i class="fas fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </article>
+<footer class="site-footer">
+  <span class="footer-logo">Phuket Living</span>
+  <div class="footer-links"><a href="areas.html">Areas</a><a href="properties.html">Properties</a><a href="about.html">About</a><a href="resources.html">Resources</a></div>
+  <span class="footer-note">© 2025 Phuket Living</span>
+</footer>
 
-        <!-- Card 2 -->
-        <article class="propv2-card">
-          <div class="propv2-img">
-            <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80" alt="Kata Sea View Estate">
-            <button class="propv2-fav" aria-label="Save"><i class="far fa-heart"></i></button>
-            <span class="propv2-badge">Sea view</span>
-          </div>
-          <div class="propv2-body">
-            <div class="propv2-price-row">
-              <span class="propv2-price">฿120,000</span>
-              <span class="propv2-per">/month</span>
-            </div>
-            <h3 class="propv2-title">Luxury Beachfront Retreat with Terrace</h3>
-            <p class="propv2-loc"><i class="fas fa-map-marker-alt"></i> Kata, West Coast &middot; Phuket</p>
-            <div class="propv2-meta">
-              <span><i class="fas fa-bed"></i> 5 Beds</span>
-              <span><i class="fas fa-bath"></i> 4 Baths</span>
-              <span><i class="fas fa-expand"></i> 450 sqm</span>
-            </div>
-            <a href="#contact" class="propv2-arrow" aria-label="View details"><i class="fas fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="propv2-card">
-          <div class="propv2-img">
-            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80" alt="Modern Minimalist Home">
-            <button class="propv2-fav" aria-label="Save"><i class="far fa-heart"></i></button>
-            <span class="propv2-badge">Quiet street</span>
-          </div>
-          <div class="propv2-body">
-            <div class="propv2-price-row">
-              <span class="propv2-price">฿55,000</span>
-              <span class="propv2-per">/month</span>
-            </div>
-            <h3 class="propv2-title">Modern Minimalist Home with Smart Features</h3>
-            <p class="propv2-loc"><i class="fas fa-map-marker-alt"></i> Rawai, South Phuket</p>
-            <div class="propv2-meta">
-              <span><i class="fas fa-bed"></i> 3 Beds</span>
-              <span><i class="fas fa-bath"></i> 2 Baths</span>
-              <span><i class="fas fa-expand"></i> 240 sqm</span>
-            </div>
-            <a href="#contact" class="propv2-arrow" aria-label="View details"><i class="fas fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </article>
-
-        <!-- Card 4 -->
-        <article class="propv2-card">
-          <div class="propv2-img">
-            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80" alt="Opulent Penthouse">
-            <button class="propv2-fav" aria-label="Save"><i class="far fa-heart"></i></button>
-          </div>
-          <div class="propv2-body">
-            <div class="propv2-price-row">
-              <span class="propv2-price">฿95,000</span>
-              <span class="propv2-per">/month</span>
-            </div>
-            <h3 class="propv2-title">Opulent Penthouse with Rooftop Deck</h3>
-            <p class="propv2-loc"><i class="fas fa-map-marker-alt"></i> Bang Tao &middot; Phuket</p>
-            <div class="propv2-meta">
-              <span><i class="fas fa-bed"></i> 3 Beds</span>
-              <span><i class="fas fa-bath"></i> 3 Baths</span>
-              <span><i class="fas fa-expand"></i> 280 sqm</span>
-            </div>
-            <a href="#contact" class="propv2-arrow" aria-label="View details"><i class="fas fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </article>
-
-        <!-- Card 5 -->
-        <article class="propv2-card">
-          <div class="propv2-img">
-            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80" alt="Stylish Studio Apartment">
-            <button class="propv2-fav" aria-label="Save"><i class="far fa-heart"></i></button>
-          </div>
-          <div class="propv2-body">
-            <div class="propv2-price-row">
-              <span class="propv2-price">฿38,000</span>
-              <span class="propv2-per">/month</span>
-            </div>
-            <h3 class="propv2-title">Stylish Studio Apartment with Balcony</h3>
-            <p class="propv2-loc"><i class="fas fa-map-marker-alt"></i> Kamala &middot; Phuket</p>
-            <div class="propv2-meta">
-              <span><i class="fas fa-bed"></i> 1 Bed</span>
-              <span><i class="fas fa-bath"></i> 1 Bath</span>
-              <span><i class="fas fa-expand"></i> 65 sqm</span>
-            </div>
-            <a href="#contact" class="propv2-arrow" aria-label="View details"><i class="fas fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </article>
-
-        <!-- Card 6 -->
-        <article class="propv2-card">
-          <div class="propv2-img">
-            <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=800&q=80" alt="Classic Colonial House">
-            <button class="propv2-fav" aria-label="Save"><i class="far fa-heart"></i></button>
-          </div>
-          <div class="propv2-body">
-            <div class="propv2-price-row">
-              <span class="propv2-price">฿72,000</span>
-              <span class="propv2-per">/month</span>
-            </div>
-            <h3 class="propv2-title">Classic Colonial House with Spacious Porch</h3>
-            <p class="propv2-loc"><i class="fas fa-map-marker-alt"></i> Phuket Old Town</p>
-            <div class="propv2-meta">
-              <span><i class="fas fa-bed"></i> 3 Beds</span>
-              <span><i class="fas fa-bath"></i> 3 Baths</span>
-              <span><i class="fas fa-expand"></i> 220 sqm</span>
-            </div>
-            <a href="#contact" class="propv2-arrow" aria-label="View details"><i class="fas fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       BELIEF — Dark quote band
-  ============================================================ -->
-  <section class="believe-band">
-    <div class="container">
-      <p class="v2-kicker v2-kicker--light">What I believe</p>
-      <h2 class="believe-title"><em>Relocating is a life decision.</em><br>Not a property transaction.</h2>
-      <p class="believe-sub">My job isn't to close a deal &mdash; it's to help your family land somewhere you can actually thrive.</p>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       JOURNAL / BLOG — Priority Section
-  ============================================================ -->
-  <section class="journal" id="journal">
-    <div class="container">
-      <div class="journal-head">
-        <div>
-          <p class="v2-kicker">The journal</p>
-          <h2 class="v2-heading">Stories, guides &amp; <em>honest notes</em><br>from life in Phuket</h2>
-        </div>
-        <a href="#" class="v2-link v2-link--right">All posts <i class="fas fa-arrow-right"></i></a>
-      </div>
-
-      <div class="journal-grid">
-        <article class="journal-card journal-card--featured">
-          <a href="#" class="journal-img">
-            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80" alt="International schools in Phuket">
-          </a>
-          <div class="journal-meta">
-            <span class="journal-tag">Schools</span>
-            <span>&middot;</span>
-            <span>6 min read</span>
-          </div>
-          <h3><a href="#">The honest guide to choosing an international school in Phuket</a></h3>
-          <p>What the admissions brochures don't say, what the fees actually cover, and the 4 questions every parent should ask.</p>
-          <span class="journal-more">Read the post <i class="fas fa-arrow-right"></i></span>
-        </article>
-
-        <article class="journal-card">
-          <a href="#" class="journal-img">
-            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80" alt="Cost of living in Phuket">
-          </a>
-          <div class="journal-meta">
-            <span class="journal-tag">Cost of Living</span>
-            <span>&middot;</span>
-            <span>8 min read</span>
-          </div>
-          <h3><a href="#">What a family of 4 actually spends per month in Phuket</a></h3>
-          <p>A real, line-by-line breakdown from three families I've helped relocate &mdash; with the unexpected expenses nobody warns you about.</p>
-          <span class="journal-more">Read the post <i class="fas fa-arrow-right"></i></span>
-        </article>
-
-        <article class="journal-card">
-          <a href="#" class="journal-img">
-            <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?w=800&q=80" alt="Best neighborhoods in Phuket">
-          </a>
-          <div class="journal-meta">
-            <span class="journal-tag">Neighbourhoods</span>
-            <span>&middot;</span>
-            <span>5 min read</span>
-          </div>
-          <h3><a href="#">Bang Tao vs Rawai: which Phuket area fits your family?</a></h3>
-          <p>A side-by-side from someone who's lived in both. Schools, community feel, daily life, and the trade-offs nobody mentions.</p>
-          <span class="journal-more">Read the post <i class="fas fa-arrow-right"></i></span>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       TESTIMONIALS
-  ============================================================ -->
-  <section class="testim-v2">
-    <div class="container">
-      <div class="testim-v2-head">
-        <p class="v2-kicker">Kind words</p>
-        <h2 class="v2-heading">Families who <em>found their home</em>.</h2>
-      </div>
-      <div class="testim-v2-grid">
-        <figure class="testim-v2-card">
-          <div class="testim-v2-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <blockquote>Moving from London felt overwhelming until we found her. She pre-vetted every property, flagged the right schools, and made the whole process feel effortless. Worth every baht.</blockquote>
-          <figcaption>
-            <strong>Sarah &amp; James K.</strong>
-            <span>Relocated from London, UK</span>
-          </figcaption>
-        </figure>
-        <figure class="testim-v2-card">
-          <div class="testim-v2-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <blockquote>The school guidance alone was invaluable. She understood our family, not just our budget. Six months in, our kids have friends and we have a community.</blockquote>
-          <figcaption>
-            <strong>The Martinez Family</strong>
-            <span>Relocated from Sydney, AU</span>
-          </figcaption>
-        </figure>
-        <figure class="testim-v2-card">
-          <div class="testim-v2-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <blockquote>She connected us with an amazing community of families. Phuket truly feels like home now &mdash; we couldn't have done it alone.</blockquote>
-          <figcaption>
-            <strong>David &amp; Mika L.</strong>
-            <span>Relocated from Tokyo, JP</span>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       INSTAGRAM STRIP
-  ============================================================ -->
-  <section class="insta-strip">
-    <div class="container">
-      <div class="insta-head">
-        <p class="v2-kicker">Follow along</p>
-        <h2 class="insta-title">@phuketliving &mdash; <em>daily from the island</em></h2>
-      </div>
-      <div class="insta-grid">
-        <a href="#" class="insta-tile"><img src="https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?w=500&q=80" alt=""><i class="fab fa-instagram"></i></a>
-        <a href="#" class="insta-tile"><img src="https://images.unsplash.com/photo-1484820540004-14229fe36ca4?w=500&q=80" alt=""><i class="fab fa-instagram"></i></a>
-        <a href="#" class="insta-tile"><img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=500&q=80" alt=""><i class="fab fa-instagram"></i></a>
-        <a href="#" class="insta-tile"><img src="https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=500&q=80" alt=""><i class="fab fa-instagram"></i></a>
-        <a href="#" class="insta-tile"><img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=500&q=80" alt=""><i class="fab fa-instagram"></i></a>
-        <a href="#" class="insta-tile"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80" alt=""><i class="fab fa-instagram"></i></a>
-      </div>
-      <div class="insta-cta">
-        <a href="https://instagram.com/phuketliving" target="_blank" class="insta-follow"><i class="fab fa-instagram"></i> Follow @phuketliving</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       CONTACT / CTA
-  ============================================================ -->
-  <section class="contactv2" id="contact">
-    <div class="container">
-      <div class="contactv2-inner">
-        <div class="contactv2-left">
-          <p class="v2-kicker v2-kicker--light">Let's talk</p>
-          <h2 class="contactv2-title">Your next chapter starts<br>with <em>one conversation.</em></h2>
-          <p class="contactv2-text">Tell me where you are in your journey &mdash; just dreaming, actively planning, or ready to view. I reply within 24 hours, and there's no sales pitch waiting on the other side.</p>
-          <div class="contactv2-channels">
-            <a href="#" class="contactv2-channel"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
-            <a href="#" class="contactv2-channel"><i class="fab fa-instagram"></i><span>Instagram</span></a>
-            <a href="#" class="contactv2-channel"><i class="fab fa-line"></i><span>LINE</span></a>
-            <a href="mailto:hello@phuketliving.com" class="contactv2-channel"><i class="fas fa-envelope"></i><span>Email</span></a>
-          </div>
-          <p class="contactv2-promise"><i class="fas fa-clock"></i> Reply within 24 hours &middot; Always from me, never a template</p>
-        </div>
-        <form class="contactv2-form" id="contactForm">
-          <h3>Book a free consultation</h3>
-          <div class="form-group"><input type="text" placeholder="Your name" required></div>
-          <div class="form-group"><input type="email" placeholder="Email address" required></div>
-          <div class="form-group">
-            <select>
-              <option value="" disabled selected>Where are you in your journey?</option>
-              <option>Just exploring the idea</option>
-              <option>Actively planning our move</option>
-              <option>Ready to view properties</option>
-              <option>Something else</option>
-            </select>
-          </div>
-          <div class="form-group"><textarea placeholder="Tell me a little about your family..." rows="4"></textarea></div>
-          <button type="submit" class="hv2-btn-dark hv2-btn-dark--full">Send message <i class="fas fa-arrow-right"></i></button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       FOOTER
-  ============================================================ -->
-  <footer class="footerv2">
-    <div class="container">
-      <div class="footerv2-cta">
-        <div class="footerv2-cta-text">
-          <h2 class="footerv2-cta-title">This feels <em>right.</em></h2>
-          <p>Book a 30-minute call. No pitch, no pressure &mdash; just a conversation about whether Phuket fits your family.</p>
-        </div>
-        <div class="footerv2-cta-actions">
-          <a href="#contact" class="footerv2-book">Book your call <i class="fas fa-arrow-up-right-from-square"></i></a>
-          <a href="mailto:hello@phuketliving.co" class="footerv2-email">hello@phuketliving.co</a>
-        </div>
-      </div>
-
-      <div class="footerv2-top">
-        <div class="footerv2-brand">
-          <span class="footerv2-logo">Phuket <em>Living</em></span>
-          <span class="footerv2-tag">This feels right</span>
-          <p>A relocation partner for expat families moving to Phuket. Curated homes, lifestyle-first guidance.</p>
-        </div>
-        <div class="footerv2-links">
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="#properties">Properties</a></li>
-            <li><a href="#areas">Areas</a></li>
-            <li><a href="#">Shortlists</a></li>
-            <li><a href="#journal">Journal</a></li>
-          </ul>
-        </div>
-        <div class="footerv2-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="#services">Relocation</a></li>
-            <li><a href="#">Schools</a></li>
-            <li><a href="#">Legal &amp; visas</a></li>
-            <li><a href="#">Settling in</a></li>
-          </ul>
-        </div>
-        <div class="footerv2-links">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="about.html">Approach</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Press</a></li>
-          </ul>
-        </div>
-        <div class="footerv2-links">
-          <h4>Connect</h4>
-          <ul>
-            <li><a href="#contact">Book a call</a></li>
-            <li><a href="https://instagram.com/phuketliving" target="_blank">Instagram</a></li>
-            <li><a href="#" target="_blank">TikTok</a></li>
-            <li><a href="mailto:hello@phuketliving.co">Email</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footerv2-bottom">
-        <p>&copy; 2026 Phuket Living. All rights reserved.</p>
-        <p>Made on the island.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const navToggle = document.getElementById('navToggle');
-    const navMenu = document.getElementById('navMenu');
-    navToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
-      navToggle.classList.toggle('open');
-    });
-    navMenu.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
-        navToggle.classList.remove('open');
-      });
-    });
-
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 60);
-    });
-
-    const chips = document.querySelectorAll('.chip');
-    chips.forEach(c => c.addEventListener('click', () => {
-      chips.forEach(x => x.classList.remove('chip--active'));
-      c.classList.add('chip--active');
-    }));
-
-    const favs = document.querySelectorAll('.propv2-fav');
-    favs.forEach(f => f.addEventListener('click', (e) => {
-      e.preventDefault();
-      f.classList.toggle('is-saved');
-      const icon = f.querySelector('i');
-      icon.classList.toggle('far');
-      icon.classList.toggle('fas');
-    }));
-
-    const revealEls = document.querySelectorAll('.hv2-hero-card, .hv2-hero-photo, .howhelp-card, .meetv2-photo, .meetv2-body, .propv2-card, .journal-card, .testim-v2-card, .insta-tile, .contactv2-left, .contactv2-form, .believe-title, .believe-sub, .footerv2-cta, .footerv2-top');
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    revealEls.forEach(el => {
-      el.classList.add('reveal');
-      revealObserver.observe(el);
-    });
-
-    document.getElementById('contactForm').addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert("Thanks! I'll be in touch within 24 hours.");
-      e.target.reset();
-    });
-  </script>
+<script>
+document.getElementById('navToggle').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('open'));
+let slCount = 0;
+function toggleSL(btn) {
+  event.stopPropagation();
+  btn.classList.toggle('added');
+  slCount += btn.classList.contains('added') ? 1 : -1;
+  btn.textContent = btn.classList.contains('added') ? '✓' : '+';
+  document.getElementById('sl-count').textContent = slCount + (slCount === 1 ? ' property' : ' properties') + ' selected';
+  const slBtn = document.getElementById('sl-btn');
+  slBtn.style.pointerEvents = slCount > 0 ? 'auto' : 'none';
+  slBtn.style.opacity = slCount > 0 ? '1' : '.5';
+}
+</script>
 </body>
 </html>
