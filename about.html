@@ -3,333 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Phuket Living — Meet the Person Behind Your Move</title>
-  <meta name="description" content="Meet the person behind Phuket Living. 7 years of real Phuket experience, with and without kids. Honest, unbiased guidance for families relocating to paradise.">
-
+  <title>About — Phuket Living</title>
+  <meta name="description" content="I help families relocate to Phuket — with clarity, not pressure. Learn why I started Phuket Living.">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ============================================================
-       NAVIGATION
-  ============================================================ -->
-  <nav class="navbar navbar--solid" id="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <span class="logo-text">Phuket Living</span>
-      </a>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="about.html" class="nav-link nav-link--active">About</a></li>
-        <li><a href="index.html#services" class="nav-link">Services</a></li>
-        <li><a href="index.html#properties" class="nav-link">Properties</a></li>
-        <li><a href="index.html#journal" class="nav-link">Journal</a></li>
-        <li><a href="index.html#contact" class="nav-link nav-link--cta">Contact Me</a></li>
-      </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+<nav class="site-nav">
+  <a href="index.html" class="logo">Phuket <em>Living</em></a>
+  <div class="nav-links" id="navLinks">
+    <a href="areas.html">Areas</a>
+    <a href="properties.html">Properties</a>
+    <a href="about.html" class="active">About</a>
+    <a href="resources.html">Resources</a>
+  </div>
+  <a href="contact.html" class="nav-cta">Get in touch</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
 
-  <!-- ============================================================
-       ABOUT HERO — Magazine-style intro
-  ============================================================ -->
-  <section class="about-hero">
-    <div class="container">
-      <div class="about-hero-grid">
-        <div class="about-hero-image">
-          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&q=80" alt="Your Phuket Living guide">
-          <span class="about-hero-badge">7 years on the island</span>
-        </div>
-        <div class="about-hero-content">
-          <p class="section-label">Nice to Meet You</p>
-          <h1 class="about-hero-title">Hi There &mdash;<br><em>I'm Your Guide<br>to Phuket</em></h1>
-          <p class="about-hero-text">I didn't just read about Phuket in a brochure. I packed my life, moved here, and built a home on this island. Seven years later, I've experienced everything &mdash; the excitement, the overwhelm, the adjustments, and the pure joy of watching this place become home.</p>
-          <p class="about-hero-text">Now I help families like yours do the same, minus the guesswork.</p>
-          <div class="about-hero-sig">
-            <span class="about-hero-sig-line"></span>
-            <span class="about-hero-sig-text">With heart, always.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="about-hero">
+  <div>
+    <p class="eyebrow" style="font-size:11px;font-weight:500;color:var(--green-text);letter-spacing:.08em;text-transform:lowercase;margin-bottom:12px">About Phuket Living</p>
+    <h1 style="font-family:var(--font-display);font-size:28px;font-weight:400;line-height:1.3;margin-bottom:14px">I help families relocate<br>to Phuket — <em style="color:var(--green-text)">with clarity,<br>not pressure.</em></h1>
+    <p style="font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:18px">Most people searching for a home in Phuket feel overwhelmed before they've even started. I started Phuket Living because I wanted to be the person I wish I'd had when I first moved here.</p>
+    <p class="sig">Annie</p>
+    <p class="sig-role">Founder, Phuket Living</p>
+  </div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:10px;padding-top:4px">
+    <div class="avatar"><span class="avatar-init">A</span></div>
+    <p style="font-size:11px;color:var(--green-text);font-weight:500;text-align:center;margin:0">Living in Phuket<br><span style="color:var(--text3);font-weight:400">since 2017</span></p>
+  </div>
+</div>
 
-  <!-- ============================================================
-       STORY SECTION 1 — Full-bleed image with floating card
-  ============================================================ -->
-  <section class="story-spread">
-    <div class="story-spread-image">
-      <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?w=1600&q=80" alt="Phuket coastal scenery">
-    </div>
-    <div class="story-spread-card">
-      <p class="story-cursive">Let me rewind a little...</p>
-      <h2 class="story-heading">I wasn't born here.<br>I chose to be here.</h2>
-      <p class="story-text">Years ago, I made the decision to leave everything familiar behind and start a new chapter in Thailand. No family connections, no company transfer &mdash; just a deep feeling that this was where I was meant to be.</p>
-      <p class="story-text">Those first months? Exhilarating and terrifying in equal measure. Finding an apartment, opening a bank account, navigating a new language, figuring out which neighbourhood actually suited my lifestyle &mdash; I learned it all the hard way.</p>
-    </div>
-  </section>
+<div class="section">
+  <p class="section-label">The story</p>
+  <h2 style="margin-bottom:16px">Why I built <em>Phuket Living.</em></h2>
+  <p style="font-size:14px;color:var(--text2);line-height:1.75;margin-bottom:14px">I moved to Phuket in 2017 with my partner, two suitcases, and a lot of questions nobody could answer properly. We ended up in the wrong area for six months — beautiful property, wrong lifestyle fit.</p>
+  <p style="font-size:14px;color:var(--text2);line-height:1.75;margin-bottom:14px">When we eventually found the right neighbourhood, everything shifted. The kids settled. Our routine clicked. We stopped feeling like we were on a long holiday and started feeling like we actually lived here.</p>
+  <div class="pull-quote">"I realised the property was never really the decision. The area was the decision — and nobody had helped us make it properly."</div>
+  <p style="font-size:14px;color:var(--text2);line-height:1.75">That experience became the foundation of Phuket Living. Every client I work with starts with the same question: how do you actually want to live? The property comes second. The life comes first.</p>
+</div>
 
-  <!-- ============================================================
-       STORY SECTION 2 — Overlapping asymmetric layout
-  ============================================================ -->
-  <section class="story-overlap">
-    <div class="container">
-      <div class="story-overlap-grid">
-        <div class="story-overlap-visual">
-          <div class="story-overlap-img story-overlap-img--main">
-            <img src="https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?w=800&q=80" alt="Family life in Phuket">
-          </div>
-          <div class="story-overlap-img story-overlap-img--accent">
-            <img src="https://images.unsplash.com/photo-1484820540004-14229fe36ca4?w=500&q=80" alt="Children playing at the beach">
-          </div>
-        </div>
-        <div class="story-overlap-content">
-          <p class="story-cursive">Then everything changed...</p>
-          <h2 class="story-heading">I experienced Phuket as a parent &mdash; and it's a completely different world.</h2>
-          <div class="story-overlap-divider"></div>
-          <p class="story-text">Living in Phuket as a single person is one thing. Living here with kids? The questions multiply overnight. Which school has the right curriculum? Is this neighbourhood safe for children? Where will they make friends?</p>
-          <p class="story-text">I've navigated all of this firsthand. I know which international schools actually deliver on their promises. I know which areas have the best community feel for families. And I know what it's like to worry about whether you're making the right call for your children.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="section tinted">
+  <p class="section-label">What I believe</p>
+  <h2 style="margin-bottom:20px">Five things that guide<br>every <em>conversation.</em></h2>
+  <div class="belief-card"><div class="belief-num">1</div><div><p class="belief-title">Choosing the right area matters more than choosing the right property</p><p class="belief-desc">A great home in the wrong neighbourhood will never feel right. We start with lifestyle, not listings.</p></div></div>
+  <div class="belief-card"><div class="belief-num">2</div><div><p class="belief-title">You don't need more options — you need the right ones</p><p class="belief-desc">I send clients three or four carefully matched properties, not forty. Decision fatigue is real.</p></div></div>
+  <div class="belief-card"><div class="belief-num">3</div><div><p class="belief-title">Clarity removes fear</p><p class="belief-desc">Clear, honest information — even when it's not what you hoped to hear — is always more useful than reassurance.</p></div></div>
+  <div class="belief-card"><div class="belief-num">4</div><div><p class="belief-title">There is no "best" property — only what's right for your life</p><p class="belief-desc">I'm not here to sell the most expensive property. I'm here to find the most fitting one.</p></div></div>
+  <div class="belief-card" style="margin-bottom:20px"><div class="belief-num">5</div><div><p class="belief-title">Relocating is a life decision, not a property transaction</p><p class="belief-desc">You're choosing a school run, a weekend pace, a community. I treat the decision with the weight it deserves.</p></div></div>
+  <div class="green-box"><p class="gb-label">Brand promise</p><p class="gb-text">"Clarity in every step. Confidence in every decision."</p></div>
+</div>
 
-  <!-- ============================================================
-       BELIEF / VALUES — Full-width statement
-  ============================================================ -->
-  <section class="belief-section">
-    <div class="container">
-      <div class="belief-content">
-        <h2 class="belief-heading">I know what it takes to uproot your life and start over in a place where everything is new. That's exactly why I do what I do.</h2>
-      </div>
-    </div>
-  </section>
+<div class="section">
+  <p class="section-label">Track record</p>
+  <h2 style="margin-bottom:20px">Families who've made <em>the move.</em></h2>
+  <div class="about-stats">
+    <div class="about-stat"><p class="about-stat-v">60+</p><p class="about-stat-k">Families relocated</p></div>
+    <div class="about-stat"><p class="about-stat-v">7 yrs</p><p class="about-stat-k">Living in Phuket</p></div>
+    <div class="about-stat"><p class="about-stat-v">6</p><p class="about-stat-k">Areas covered</p></div>
+    <div class="about-stat"><p class="about-stat-v">4.6★</p><p class="about-stat-k">Average rating</p></div>
+  </div>
+  <div class="quote-card"><p class="quote-text">"Annie didn't show us a single property until she understood how we wanted to live. That felt completely different from every other agent we'd spoken to."</p><p class="quote-attr">— James &amp; Claire, relocated from London · 2023</p></div>
+  <div class="quote-card"><p class="quote-text">"We were overwhelmed by everything we'd read online. One conversation with Annie gave us more clarity than six months of research."</p><p class="quote-attr">— Sarah &amp; Tom, relocated from Melbourne · 2024</p></div>
+</div>
 
-  <!-- ============================================================
-       STORY SECTION 3 — My Approach
-  ============================================================ -->
-  <section class="story-section">
-    <div class="container">
-      <div class="story-block story-block--reverse">
-        <div class="story-content">
-          <p class="story-cursive">Here's what makes me different...</p>
-          <h2 class="story-heading">I give you facts, not sales pitches. So you can decide with confidence.</h2>
-          <p class="story-text">I'm not here to sell you a dream or push a listing because of a commission. I'm here because I genuinely believe every family deserves honest, unbiased information when making one of the biggest decisions of their lives.</p>
-          <p class="story-text">After 7 years of living, working, and raising a family in Phuket, I've built the kind of local knowledge you can only get from actually being here &mdash; not from a website or a weekend visit. I know the hidden costs, the real pros and cons of each area, and the things no one tells you until you've already signed a lease.</p>
-          <p class="story-text">My job is to give you all of that, lay it out clearly, and let you make the decision that's right for <em>your</em> family.</p>
-        </div>
-        <div class="story-image">
-          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=700&q=80" alt="Property consultation">
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="section tinted">
+  <p class="section-label">How I'm different</p>
+  <h2 style="margin-bottom:20px">What Phuket Living <em>is not.</em></h2>
+  <div class="diff-row"><div class="diff-dot"></div><p class="diff-text"><strong>Not a listing aggregator.</strong> I don't publish everything available. I publish what I'd actually recommend — and only after understanding your situation.</p></div>
+  <div class="diff-row"><div class="diff-dot"></div><p class="diff-text"><strong>Not commission-driven in the traditional sense.</strong> My incentive is a client who settles well and refers others — not a fast close on the highest-value property.</p></div>
+  <div class="diff-row"><div class="diff-dot"></div><p class="diff-text"><strong>Not a remote service.</strong> I accompany every viewing in person. There are no virtual tours dressed up as local expertise.</p></div>
+  <div class="diff-row" style="margin-bottom:0"><div class="diff-dot"></div><p class="diff-text"><strong>Not one-size-fits-all.</strong> A retired couple from Germany and a remote-working family from Sydney have almost nothing in common when it comes to the right area.</p></div>
+</div>
 
-  <!-- ============================================================
-       7 YEARS — Horizontal editorial stats
-  ============================================================ -->
-  <section class="years-section">
-    <div class="container">
-      <div class="years-header">
-        <p class="section-label">7 Years of Living It</p>
-        <h2 class="section-title">Not just experience.<br><em>Lived experience.</em></h2>
-      </div>
-      <div class="years-row">
-        <div class="year-stat">
-          <span class="year-stat-number">7</span>
-          <span class="year-stat-label">Years living in Phuket</span>
-          <p class="year-stat-desc">School runs, lease negotiations, hidden beaches &mdash; all lived, not Googled.</p>
-        </div>
-        <div class="year-stat">
-          <span class="year-stat-number">2</span>
-          <span class="year-stat-label">Perspectives</span>
-          <p class="year-stat-desc">Solo expat life and parenthood. Two completely different Phukets.</p>
-        </div>
-        <div class="year-stat">
-          <span class="year-stat-number">50+</span>
-          <span class="year-stat-label">Families guided home</span>
-          <p class="year-stat-desc">Real families, real moves. Every one of them different, every one personal.</p>
-        </div>
-        <div class="year-stat">
-          <span class="year-stat-number">0</span>
-          <span class="year-stat-label">Bias</span>
-          <p class="year-stat-desc">No commissions, no hidden agendas. Just honest facts so you can decide.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="footer-cta">
+  <h2>Ready to have a real conversation<br>about your move?</h2>
+  <p>No pressure. No pitch. Just an honest conversation.</p>
+  <a href="contact.html" class="btn-light">Get in touch →</a>
+  <a href="areas.html" class="btn-ghost">Explore areas first</a>
+</div>
 
-  <!-- ============================================================
-       PULL QUOTE — Editorial warm break
-  ============================================================ -->
-  <section class="pull-quote">
-    <div class="container">
-      <blockquote class="pull-quote-text">
-        <span class="pull-quote-mark">&ldquo;</span>
-        Every family I work with reminds me why I started &mdash; that feeling of someone saying <em>&lsquo;I wish I'd had you when I first moved here.&rsquo;</em> That's the whole point.
-      </blockquote>
-    </div>
-  </section>
+<footer class="site-footer">
+  <span class="footer-logo">Phuket Living</span>
+  <div class="footer-links"><a href="areas.html">Areas</a><a href="properties.html">Properties</a><a href="about.html">About</a><a href="resources.html">Resources</a></div>
+  <span class="footer-note">© 2025 Phuket Living</span>
+</footer>
 
-  <!-- ============================================================
-       FUN FACTS — Personal touch, magazine-style
-  ============================================================ -->
-  <section class="funfacts-section">
-    <div class="container">
-      <div class="funfacts-header">
-        <p class="funfacts-cursive">A few things about me</p>
-        <h2 class="funfacts-title">Beyond the <em>business</em></h2>
-      </div>
-      <div class="funfacts-grid">
-        <div class="funfact-card">
-          <div class="funfact-image">
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80" alt="Thai street food">
-          </div>
-          <div class="funfact-body">
-            <span class="funfact-num">01</span>
-            <p class="funfact-text">I'm a street food fanatic. Ask me for my top 5 local spots and I'll talk for an hour.</p>
-          </div>
-        </div>
-        <div class="funfact-card">
-          <div class="funfact-image">
-            <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=500&q=80" alt="Phuket beach sunset">
-          </div>
-          <div class="funfact-body">
-            <span class="funfact-num">02</span>
-            <p class="funfact-text">Sunsets at Promthep Cape still take my breath away, even after 7 years.</p>
-          </div>
-        </div>
-        <div class="funfact-card">
-          <div class="funfact-image">
-            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&q=80" alt="Morning yoga">
-          </div>
-          <div class="funfact-body">
-            <span class="funfact-num">03</span>
-            <p class="funfact-text">Early mornings are sacred &mdash; you'll find me at yoga before the rest of the island wakes up.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       CTA — Let's Connect
-  ============================================================ -->
-  <section class="about-cta">
-    <div class="container">
-      <div class="about-cta-content">
-        <p class="section-label">Ready?</p>
-        <h2 class="section-title">Let's start your <em>Phuket story</em> together.</h2>
-        <p class="about-cta-text">Whether you're still dreaming or you've already booked your flights, I'd love to hear where you are in your journey. No pressure, no sales pitch &mdash; just an honest conversation about what life in Phuket could look like for your family.</p>
-        <div class="about-cta-buttons">
-          <a href="index.html#contact" class="btn btn--primary">Book a Free Consultation</a>
-          <a href="https://instagram.com/phuketliving" class="btn btn--secondary" target="_blank">Follow My Journey <i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       FOOTER
-  ============================================================ -->
-  <footer class="footerv2">
-    <div class="container">
-      <div class="footerv2-cta">
-        <div class="footerv2-cta-text">
-          <h2 class="footerv2-cta-title">This feels <em>right.</em></h2>
-          <p>Book a 30-minute call. No pitch, no pressure &mdash; just a conversation about whether Phuket fits your family.</p>
-        </div>
-        <div class="footerv2-cta-actions">
-          <a href="index.html#contact" class="footerv2-book">Book your call <i class="fas fa-arrow-up-right-from-square"></i></a>
-          <a href="mailto:hello@phuketliving.co" class="footerv2-email">hello@phuketliving.co</a>
-        </div>
-      </div>
-      <div class="footerv2-top">
-        <div class="footerv2-brand">
-          <span class="footerv2-logo">Phuket <em>Living</em></span>
-          <span class="footerv2-tag">This feels right</span>
-          <p>A relocation partner for expat families moving to Phuket. Curated homes, lifestyle-first guidance.</p>
-        </div>
-        <div class="footerv2-links">
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="index.html#properties">Properties</a></li>
-            <li><a href="index.html#areas">Areas</a></li>
-            <li><a href="index.html#shortlists">Shortlists</a></li>
-            <li><a href="index.html#journal">Journal</a></li>
-          </ul>
-        </div>
-        <div class="footerv2-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="index.html#services">Relocation</a></li>
-            <li><a href="#">Schools</a></li>
-            <li><a href="#">Legal &amp; visas</a></li>
-            <li><a href="#">Settling in</a></li>
-          </ul>
-        </div>
-        <div class="footerv2-links">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Approach</a></li>
-            <li><a href="index.html#testimonials">Testimonials</a></li>
-            <li><a href="#">Press</a></li>
-          </ul>
-        </div>
-        <div class="footerv2-links">
-          <h4>Connect</h4>
-          <ul>
-            <li><a href="index.html#contact">Book a call</a></li>
-            <li><a href="https://instagram.com/phuketliving" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="#">TikTok</a></li>
-            <li><a href="mailto:hello@phuketliving.co">Email</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footerv2-bottom">
-        <p>&copy; 2026 Phuket Living. All rights reserved.</p>
-        <p>Made on the island.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const navToggle = document.getElementById('navToggle');
-    const navMenu = document.getElementById('navMenu');
-    navToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
-      navToggle.classList.toggle('open');
-    });
-    navMenu.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
-        navToggle.classList.remove('open');
-      });
-    });
-
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 60);
-    });
-
-    const revealEls = document.querySelectorAll('.story-content, .story-image, .story-spread-card, .story-overlap-visual, .story-overlap-content, .belief-content, .years-header, .year-stat, .funfact-card, .about-hero-image, .about-hero-content, .about-cta-content, .pull-quote-text');
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
-    revealEls.forEach(el => {
-      el.classList.add('reveal');
-      revealObserver.observe(el);
-    });
-  </script>
-
+<script>
+document.getElementById('navToggle').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('open'));
+</script>
 </body>
 </html>
