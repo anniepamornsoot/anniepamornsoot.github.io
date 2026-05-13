@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Phuket Living</title>
+  <meta name="description" content="Get in touch with Annie. No pitch, no pressure — just an honest conversation about your move to Phuket.">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="logo"><em>Phuket</em> Living</a>
+  <div class="nav-links" id="navLinks">
+    <a href="areas.html">Areas</a>
+    <a href="properties.html">Properties</a>
+    <a href="about.html">About</a>
+    <a href="resources.html">Resources</a>
+  </div>
+  <a href="contact.html" class="nav-cta" style="background:var(--green-dark)">Get in touch</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="hero hero--left" style="background:var(--surface2)">
+  <p class="eyebrow">Get in touch</p>
+  <h1 style="font-size:28px">Let's start with<br>how you want to <em>live.</em></h1>
+  <p class="sub">No pitch, no pressure. Just an honest conversation about your move — and whether Phuket is the right fit.</p>
+</div>
+
+<div id="form-view">
+  <div class="contact-wrap">
+    <div class="form-card">
+      <div class="field-group">
+        <div class="field-wrap"><label class="field-label">Your name</label><input type="text" placeholder="e.g. Sarah Johnson" id="f-name"></div>
+        <div class="field-wrap"><label class="field-label">Email address</label><input type="email" placeholder="you@example.com" id="f-email"></div>
+      </div>
+      <div class="field-wrap"><label class="field-label">Where are you relocating from?</label><input type="text" placeholder="e.g. Melbourne, Australia"></div>
+      <div class="field-wrap"><label class="field-label">Family situation</label><div class="chip-row"><span class="chip" onclick="chipSel(this,'fam')">Couple, no kids</span><span class="chip" onclick="chipSel(this,'fam')">Family with young kids</span><span class="chip" onclick="chipSel(this,'fam')">Family with teens</span><span class="chip" onclick="chipSel(this,'fam')">Retiring couple</span><span class="chip" onclick="chipSel(this,'fam')">Solo</span></div></div>
+      <div class="field-wrap"><label class="field-label">What matters most to you?</label><div class="chip-row"><span class="chip" onclick="this.classList.toggle('sel')">Schools &amp; family routine</span><span class="chip" onclick="this.classList.toggle('sel')">Peace and quiet</span><span class="chip" onclick="this.classList.toggle('sel')">Remote work setup</span><span class="chip" onclick="this.classList.toggle('sel')">Healthcare access</span><span class="chip" onclick="this.classList.toggle('sel')">Expat community</span><span class="chip" onclick="this.classList.toggle('sel')">Beach proximity</span></div><p class="field-hint">Select all that apply</p></div>
+      <div class="field-wrap"><label class="field-label">Rough monthly budget</label><select><option value="">Select a range</option><option>Under ฿30,000</option><option>฿30,000 – 50,000</option><option>฿50,000 – 80,000</option><option>฿80,000 – 120,000</option><option>฿120,000+</option><option>Not sure yet</option></select></div>
+      <div class="field-wrap"><label class="field-label">When are you planning to move?</label><div class="chip-row"><span class="chip" onclick="chipSel(this,'time')">Within 3 months</span><span class="chip" onclick="chipSel(this,'time')">3–6 months</span><span class="chip" onclick="chipSel(this,'time')">6–12 months</span><span class="chip" onclick="chipSel(this,'time')">Just exploring</span></div></div>
+      <div class="field-wrap" style="margin-bottom:20px"><label class="field-label">Anything else Annie should know?</label><textarea placeholder="Areas you've been considering, schools, questions — anything helps."></textarea><p class="field-hint">Optional, but the more context you share, the more useful the first conversation will be.</p></div>
+      <button class="submit-btn" onclick="submitForm()">Send message to Annie</button>
+      <p class="reassure">No spam. No follow-up pitch. Annie typically replies within 24 hours.</p>
+    </div>
+    <div>
+      <p class="sidebar-label">What happens next</p>
+      <div class="expect-row"><div class="expect-num">1</div><div><p class="expect-title">Annie reads your message personally</p><p class="expect-desc">Not a CRM autoresponder. She reads every inquiry herself and replies within 24 hours.</p></div></div>
+      <div class="expect-row"><div class="expect-num">2</div><div><p class="expect-title">A short conversation about your situation</p><p class="expect-desc">Via WhatsApp, email, or a short call — whichever you prefer. No commitment required.</p></div></div>
+      <div class="expect-row"><div class="expect-num">3</div><div><p class="expect-title">Area and property recommendations</p><p class="expect-desc">Based on what you've shared, Annie will suggest the areas and homes that actually fit.</p></div></div>
+      <div class="expect-row" style="margin-bottom:0"><div class="expect-num">4</div><div><p class="expect-title">Viewings — when you're ready</p><p class="expect-desc">No pressure to move fast. Annie accompanies every viewing in person.</p></div></div>
+      <div class="annie-card"><div class="annie-av">A</div><div><p class="annie-quote">"I reply to every message myself. Tell me as much or as little as you like — there's no wrong way to start."</p><p class="annie-name">— Annie, founder</p></div></div>
+      <div class="contact-direct">
+        <p>Prefer to reach out directly?</p>
+        <p class="dc">WhatsApp: <span>+66 XX XXX XXXX</span></p>
+        <p class="dc">Instagram: <span class="handle">@phuketliving</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="success-wrap" id="success-view">
+  <div class="success-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#1D9E75" stroke-width="1.5"/><path d="M7.5 12l3.5 3.5 6-7" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <h2 class="success-h">Message sent.<br><em>Annie will be in touch.</em></h2>
+  <p class="success-sub">She reads every inquiry personally and typically replies within 24 hours — often sooner. No automated responses, no sales pitch.</p>
+  <div class="success-detail"><p><strong>What to expect:</strong></p><p>A personal reply from Annie via email or WhatsApp, with a few follow-up questions about your situation — so she can point you in the right direction from the very first conversation.</p></div>
+  <div class="success-btns">
+    <a href="areas.html" class="success-cta">Explore areas while you wait →</a>
+    <button class="success-back" onclick="resetForm()">Send another message</button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <span class="footer-logo"><em>Phuket</em> Living</span>
+  <div class="footer-links"><a href="areas.html">Areas</a><a href="properties.html">Properties</a><a href="about.html">About</a><a href="resources.html">Resources</a></div>
+  <span class="footer-note">© 2025 Phuket Living</span>
+</footer>
+
+<script>
+document.getElementById('navToggle').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('open'));
+
+function chipSel(el, group) {
+  el.closest('.chip-row').querySelectorAll('.chip').forEach(c => {
+    if (c.dataset.group === group || c.closest('.field-wrap') === el.closest('.field-wrap')) {}
+  });
+  el.closest('.chip-row').querySelectorAll('.chip').forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+}
+
+function submitForm() {
+  const name = document.getElementById('f-name').value.trim();
+  const email = document.getElementById('f-email').value.trim();
+  document.getElementById('f-name').style.borderColor = name ? '' : '#E24B4A';
+  document.getElementById('f-email').style.borderColor = email ? '' : '#E24B4A';
+  if (!name || !email) return;
+  document.getElementById('form-view').style.display = 'none';
+  document.getElementById('success-view').style.display = 'block';
+}
+
+function resetForm() {
+  document.getElementById('form-view').style.display = 'block';
+  document.getElementById('success-view').style.display = 'none';
+}
+</script>
+</body>
+</html>

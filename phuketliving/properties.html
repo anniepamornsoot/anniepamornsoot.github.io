@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties — Phuket Living</title>
+  <meta name="description" content="Curated family homes across Phuket. Only properties worth your time, updated monthly.">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="logo"><em>Phuket</em> Living</a>
+  <div class="nav-links" id="navLinks">
+    <a href="areas.html">Areas</a>
+    <a href="properties.html" class="active">Properties</a>
+    <a href="about.html">About</a>
+    <a href="resources.html">Resources</a>
+  </div>
+  <a href="contact.html" class="nav-cta">Get in touch</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="hero hero--left">
+  <p class="eyebrow">Curated listings</p>
+  <h1 style="font-size:28px">Homes we'd actually<br><em>recommend right now.</em></h1>
+  <p class="sub">Not a full catalogue — only properties worth your time, updated monthly.</p>
+</div>
+
+<div class="section">
+  <div class="filter-row" id="prop-filters">
+    <button class="fpill active" onclick="filterProps(this,'all')">All areas</button>
+    <button class="fpill" onclick="filterProps(this,'Bangtao')">Bangtao</button>
+    <button class="fpill" onclick="filterProps(this,'Rawai')">Rawai</button>
+    <button class="fpill" onclick="filterProps(this,'Cherngtalay')">Cherngtalay</button>
+    <button class="fpill" onclick="filterProps(this,'Nai Harn')">Nai Harn</button>
+  </div>
+  <div class="shortlist-bar"><span>Shortlist — <strong id="sl-count">0 properties selected</strong></span><a href="contact.html" class="req-btn" id="sl-btn" style="pointer-events:none;opacity:.5">Request viewings ↗</a></div>
+  <div class="cards-grid" id="props-grid">
+    <div class="card" data-area="Bangtao"><div class="card-img"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="4-bed pool villa"><span class="area-badge" style="background:#F2EDE3;color:#4A5340">Bangtao</span><button class="add-btn" onclick="toggleSL(this)">+</button></div><div class="card-body"><p class="card-title">4-bed pool villa</p><p class="card-meta">320 sqm · private pool</p><p class="card-price">฿65,000 / mo</p><div class="card-tags"><span class="tag">Pool</span><span class="tag">Near schools</span></div></div></div>
+    <div class="card" data-area="Rawai"><div class="card-img"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="3-bed townhouse"><span class="area-badge" style="background:#F2EDE3;color:#7D5A3A">Rawai</span><button class="add-btn" onclick="toggleSL(this)">+</button></div><div class="card-body"><p class="card-title">3-bed townhouse</p><p class="card-meta">210 sqm · sea views</p><p class="card-price">฿38,000 / mo</p><div class="card-tags"><span class="tag">Quiet</span><span class="tag">Sea views</span></div></div></div>
+    <div class="card" data-area="Cherngtalay"><div class="card-img"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&q=80" alt="3-bed modern villa"><span class="area-badge" style="background:#F2EDE3;color:#4A5340">Cherngtalay</span><button class="add-btn" onclick="toggleSL(this)">+</button></div><div class="card-body"><p class="card-title">3-bed modern villa</p><p class="card-meta">260 sqm · pool</p><p class="card-price">฿52,000 / mo</p><div class="card-tags"><span class="tag">Pool</span><span class="tag">Community</span></div></div></div>
+    <div class="card" data-area="Bangtao"><div class="card-img"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="2-bed condo"><span class="area-badge" style="background:#F2EDE3;color:#4A5340">Bangtao</span><button class="add-btn" onclick="toggleSL(this)">+</button></div><div class="card-body"><p class="card-title">2-bed condo</p><p class="card-meta">95 sqm</p><p class="card-price">฿22,000 / mo</p><div class="card-tags"><span class="tag">Low-maintenance</span></div></div></div>
+    <div class="card" data-area="Nai Harn"><div class="card-img"><img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=600&q=80" alt="4-bed hillside villa"><span class="area-badge" style="background:#F2EDE3;color:#7D5A3A">Nai Harn</span><button class="add-btn" onclick="toggleSL(this)">+</button></div><div class="card-body"><p class="card-title">4-bed hillside villa</p><p class="card-meta">380 sqm</p><p class="card-price">฿75,000 / mo</p><div class="card-tags"><span class="tag">Sea views</span><span class="tag">Private</span></div></div></div>
+    <div class="card" data-area="Rawai"><div class="card-img"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="3-bed family home"><span class="area-badge" style="background:#F2EDE3;color:#7D5A3A">Rawai</span><button class="add-btn" onclick="toggleSL(this)">+</button></div><div class="card-body"><p class="card-title">3-bed family home</p><p class="card-meta">240 sqm · garden</p><p class="card-price">฿42,000 / mo</p><div class="card-tags"><span class="tag">Garden</span><span class="tag">Quiet</span></div></div></div>
+  </div>
+  <p style="font-size:12px;color:var(--text3);text-align:center;margin-top:16px">Showing curated properties — not every listing, only the right ones</p>
+</div>
+
+<div class="footer-cta">
+  <h2>Not sure which properties suit you?</h2>
+  <p>Tell Annie how you want to live — she'll match you to the right homes.</p>
+  <a href="contact.html" class="btn-light">Get in touch →</a>
+</div>
+
+<footer class="site-footer">
+  <span class="footer-logo"><em>Phuket</em> Living</span>
+  <div class="footer-links"><a href="areas.html">Areas</a><a href="properties.html">Properties</a><a href="about.html">About</a><a href="resources.html">Resources</a></div>
+  <span class="footer-note">© 2025 Phuket Living</span>
+</footer>
+
+<script>
+document.getElementById('navToggle').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('open'));
+
+let slCount = 0;
+function toggleSL(btn) {
+  event.stopPropagation();
+  btn.classList.toggle('added');
+  slCount += btn.classList.contains('added') ? 1 : -1;
+  btn.textContent = btn.classList.contains('added') ? '✓' : '+';
+  document.getElementById('sl-count').textContent = slCount + (slCount === 1 ? ' property' : ' properties') + ' selected';
+  const slBtn = document.getElementById('sl-btn');
+  slBtn.style.pointerEvents = slCount > 0 ? 'auto' : 'none';
+  slBtn.style.opacity = slCount > 0 ? '1' : '.5';
+}
+
+function filterProps(btn, area) {
+  document.querySelectorAll('#prop-filters .fpill').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('#props-grid .card').forEach(c => {
+    c.style.display = (area === 'all' || c.dataset.area === area) ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>
